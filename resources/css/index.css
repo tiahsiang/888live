@@ -505,7 +505,7 @@ a>.icon-usergroup {
 .f2-view .icon-usergroup {
   font-size: 14px;
 }
-/*** floor3 ***/
+/*** floor3 + floor4 ***/
 .floor3 .lt-aside {
   width: 100%;
   margin-right: 0;
@@ -579,4 +579,41 @@ a>.icon-usergroup {
   -o-text-overflow: ellipsis;
   -moz-text-overflow: ellipsis;
   white-space: nowrap;
+}
+/*** footer ***/
+.footer {
+  width: 100%;
+  height: 192px;
+  line-height: 1;
+  padding: 45px;
+  background: #202124;
+}
+.footer>.container {
+  text-align: center;
+}
+.links>li {
+  display: inline-block;
+}
+.links>li>a {
+  font-size: 14px;
+  color: #666;
+}
+.links>li>a:hover, .links>li>a:active {
+  color: #f11c2a;
+}
+.links>li>a b {
+  font-size: 13px;
+  margin: 0 5px;
+  color: #444;
+  vertical-align: baseline;
+}
+.copyright {
+  padding-top: 20px;
+}
+.copyright a {
+  text-align: center;
+}
+.copyright a img {
+  width: 237px;
+  height: 70px;
 }
