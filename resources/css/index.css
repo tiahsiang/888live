@@ -322,7 +322,6 @@ input::placeholder {
   overflow: hidden;
   border-radius: 3px;
   margin-bottom: 10px;
-  /*border: 1px solid #ddd;*/
   position: relative;
 }
 .lt-aside .f1-list .video-list>li a {
@@ -415,11 +414,17 @@ input::placeholder {
   font-size: 14px;
   overflow: hidden;
 }
-.f2-cover span {
+.floor2 .f2-cover span {
   float: left;
   font-size: 14px;
   color: #333;
   text-align: left;
+  max-width: 88px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .f2-cover a {
   float: right;
@@ -491,7 +496,7 @@ a>.icon-usergroup {
   white-space: nowrap;
   margin: 5px 0;
 }
-.f2-cash>li .f2-view {
+.floor2 .f2-view {
   font-size: 14px;
   color: #888;
   text-align: left;
@@ -499,4 +504,79 @@ a>.icon-usergroup {
 }
 .f2-view .icon-usergroup {
   font-size: 14px;
+}
+/*** floor3 ***/
+.floor3 .lt-aside {
+  width: 100%;
+  margin-right: 0;
+  height: 558px;
+}
+.floor3 .lt-aside .video-list>li {
+  width: 276px;
+  height: 224px;
+}
+.floor3 .lt-aside .video-list>li>a {
+  display: block;
+  width: 276px;
+  height: 156px;
+}
+.floor3 .lt-aside .video-list>li>a img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.floor3 .f2-view {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.floor3 .f2-view .avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ddd;
+  vertical-align: middle;
+}
+.floor3 .f2-view .avatar>img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.floor3 .f2-view b {
+  display: inline-block;
+  max-width: 110px;
+  font-size: 12px;
+  color: #888;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.floor3 .f2-view>.label>span {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 12px;
+  color: #666;
+  padding: 3px 7px;
+  text-align: center;
+  background: #e0e0e0;
+  border-radius: 20px;
+}
+.floor3 .f2-cover>span {
+  float: left;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  white-space: nowrap;
 }
