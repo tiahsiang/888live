@@ -41,17 +41,74 @@
 <!-- banner -->
 <section class="banner">
   <div class="container">
-
+    <div class="tab-wrap">
+      <ul class="tab-content">
+        <li class="active">
+          <!--<a class="rt-img"><img src="./resources/images/yongxin.jpg" alt="1"></a>-->
+          <section>
+            <video class="video1" autoplay muted loop poster="./resources/images/banner/2014_1.jpg">
+              <source src="resources/src/Rallye.3gp" type="video/mp4">
+            </video>
+          </section>
+        </li>
+        <li>
+          <!--<a class="rt-img"><img src="./resources/images/zhudong.jpg" alt="2"></a>-->
+          <section>
+            <video class="video1" autoplay muted loop poster="./resources/images/banner/2014_2.jpg">
+              <source src="resources/src/Rallye.3gp" type="video/mp4">
+            </video>
+          </section>
+        </li>
+        <li>
+          <!--<a class="rt-img"><img src="./resources/images/jianci.jpg" alt="3"></a>-->
+          <section>
+            <video class="video1" autoplay muted loop poster="./resources/images/banner/2014_3.jpg">
+              <source src="resources/src/Rallye.3gp" type="video/mp4">
+            </video>
+          </section>
+        </li>
+        <li>
+          <!--<a class="rt-img"><img src="./resources/images/zhixingli.jpg" alt="4"></a>-->
+          <section>
+            <video class="video1" autoplay muted loop poster="./resources/images/banner/2014_4.jpg">
+              <source src="resources/src/Rallye.3gp" type="video/mp4">
+            </video>
+          </section>
+        </li>
+        <li>
+          <!--<a class="rt-img"><img src="./resources/images/zhencheng.jpg" alt="5"></a>-->
+          <section>
+            <video class="video1" autoplay muted loop poster="./resources/images/banner/2014_5.jpg">
+              <source src="resources/src/Rallye.3gp" type="video/mp4">
+            </video>
+          </section>
+        </li>
+      </ul>
+      <ul class="tabs">
+        <li class="active"><a><img src="./resources/images/banner/2014_1.jpg" alt="1"></a></li>
+        <li><a><img src="./resources/images/banner/2014_2.jpg" alt="2"></a></li>
+        <li><a><img src="./resources/images/banner/2014_3.jpg" alt="3"></a></li>
+        <li><a><img src="./resources/images/banner/2014_4.jpg" alt="4"></a></li>
+        <li><a><img src="./resources/images/banner/2014_5.jpg" alt="5"></a></li>
+      </ul>
+    </div>
   </div>
 </section>
 
 
 
-
-
-
-
 <script src="resources/js/jquery.min.js"></script>
+<!-- 首页 banner 背景切换JS -->
+<script>
+  $(".tabs").on("click","li", function (e) {
+    e.preventDefault();
+    let idx = $(this).index();
+    $(this).siblings().removeClass("active");
+    $(this).addClass("active");
+    $(this).parents(".tab-wrap").find(".tab-content>li").eq(idx).siblings().removeClass("active");
+    $(this).parents(".tab-wrap").find(".tab-content>li").eq(idx).addClass("active");
+  })
+</script>
 
 </body>
 </html>
