@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="483207ae-0b50-481e-bfd0-3e7f048332dc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change beforePath="$PROJECT_DIR$/resources/css/index.css" afterPath="$PROJECT_DIR$/resources/css/index.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -54,8 +53,8 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="594" column="24" lean-forward="true" selection-start-line="594" selection-start-column="24" selection-end-line="594" selection-end-column="24" />
+            <state relative-caret-position="665">
+              <caret line="431" column="20" lean-forward="true" selection-start-line="431" selection-start-column="20" selection-end-line="431" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -128,25 +127,6 @@
               <item name="888live" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="888live" type="b2602c69:ProjectViewProjectNode" />
-              <item name="888live" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="888live" type="b2602c69:ProjectViewProjectNode" />
-              <item name="888live" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="888live" type="b2602c69:ProjectViewProjectNode" />
-              <item name="888live" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="banner" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -197,12 +177,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1521509301800</updated>
-      <workItem from="1521509305997" duration="32924000" />
+      <workItem from="1521509305997" duration="33682000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32924000" />
+    <option name="totallyTimeSpent" value="33682000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2" y="4" width="1856" height="1046" extended-state="0" />
@@ -326,8 +306,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="594" column="24" lean-forward="true" selection-start-line="594" selection-start-column="24" selection-end-line="594" selection-end-column="24" />
+        <state relative-caret-position="665">
+          <caret line="431" column="20" lean-forward="true" selection-start-line="431" selection-start-column="20" selection-end-line="431" selection-end-column="20" />
           <folding />
         </state>
       </provider>
