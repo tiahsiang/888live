@@ -223,7 +223,7 @@ input::placeholder {
   height: 100%;
   vertical-align: middle;
 }
-.tabs li.active a {
+.tabs li:hover a, .tabs li.active a {
   border-color: #f11c2a;
 }
 .tabs li.active:before {
@@ -398,6 +398,7 @@ input::placeholder {
 .floor2 .lt-aside .video-list>li {
   width: 140px;
   height: 214px;
+  cursor: pointer;
 }
 .floor2 .lt-aside .video-list>li>a {
   width: 140px;
@@ -409,6 +410,7 @@ input::placeholder {
   overflow: hidden;
 }
 .floor2 .f2-cover span {
+  cursor: pointer;
   float: left;
   font-size: 14px;
   color: #333;
@@ -529,6 +531,7 @@ a>.icon-usergroup {
   align-items: center;
 }
 .floor3 .f2-view .avatar {
+  cursor: pointer;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -536,11 +539,13 @@ a>.icon-usergroup {
   vertical-align: middle;
 }
 .floor3 .f2-view .avatar>img {
+  cursor: pointer;
   width: 100%;
   height: 100%;
   vertical-align: middle;
 }
 .floor3 .f2-view b {
+  cursor: pointer;
   display: inline-block;
   max-width: 110px;
   font-size: 12px;
