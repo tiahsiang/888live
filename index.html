@@ -7,7 +7,8 @@
   <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
   <link type="favicon" rel="shortcut icon" href="./resources/images/favicon.ico" mce_href="/favicon.ico" type="image/x-icon"/>
   <link rel="shortcut icon" href="./resources/images/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="resources/css/iconfont.css">
+  <link rel="stylesheet" href="resources/font/iconfont.css">
+  <link rel="stylesheet" href="resources/css/DPlayer.min.css">
   <link rel="stylesheet" href="resources/css/index.css"/>
 </head>
 <body>
@@ -44,12 +45,10 @@
     <div class="tab-wrap">
       <ul class="tab-content">
         <li class="active">
-          <a class="rt-img"><img src="./resources/images/yongxin.jpg" alt="1"></a>
-          <!--<section>-->
-            <!--<video class="video1" autoplay muted loop poster="./resources/images/banner/2014_1.jpg">-->
-              <!--<source src="resources/src/Rallye.3gp" type="video/mp4">-->
-            <!--</video>-->
-          <!--</section>-->
+          <!--<a class="rt-img"><img src="./resources/images/yongxin.jpg" alt="1"></a>-->
+          <section>
+            <div id="dplayer"></div>
+          </section>
         </li>
         <li>
           <a class="rt-img"><img src="./resources/images/zhudong.jpg" alt="2"></a>
@@ -633,8 +632,14 @@
   </div>
 </footer>
 
-
 <script src="resources/js/jquery.min.js"></script>
+<!-- 支持不同视频格式 必须加载在Dplayer.min.js之前 -->
+<script src="resources/js/hls.min.js"></script>
+<script src="resources/js/flv.min.js"></script>
+<script src="resources/js/webtorrent.min.js"></script>
+<!--支持不同视频格式 必须加载在Dplayer.min.js之前 -->
+<script src="resources/js/DPlayer.min.js"></script>
+
 <!-- 首页 banner 背景切换JS -->
 <script>
   $(".tabs").on("click","li", function (e) {
@@ -647,5 +652,40 @@
   })
 </script>
 
+<!-- **  播放器设置  ** -->
+<script>
+
+  const dp = new DPlayer({
+    container: document.getElementById('dplayer'),
+    autoplay: false,
+    theme: '#FADFA3',
+    loop: true,
+    lang: 'zh-cn',
+    live: true,
+    hotkey: true,
+    preload: 'auto',
+    logo: './resources/images/favicon.png',
+    volume: 1,
+    mutex: true,
+    video: {
+      url: './resources/src/jinghong.flv',
+      pic: './resources/images/danmu.jpg',
+      thumbnails: './resources/images/danmu.jpg',
+      type: 'auto'
+    },
+    danmaku: {
+      id: '9E2E3368B56CDBB4',
+      api: 'https://api.prprpr.me/dplayer/',
+      token: 'tokendemo',
+      maximum: 1000,
+      addition: ['https://api.prprpr.me/dplayer/bilibili?aid=4157142'],
+      user: 'DIYgod',
+      bottom: '15%',
+      unlimited: true
+    }
+  });
+
+
+</script>
 </body>
 </html>
