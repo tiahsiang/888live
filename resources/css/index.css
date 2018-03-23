@@ -276,7 +276,7 @@ input::placeholder {
 }
 .video1 {
   width: 980px;
-  margin: -80px 0 0 0;
+  /*margin: -80px 0 0 0;*/
 }
 /*** 首页 floor1  ***/
 .floor1 {

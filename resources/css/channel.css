@@ -38,11 +38,7 @@ a:hover, a:active {
   font-style: normal;
   vertical-align: middle;
 }
-.container {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 5%;
-}
+
 /*********************************************** common css **********************************************/
 /** nav **/
 .nav {
@@ -61,6 +57,9 @@ a:hover, a:active {
 }
 .nav>.container {
   overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5%;
 }
 .logo, .lt-nav {
   float: left;
@@ -162,3 +161,431 @@ input::placeholder {
   font-size: 14px;
   padding: 10px 5px 10px 10px;
 }
+
+
+
+
+
+/*  主要频道 界面样式 */
+.layout {
+  margin: auto;
+  margin-top: 56px;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+}
+.layout .main-pannel {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+/*** side nav start  ***/
+.main-menu {
+  background:#333;
+  border-right:1px solid #e5e5e5;
+  /*position:absolute;*/
+  /*top:56px;*/
+  /*bottom:0;*/
+  /*height:auto;*/
+  /*left:0;*/
+  width:60px;
+  overflow:hidden;
+  -webkit-transition:width .2s linear;
+  transition:width .2s linear;
+  -webkit-transform:translateZ(0) scale(1,1);
+  box-shadow: 1px 0 15px rgba(0, 0, 0, 0.07);
+  opacity:1;
+}
+.main-menu:hover {
+  min-width:250px;
+  overflow:hidden;
+  opacity:1;
+}
+.fa {
+  display: table-cell;
+  width: 60px;
+  height: 46px;
+  text-align: center;
+  font-size: 20px;
+}
+.main-menu>.menu-icon {
+  margin-top: -6px;
+}
+
+.main-menu>.menu-icon li {
+  display:block;
+  width:250px;
+  padding: 6px 0;
+  position: relative;
+}
+
+.main-menu>.menu-icon li>a {
+  position: relative;
+  display: block;
+  width:255px;
+  color:#999;
+  font-size: 16px;
+  text-decoration:none;
+  -webkit-transform:translateZ(0) scale(1,1);
+  -webkit-transition:all .14s linear;
+  transition:all .14s linear;
+}
+
+.line {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  width: 225px;
+  height: 1px;
+  border-bottom: 1px solid #292929;
+  background: #292929;
+  box-shadow: 0 0 1px 1px #3b3b3b;
+  -webkit-box-shadow: 0 0 1px 1px #3b3b3b;
+  -moz-box-shadow: 0 0 1px 1px #3b3b3b;
+  -o-box-shadow: 0 0 1px 1px #3b3b3b;
+  -ms-box-shadow: 0 0 1px 1px #3b3b3b;
+}
+
+.main-menu>.menu-icon li.active>a {
+  background: #f11c2a;
+  color: #fff;
+}
+
+.main-menu>.menu-icon li:hover>a, .main-menu>.menu-icon li:focus>a {
+  color:#f11c2a;
+  background-color: transparent;
+  border-left: 3px solid #f11c2a;
+}
+
+.main-menu .nav-text {
+  position:relative;
+  display:table-cell;
+  vertical-align:middle;
+  width:190px;
+}
+
+.main-menu>.hot {
+  opacity: 0;
+  width: 240px;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  padding: 50px 20px 20px 20px;
+  position: relative;
+}
+
+.main-menu>.games::before {
+  content: '热门游戏';
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 16px;
+  color: #888;
+}
+
+.main-menu>.cashs::before {
+  content: '热门现金网';
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 16px;
+  color: #888;
+}
+
+.main-menu>.hot li {
+  display: inline-block;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+.main-menu>.hot li>a {
+  display: block;
+  text-align: center;
+  width: 96px;
+  height: 28px;
+  color: #999;
+  font-size: 14px;
+  line-height: 18px;
+  background: rgba(255,255,255,.15);
+  border-radius: 3px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.main-menu>.hot li>a:hover, .main-menu>.hot li>a:focus {
+  color: #fff;
+}
+
+.reds {
+  opacity: 0;
+  width: 240px;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  padding: 20px 20px;
+}
+
+.reds>li a {
+  display: inline-block;
+  width: 96px;
+  height: 36px;
+  line-height: 26px;
+  font-size: 14px;
+  padding: 5px 0;
+  background: #f11c2a;
+  color: #fff;
+  border-radius: 3px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.reds>li>a .icon {
+  color: #fff;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.hot-text {
+  opacity: 0;
+  width: 180px;
+  margin: 0 auto;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.hot-text>a {
+  display: inline-block;
+  font-size: 12px;
+  color: #999;
+  text-decoration: none;
+}
+
+.hot-text>a:hover , .hot-text>a:focus {
+  color: #f11c2a;
+}
+
+.main-menu:hover .hot,
+.main-menu:focus .hot,
+.main-menu:hover .line,
+.main-menu:focus .line,
+.main-menu:hover .reds,
+.main-menu:focus .reds,
+.main-menu:hover .hot-text,
+.main-menu:focus .hot-text {
+  opacity: 1;
+}
+/*.area {*/
+/*float: left;*/
+/*background: #e2e2e2;*/
+/*width: 100%;*/
+/*height: 100%;*/
+/*}*/
+
+/*** side nav end  ***/
+
+/***  右侧 内容区域  ***/
+.main-panel {
+  margin: 0 auto;
+}
+.main-panel>.container {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+.main-panel .zb-floor1 {
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.main-panel .zb-floor1 .video-area {
+  width: 85%;
+}
+
+.video-area .whoesonline {
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.whoesonline>div {
+  width: 50%;
+  display: inline-block;
+  padding: 10px;
+  text-align: left;
+  border: 1px solid red;
+}
+.whoesonline .ws-lt {
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.whoesonline a.avatar {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  border-radius: 5px;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.whoesonline a.avatar>img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.whoesonline .ws-lt .ws-info {
+  padding: 0 15px;
+}
+.ws-title {
+  display: block;
+  position: relative;
+}
+.ws-title>a.ws-name {
+  display: block;
+  max-width: 220px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 5px 0;
+}
+.badge1 {
+  display: inline-block;
+  width: 94px;
+  height: 26px;
+  line-height: 18px;
+  padding: 3px 8px 3px 8px;
+  background: #ff921a;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 15px;
+  vertical-align: middle;
+  position: absolute;
+  top: -5px;
+  right: -14px;
+}
+.badge1>.icon {
+  font-size: 16px;
+  margin-left: 3px;
+  vertical-align: middle;
+}
+.ws-info>p {
+  padding-bottom: 10px;
+}
+.ws-info>p a {
+  font-size: 14px;
+  vertical-align: middle;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.ws-info>p a> .icon {
+  font-size: 18px;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+.ws-info>p.red-txt a {
+  color: #f11c2a;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.ws-info>p.red-txt a> .icon {
+  color: #f11c2a;
+}
+.ws-info a.purple {
+  display: inline-block;
+  width: 97px;
+  height: 30px;
+  line-height: 24px;
+  padding: 3px 5px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  background: #876bff;
+  text-align: center;
+  border-radius: 15px;
+}
+a.purple .icon-yuyin {
+  font-size: 20px !important;
+  color: #fff;
+}
+a.yellow .icon-youjian {
+  font-size: 20px !important;
+  color: #ff921a;
+  margin-right: 0;
+}
+a.red .icon-usergroup {
+  font-size: 16px !important;
+  color: #f11c2a;
+}
+.ws-info>p.notice {
+  position: relative;
+}
+p.notice>a {
+  cursor: pointer;
+  font-size: 12px;
+  color: #333;
+  display: block;
+  max-width: 286px;
+  height: 20px;
+  line-height: 20px;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  white-space: nowrap;
+
+}
+p.notice .icon-laba- {
+  font-size: 18px;
+  color: #f11c2a !important;
+}
+p.notice .icon-bofangqi-bofang {
+  font-size: 14px;
+  color: #666;
+  position: absolute;
+  top: 2px;
+  right: 0;
+}
+
+.ws-rt a.avatar {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 3px;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+/*.video-frame> section {*/
+  /*position: absolute;*/
+  /*width: 980px;*/
+  /*height: 575px;*/
+  /*top: 0;*/
+  /*left: 0;*/
+  /*right: 0;*/
+  /*bottom: 0;*/
+  /*margin: auto;*/
+/*}*/
+
+
+
