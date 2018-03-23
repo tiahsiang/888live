@@ -7,25 +7,26 @@
   <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
   <link type="favicon" rel="shortcut icon" href="./resources/images/favicon.ico" mce_href="/favicon.ico" type="image/x-icon"/>
   <link rel="shortcut icon" href="./resources/images/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="resources/css/normalize.css">
   <link rel="stylesheet" href="resources/font/iconfont.css">
   <link rel="stylesheet" href="resources/css/DPlayer.min.css">
   <link rel="stylesheet" href="resources/css/index.css"/>
 </head>
 <body>
-<!-- 主导航 -->
+<!-- max-width: 1200px 主导航 -->
 <nav class="nav">
   <div class="container">
     <a class="logo" href="index.html"><img src="./resources/images/logo144x46.png" alt="lOGO"></a>
     <ul class="lt-nav">
       <li class="active"><a href="index.html">首页</a></li>
-      <li><a href="/live">直播</a></li>
-      <li><a href="/game">游戏</a></li>
-      <li><a href="/cash">现金网</a></li>
+      <li><a href="live.html">直播</a></li>
+      <li><a href="#">游戏</a></li>
+      <li><a href="#">现金网</a></li>
       <li><a href=""><i class="icon icon-gengduo-tianchong"></i></a></li>
     </ul>
     <ul class="rt-nav">
       <li class="search">
-        <input type="text" placeholder="搜索房间、主播、游戏">
+        <input type="search" placeholder="搜索房间、主播、游戏">
         <i class="icon icon-sousuo"></i>
       </li>
       <li class="wyzb">
@@ -632,6 +633,15 @@
   </div>
 </footer>
 
+
+
+
+
+
+
+
+
+
 <script src="resources/js/jquery.min.js"></script>
 <!-- 支持不同视频格式 必须加载在Dplayer.min.js之前 -->
 <script src="resources/js/hls.min.js"></script>
@@ -639,7 +649,6 @@
 <script src="resources/js/webtorrent.min.js"></script>
 <!--支持不同视频格式 必须加载在Dplayer.min.js之前 -->
 <script src="resources/js/DPlayer.min.js"></script>
-
 <!-- 首页 banner 背景切换JS -->
 <script>
   $(".tabs").on("click","li", function (e) {
@@ -651,10 +660,8 @@
     $(this).parents(".tab-wrap").find(".tab-content>li").eq(idx).addClass("active");
   })
 </script>
-
 <!-- **  播放器设置  ** -->
 <script>
-
   const dp = new DPlayer({
     container: document.getElementById('dplayer'),
     autoplay: false,
@@ -684,8 +691,6 @@
       unlimited: true
     }
   });
-
-
 </script>
 </body>
 </html>

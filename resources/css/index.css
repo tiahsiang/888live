@@ -112,7 +112,7 @@ a.logo>img {
   text-align: right;
   margin-left: 20px;
 }
-.rt-nav .search input[type=text] {
+.rt-nav .search input[type=search] {
   width: 178px;
   height: 30px;
   border: 1px solid #efefef;
@@ -120,12 +120,11 @@ a.logo>img {
   border-radius: 25px;
   background: #e1e1e1;
   padding: 2px 0 2px 10px;
+  color: #333;
 }
 input::placeholder {
   color: #999;
-}
-input::placeholder {
-  color: #999;
+  font-size: 12px;
 }
 .rt-nav li.search {
   position: relative;
