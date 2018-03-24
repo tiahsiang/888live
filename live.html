@@ -8,10 +8,11 @@
   <link type="favicon" rel="shortcut icon" href="resources/images/favicon.ico" mce_href="/favicon.ico"/>
   <link rel="shortcut icon" href="resources/images/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="resources/css/normalize.css">
-  <link rel="stylesheet" href="//at.alicdn.com/t/font_597136_08lnkdlnbqd26gvi.css">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_597136_hp47yjljsx7p66r.css">
   <!--<link rel="stylesheet" href="resources/font/iconfont.css">-->
   <link rel="stylesheet" href="resources/css/DPlayer.min.css">
   <link rel="stylesheet" href="resources/css/channel.css">
+
 </head>
 <body>
 
@@ -235,15 +236,59 @@
               <section>
                 <div id="dplayer2"></div>
               </section>
+              <ul class="send-gifts">
+                <li>
+                  <a class="ba-coin" href=""><i class="icon icon-tubiao207"></i>巴币 <span>4122</span></a>
+                  <a class="pay-btn" href="">充值</a>
+                </li>
+                <li class="gifts-list">
+                  <ul>
+                    <li><a class="ics1"><i class="icons1"></i></a></li>
+                    <li><a class="ics2"><i class="icons2"></i></a></li>
+                    <li><a class="ics3"><i class="icons3"></i></a></li>
+                    <li><a class="ics4"><i class="icons4"></i></a></li>
+                    <li><a class="ics5"><i class="icons5"></i></a></li>
+                    <li><a class="ics6"><i class="icons6"></i></a></li>
+                    <li><a class="ics7"><i class="icons7"></i></a></li>
+                    <li><a class="ics8"><i class="icons8"></i></a></li>
+                    <li><a class="ics9"><i class="icons9"></i></a></li>
+                  </ul>
+                </li>
+              </ul>
             </div>
           </div>
           <div class="video-chat">
-            <img src="resources/images/banner/2014_1.jpg" alt="">
-            <img src="resources/images/banner/2014_2.jpg" alt="">
-            <p>系统消息：直播内容包含任何低俗/暴露和涉黄内容，账号会被封禁；安全部门会24小时巡查哦~</p>
-            <p class="danmu-area">
+            <div class="adv-img">
+              <img src="resources/images/banner/2014_1.jpg" alt="">
+              <img src="resources/images/banner/2014_2.jpg" alt="">
+              <p><i class="icon icon-laba-"></i> <b>系统消息：</b>直播内容包含任何低俗/暴露和涉黄内容，账号会被封禁；安全部门会24小时巡查哦~</p>
+            </div>
+            <div class="Dplayer_danmu">
+              <div class="Dplayer_watching">
+                <span class="Dplayer-watching-number" title="">24</span>
+                人正在观看,<span class="danmuku_num">100</span>条弹幕
+              </div>
 
-            </p>
+              <ul class="Dplayer_list">
+                <li>时间</li>
+                <li>发送内容</li>
+                <li>用户类型</li>
+              </ul>
+              <ul class="list_ovefiow">
+
+              </ul>
+
+            </div>
+            <div class="send-danmu">
+              <p>
+                <a class="colors" href=""><i class="icon-colors"></i></a>
+                <a href=""><i class="icon icon-smile"></i></a>
+              </p>
+              <p class="input-danmu">
+                <input type="text" placeholder="输入弹幕信息">
+                <button class="send-button">发送</button>
+              </p>
+            </div>
           </div>
         </div>
         <div class="zb-floor2">
@@ -344,14 +389,14 @@
 
 
 <script src="resources/js/jquery.min.js"></script>
+<!--<script src="resources/js/flv.min.js"></script>-->
 <script src="resources/js/DPlayer.min.js"></script>
 <script>
-  console.log(" %c 该项目基于Dplayer.js",'color:red')
   var dp = new DPlayer({
     element: document.getElementById('dplayer2'),
     video: {
-      url: 'xiaoli.mp4',
-      pic: 'danmu.jpg'
+      url: 'resources/src/demo.mp4',
+      pic: 'resources/images/danmu.jpg'
     },
     danmaku: {
       id: 'demo',
@@ -389,12 +434,12 @@
           {
             autor="地主"
           }
-          var oLi=`   <ol class="danmuku_list" time="${item.time}">
-            <li>${formatTime(item.time)}</li>
-            <li title="${item.text}">${item.text}</li>
-            <li>${autor}</li>
-</ol>
-`
+          var oLi=`
+            <ol class="danmuku_list" time="${item.time}">
+              <li>${formatTime(item.time)}</li>
+              <li title="${item.text}">${item.text}</li>
+              <li>${autor}</li>
+            </ol>`
           $(".list_ovefiow").append(oLi);
           autor="农民";
         })
