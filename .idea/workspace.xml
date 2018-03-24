@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="483207ae-0b50-481e-bfd0-3e7f048332dc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/live.html" afterPath="$PROJECT_DIR$/live.html" />
       <change beforePath="$PROJECT_DIR$/resources/css/channel.css" afterPath="$PROJECT_DIR$/resources/css/channel.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -49,8 +47,8 @@
       <file leaf-file-name="channel.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/css/channel.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1328">
-              <caret line="1059" column="22" lean-forward="true" selection-start-line="1059" selection-start-column="22" selection-end-line="1059" selection-end-column="22" />
+            <state relative-caret-position="-2377">
+              <caret line="48" column="22" lean-forward="false" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -220,12 +218,12 @@
       <workItem from="1521766945636" duration="36733000" />
       <workItem from="1521818020229" duration="514000" />
       <workItem from="1521857767514" duration="1778000" />
-      <workItem from="1521862271344" duration="24757000" />
+      <workItem from="1521862271344" duration="25661000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102854000" />
+    <option name="totallyTimeSpent" value="103758000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="655" y="10" width="1460" height="1046" extended-state="0" />
@@ -561,8 +559,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/css/channel.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1328">
-          <caret line="1059" column="22" lean-forward="true" selection-start-line="1059" selection-start-column="22" selection-end-line="1059" selection-end-column="22" />
+        <state relative-caret-position="-2377">
+          <caret line="48" column="22" lean-forward="false" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
           <folding />
         </state>
       </provider>

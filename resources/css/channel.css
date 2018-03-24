@@ -54,6 +54,7 @@ a:hover, a:active {
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
+  overflow: auto;
 }
 .main>.main-menu {
   max-width: 15%;
@@ -410,8 +411,8 @@ input::placeholder {
   display: -webkit-flex;
   align-items: flex-start;
   justify-content: space-between;
-  /*border: 1px solid red;*/
 }
+
 .main-pannel .zb-floor2 {
   height: 500px;
 
