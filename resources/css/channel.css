@@ -1033,7 +1033,9 @@ a.colors > .icon-colors {
 }
 
 .gifts-list>ul>li {
+  padding: 10px 0;
   margin-right: 10px;
+  position: relative; /* 礼物提示框定位 */
 }
 
 .gifts-list>ul>li>a {
@@ -1123,4 +1125,135 @@ a.colors > .icon-colors {
   display: inline-block;
   width: 42px; height: 42px;
   background: url('../images/icons/gifts.png') -84px -84px;
+}
+/** 鼠标hover时出现礼物提示框 **/
+.has-dropdown {
+  display: none;
+  width: 462px;
+  height: 157px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px -9px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 10px 20px -9px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 10px 20px -9px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0 10px 20px -9px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0 10px 20px -9px rgba(0, 0, 0, 0.3);
+  position: absolute; /* 礼物提示框定位 */
+  right: -205px;
+  bottom: 69px;
+}
+.has-dropdown::after {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-top-color: #fff;
+  border-width: 6px;
+  margin-left: -6px;
+}
+
+.gifts-list>ul>li:hover .has-dropdown, .gifts-list>ul>li:focus .has-dropdown {
+  display: block;
+}
+
+.has-dropdown .dropdown-list>li {
+  display: block;
+  padding: 16px;
+}
+.dropdown-list>.droplist-item1 {
+  border-bottom: 1px solid #ddd;
+}
+.dropdown-list>.droplist-item1>a {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.dropdown-list>.droplist-item1>div {
+  display: inline-block;
+}
+.dropdown-list>.droplist-item1>div>h2 {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  text-align: left;
+}
+.dropdown-list>.droplist-item1>div>p {
+  font-size: 14px;
+  color: #ff921a;
+}
+
+.dropdown-list>.droplist-item2 {
+  position: relative;
+}
+.dropdown-list>.droplist-item2>p {
+  display: inline-block;
+}
+.dropdown-list>.droplist-item2>p a {
+  text-align: center;
+  padding: 3px 10px;
+  color: #333;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  margin-right: 3px;
+  cursor: pointer;
+}
+.dropdown-list>.droplist-item2>p a:hover, .dropdown-list>.droplist-item2>p a.active {
+  border-color: #f11c2a;
+}
+
+.droplist-item2>p a.plus, .droplist-item2>p a.reduce {
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.droplist-item2>p a.reduce {
+  background: #cdcdcd;
+  border: none;
+  color: #fff;
+  border-top-left-radius: 21px;
+  border-bottom-left-radius: 21px;
+  padding: 7px 8px;
+  margin-right: 0;
+}
+.droplist-item2>p a.plus {
+  background: #f11c2a;
+  border: none;
+  border-top-right-radius: 21px;
+  border-bottom-right-radius: 21px;
+  padding: 7px;
+}
+.dropdown-list>.droplist-item2 input {
+  width: 50px;
+  height: 28px;
+  padding: 2px 3px;
+  vertical-align: middle;
+  border: 1px solid #e0e0e0;
+}
+.droplist-item2>button {
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 14px;
+  color: #fff;
+  background: #f11c2a;
+  border: 1px solid #f11c2a;
+  border-bottom-right-radius: 5px;
+  outline: none;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
