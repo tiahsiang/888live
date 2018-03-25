@@ -1500,10 +1500,10 @@ a.colors > .icon-colors {
 }
 
 /**************************   游戏频道     ***************************/
-.main-panel .game-floor {
+.main-panel .game-floor, .cash-floor {
   width: 100%;
 }
-.game-floor>ul {
+.game-floor>ul, .cash-floor>ul {
   display: flex;
   display: -webkit-flex;
   align-items: flex-start;
@@ -1512,7 +1512,7 @@ a.colors > .icon-colors {
 }
 .game-floor>ul>li {
   display: inline-block;
-  width: 140px;
+  width: 141px;
   height: 230px;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -1550,12 +1550,12 @@ a.colors > .icon-colors {
   -moz-text-overflow: ellipsis;
   white-space: nowrap;
 }
-.game-floor a.view2 {
+.game-floor a.view2, .cash-floor a.view2 {
   font-size: 14px;
   color: #888;
   cursor: pointer;
 }
-.game-floor a.view2 .icon-usergroup {
+.game-floor a.view2 .icon-usergroup, .cash-floor a.view2 .icon-usergroup {
   font-size: 16px !important;
   color: #888;
 }
@@ -1802,4 +1802,39 @@ a.colors > .icon-colors {
 .follow-list>li>div:last-child>a:hover,  .follow-list>li>div:last-child>a:focus {
   color: #f11c2a;
   border-color: #f11c2a;
+}
+
+/**************** 现金网 *****************/
+.cash-floor>ul>li {
+  width: 101px;
+  height: 160px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 16px;
+  margin-right: 16px;
+}
+.cash-floor>ul>li>a {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: #ddd;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+}
+.cash-floor>ul>li>p.f2-uname {
+  padding: 5px;
+}
+.cash-floor>ul>li>p.f2-uname>a.name2 {
+  display: inline-block;
+  max-width: 90px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cash-floor>ul>li>p {
+  padding: 0 5px;
 }
