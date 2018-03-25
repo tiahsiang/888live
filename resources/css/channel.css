@@ -53,7 +53,7 @@ a:hover, a:active {
   margin: 56px 0 0 0;
   display: flex;
   flex-grow: 1;
-  justify-content: space-between;
+  justify-content: flex-start;
   overflow: auto;
 }
 .main>.main-menu {
@@ -64,10 +64,6 @@ a:hover, a:active {
   overflow: auto;
   margin-left: 16px;
 }
-
-
-
-
 
 /** nav **/
 .nav {
@@ -1266,7 +1262,7 @@ a.colors > .icon-colors {
   align-items: flex-start;
   justify-content: space-between;
 }
-.zb-floor2 .ct-title, .zb-floor3 .ct-title {
+.zb-floor2 .ct-title, .zb-floor3 .ct-title , .game-floor .ct-title {
   font-size: 22px;
   color: #333;
   text-align: left;
@@ -1378,7 +1374,7 @@ a.colors > .icon-colors {
 }
 
 /****  zb-floor3  ****/
-.zb-floor3 .video-about .ct-title {
+.zb-floor3 .video-about .ct-title, .game-floor .ct-title {
   padding: 0 0  16px 0;
 }
 
@@ -1501,4 +1497,65 @@ a.colors > .icon-colors {
 }
 .f2-view .name3:hover, .f2-view .name3:focus {
   color: #f11c2a;
+}
+
+/**************************   游戏频道     ***************************/
+.main-panel .game-floor {
+  width: 100%;
+}
+.game-floor>ul {
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.game-floor>ul>li {
+  display: inline-block;
+  width: 140px;
+  height: 230px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.game-floor>ul>li>a {
+  display: block;
+  width: 140px;
+  height: 188px;
+  overflow: hidden;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.game-floor>ul>li>a img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.game-floor p.f2-uname {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 14px;
+  color: #333;
+}
+.game-floor a.name2 {
+  display: inline-block;
+  max-width: 90px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.game-floor a.view2 {
+  font-size: 14px;
+  color: #888;
+  cursor: pointer;
+}
+.game-floor a.view2 .icon-usergroup {
+  font-size: 16px !important;
+  color: #888;
 }
