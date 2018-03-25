@@ -43,10 +43,10 @@ a:hover, a:active {
 
 /*  布局  */
 .layout {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: #f0efe9;
+  background: #fff;
 }
 .main {
   width: 100%;
@@ -406,16 +406,12 @@ input::placeholder {
   padding: 20px;
 }
 
+/****  zb-floor1  ****/
 .main-panel .zb-floor1 {
   display: flex;
   display: -webkit-flex;
   align-items: flex-start;
   justify-content: space-between;
-}
-
-.main-pannel .zb-floor2 {
-  height: 500px;
-
 }
 
 .main-panel .zb-floor1 .video-area {
@@ -1080,7 +1076,6 @@ a.colors > .icon-colors {
 .gifts-list .ics9 {
   background: #caedf9;
 }
-
 .gifts-list .ics1 .icons1 {
   display: inline-block;
   width: 42px; height: 42px;
@@ -1126,6 +1121,7 @@ a.colors > .icon-colors {
   width: 42px; height: 42px;
   background: url('../images/icons/gifts.png') -84px -84px;
 }
+
 /** 鼠标hover时出现礼物提示框 **/
 .has-dropdown {
   display: none;
@@ -1235,7 +1231,7 @@ a.colors > .icon-colors {
   padding: 7px;
 }
 .dropdown-list>.droplist-item2 input {
-  width: 50px;
+  width: 40px;
   height: 28px;
   padding: 2px 3px;
   vertical-align: middle;
@@ -1256,4 +1252,253 @@ a.colors > .icon-colors {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+/***** zb-floor2 *****/
+.zb-floor2, .zb-floor3 {
+  background: #fff;
+  margin-top: 33px;
+  padding-top: 16px;
+  height: auto;
+  overflow: auto;
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.zb-floor2 .ct-title, .zb-floor3 .ct-title {
+  font-size: 22px;
+  color: #333;
+  text-align: left;
+  padding-bottom: 16px;
+}
+
+.zb-floor2 .video-carousel {
+  width: 78%;
+  margin-right: 16px;
+}
+.zb-floor2 .empty {
+  width: 22%;
+  min-width: 378px;
+  background: #fff;
+}
+/***  左右轮滚展示 样式 ***/
+.video-carousel>ul {
+  max-width: 1400px;
+  height: 238px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+/**  滚动条样式 目前仅支持修改webkit内核浏览器默认滚动条样式  **/
+.video-carousel>ul::-webkit-scrollbar {
+  height: 6px;
+  background-color: #e0e0e0;
+}
+.video-carousel>ul::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.15);
+  background-color: #ff921a;
+}
+.video-carousel>ul::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.15);
+  border-radius: 10px;
+  background-color: #e0e0e0;
+}
+.video-carousel>ul>li {
+  display: inline-block;
+  width: 255px;
+  height: 206px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  position: relative;
+  border: 1px solid #e0e0e0;
+}
+.video-carousel>ul>li>a {
+  display: block;
+  width: 255px;
+  height: 146px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.video-carousel>ul>li>a img, .video-about>ul>li>a img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.video-carousel>ul>li a.online-label {
+  display: block;
+  width: 70px;
+  height: 28px;
+  line-height: 28px;
+  padding-right: 6px;
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  background: #ff921a;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  top: 16px;
+  left: 0;
+}
+.video-carousel>ul>li>h2>a {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  padding: 10px 10px 5px 10px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.video-carousel>ul>li>p {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px 5px 10px;
+}
+.video-carousel>ul>li>p>a {
+  font-size: 12px;
+  color: #888;
+}
+.video-carousel a.name1 {
+  display: inline-block;
+  max-width: 150px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/****  zb-floor3  ****/
+.zb-floor3 .video-about .ct-title {
+  padding: 0 0  16px 0;
+}
+
+.zb-floor3 .video-about {
+  width: 78%;
+  margin-right: 16px;
+}
+.zb-floor3 .empty {
+  width: 22%;
+  min-width: 378px;
+  height: 274px;
+  background: #fff;
+}
+.video-about>ul {
+  max-width: 1400px;
+  height: 274px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.video-about>ul>li {
+  display: inline-block;
+  width: 327px;
+  height: 250px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  position: relative;
+  border: 1px solid #e0e0e0;
+}
+.video-about>ul>li>p {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.video-about>ul>li>p.f2-uname {
+  padding-bottom: 0;
+}
+.video-about>ul>li>p.f2-view {
+  padding-bottom: 0;
+}
+.video-about>ul>li>a {
+  display: block;
+  width: 326px;
+  height: 168px;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.video-about a.name2 {
+  font-size: 14px;
+  display: inline-block;
+  max-width: 220px;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.video-about a.view2 {
+  font-size: 14px;
+  color: #888;
+  cursor: pointer;
+}
+.video-about a.view2 .icon-usergroup {
+  font-size: 16px !important;
+  color: #888;
+}
+.video-about .f2-view {
+  text-align: left;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.video-about .f2-view .avatar {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #ddd;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.video-about .f2-view .avatar>img {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.video-about .f2-view .name3 {
+  cursor: pointer;
+  display: inline-block;
+  max-width: 136px;
+  margin: 0 4px;
+  font-size: 12px;
+  color: #888;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.video-about .f2-view>.label>span {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 12px;
+  color: #666;
+  padding: 3px 7px;
+  text-align: center;
+  background: #e0e0e0;
+  border-radius: 20px;
+  margin-right: 5px;
+}
+.f2-view>.label>span:last-child {
+  margin-right: 0;
+}
+.f2-view .name3:hover, .f2-view .name3:focus {
+  color: #f11c2a;
 }
