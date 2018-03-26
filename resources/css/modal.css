@@ -1,0 +1,265 @@
+/**模态框**/
+.clear {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/*html, body {*/
+  /*position: relative;*/
+/*}*/
+
+.dialog {
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0,0,0,0.45);
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index: 300000;
+  display: none; //
+}
+
+.dialog-close {
+  cursor: pointer;
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  vertical-align: middle;
+  position: absolute;
+  top: 0;
+  right: -5px;
+}
+.dialog-close>.icon-guanbi {
+  font-size: 16px;
+  color: #666;
+}
+.dialog-close:hover .icon-guanbi {
+  color: #444;
+}
+
+.dialog-wrap {
+  position: relative;
+}
+
+.dialog .dialog-box {
+  position: absolute;
+  z-index: 500000;
+  left: 50%;
+  top: 50%;
+  margin-left:-251px;
+  margin-top:-150px;
+  width:400px;
+  background:#fff;
+  font-size: 14px;
+  padding-bottom: 10px;
+  box-shadow: 0 0 1em hsla(0,0%,0%,0.45);
+  display: none;
+}
+
+/** 注册登录Tab **/
+.dialog-tab {
+  width:100%;
+  margin:0 auto;
+  font-size:16px;
+  border-bottom:1px solid #e0e0e0;
+}
+
+.dialog-tab>li {
+  float:left;
+  text-align: center;
+  width:50%;
+  padding:10px 20px;
+  background: #fff;
+  border-bottom:1px solid #e0e0e0;
+  border-top:none;
+  margin-top: -1px;
+  cursor: pointer;
+}
+
+.dialog-tab>li.current {
+  /*background: #f11c2a;*/
+  /*color:#fff;*/
+  border-bottom: 2px solid #f11c2a;
+  color: #f11c2a;
+}
+
+.dialog .tab-items {
+  margin:20px;
+  padding:20px 10px;
+  text-align: center;
+}
+
+.dialog .tab-items>li {
+  display:none;
+}
+
+.dialog .tab-items>li.current {
+  display:block;
+}
+
+.dialog .tab-items>li form>.row {
+  width: 80%;
+  margin: 0 auto;
+  padding:10px 0;
+}
+
+.dialog .tab-items form> .row> input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border:1px solid #ddd;
+  color:#333;
+  background: #fff;
+}
+
+.dialog .tab-items form> .row button {
+  padding: 8px 15px;
+  width: 100%;
+  color: #fff;
+  font-size:16px;
+  outline: none;
+  border: 1px solid #f11c2a;
+  background: #f11c2a;
+  border-radius: 3px;
+}
+
+.dialog .tab-items form>.row.actions button:hover {
+  background: #e51a27;
+  border: 1px solid #e51a27;
+  color: #fff;
+  cursor: pointer;
+}
+
+.dialog .tab-items form>.row.actions a {
+  font-size: 12px;
+  color: #333;
+  text-decoration: underline;
+}
+
+.dialog .tab-items form>.row.actions a:hover {
+  color: #f11c2a;
+}
+
+.dialog .tab-items form> .row p {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.dialog .tab-items form> .row p>a {
+  display: inline-block;
+  margin-right: 15px;
+  text-align: center;
+  vertical-align: middle;
+}
+.dialog .tab-items form> .row p>a:last-child {
+  margin-right: 0;
+}
+
+.dialog .tab-items form> .row p>a>i {
+  display: block;
+  vertical-align: middle;
+}
+
+.facebook {
+  width: 50px; height: 50px;
+  background: url('../images/icons/login-icons.png') -10px -80px;
+}
+
+.wechat {
+  width: 50px; height: 50px;
+  background: url('../images/icons/login-icons.png') -80px -10px;
+}
+
+.line {
+  width: 50px; height: 50px;
+  background: url('../images/icons/login-icons.png') -80px -80px;
+}
+
+.duobo {
+  width: 50px; height: 50px;
+  background: url('../images/icons/login-icons.png') -10px -10px;
+}
+
+/*** 拖动滑块验证  ***/
+#slider {
+  margin: 0 auto;
+  width: 100%;
+  height: 40px;
+  position: relative;
+  border-radius: 2px;
+  background-color: #e8e8e8;
+  overflow: hidden;
+  text-align: center;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+#slider_bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #04c073;
+  z-index: 1;
+}
+
+#label {
+  width: 46px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 40px;
+  line-height: 38px;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  z-index: 3;
+  cursor: move;
+  color: #04c073;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#labelTip {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 13px;
+  font-family: 'Microsoft Yahei', serif;
+  color: #787878;
+  line-height: 38px;
+  text-align: center;
+  z-index: 2;
+}
+
+
+.forgotPassword h3 {
+  margin-top: 1em;
+  text-align: center;
+  color: #fff;
+}
+
+/**  获取验证码  **/
+.verify {
+  position: relative;
+}
+
+#btnSendCode {
+  max-width: 109px;
+  min-width: 90px;
+  height: 38px;
+  background: #d5d5d5;
+  border-radius: 3px;
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
