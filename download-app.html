@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>APP下载_888live</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <link type="favicon" rel="shortcut icon" href="./resources/images/favicon.ico" mce_href="/favicon.ico" type="image/x-icon"/>
+  <link rel="shortcut icon" href="./resources/images/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
+  <!-- 浏览器默认样式reset css -->
+  <link rel="stylesheet" href="resources/css/normalize.css">
+  <!-- iconfont css -->
+  <link rel="stylesheet" href="resources/font/iconfont.css">
+  <!-- Dplayer播放器 css -->
+  <link rel="stylesheet" href="resources/css/DPlayer.min.css">
+  <!-- Tia 首页css -->
+  <link rel="stylesheet" href="resources/css/index.css"/>
+  <!-- 模态登录框 css -->
+  <link rel="stylesheet" href="resources/css/modal.css">
+
+
+</head>
+<body style="background: #f2f2f2;">
+<!-- max-width: 1200px 主导航 -->
+<nav class="nav">
+  <div class="container">
+    <a class="logo" href="index.html"><img src="./resources/images/logo144x46.png" alt="lOGO"></a>
+    <ul class="lt-nav">
+      <li class="active"><a href="index.html">首页</a></li>
+      <li><a href="live.html">直播</a></li>
+      <li><a href="game.html">游戏</a></li>
+      <li><a href="cash.html">现金网</a></li>
+      <li><a href="more.html"><i class="icon icon-gengduo-tianchong"></i></a></li>
+    </ul>
+    <ul class="rt-nav">
+      <li class="search">
+        <input type="search" placeholder="搜索房间、主播、游戏">
+        <i class="icon icon-sousuo"></i>
+      </li>
+      <li class="wyzb">
+        <a href="#"> <i class="icon icon-bofang4"></i>我要直播 </a>
+        <a href="#"> <i class="icon icon-shouji"></i>APP下载 </a>
+      </li>
+      <li class="user-action">
+        <a id="login-btn" href="#">登录</a>
+        <a id="signUp-btn" href="#">注册</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!-- banner -->
+<section class="banner">
+  <div class="container">
+
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <ul class="links">
+      <li><a href="">关于888直播 <b>|</b></a></li>
+      <li><a href="">广告业务 <b>|</b></a></li>
+      <li><a href="">合作伙伴 <b>|</b></a></li>
+      <li><a href="">招兵买马(台湾) <b>|</b></a></li>
+      <li><a href="">主播分成计划 <b>|</b></a></li>
+      <li><a href="">手机客户端 <b>|</b></a></li>
+      <li><a href="">直播软件 <b>|</b></a></li>
+      <li><a href="">切换语言</a></li>
+    </ul>
+    <p class="copyright">
+      <a href="/index.html"><img src="./resources/images/logo237x70.png" alt="logo"></a>
+    </p>
+  </div>
+</footer>
+
+<!----  登录注册 模态框  ---->
+<div class="dialog">
+  <div class="dialog-box">
+
+    <!--登录注册对话框-->
+    <div class="dialog-wrap">
+      <!-- 关闭模态框按钮 -->
+      <a class="dialog-close"><i class="icon icon-guanbi"></i></a>
+
+      <ul class="dialog-tab clear">
+        <li class="current">登录</li>
+        <li>注册</li>
+      </ul>
+
+      <ul class="tab-items clear">
+        <li class="current">
+          <p id="loginMsg"></p>
+          <form id="login-form">
+            <div class="row">
+              <input type="tel" placeholder="请输入手机号码" name="phone"/>
+            </div>
+            <div class="row">
+              <input type="password" placeholder="请输入登录密码" name="upwd"/>
+            </div>
+            <div class="row">
+              <div id="slider">
+                <div id="slider_bg"></div>
+                <span id="label"> >> </span> <span id="labelTip">拖动滑块验证</span>
+              </div>
+            </div>
+            <div class="row" style="text-align: right;">
+              <a href="#" style="color: #1c80f1;">忘记密码?</a>
+            </div>
+            <div class="row actions">
+              <button type="submit" id="bt-login">提交登录</button>
+            </div>
+
+            <div class="row">
+              <p>第三方登录</p>
+              <p>
+                <a href=""><i class="facebook"></i></a>
+                <a href=""><i class="wechat"></i></a>
+                <a href=""><i class="line"></i></a>
+                <a href=""><i class="duobo"></i></a>
+              </p>
+            </div>
+          </form>
+        </li>
+        <li>
+          <form id="signUp-form">
+            <div class="row">
+              <input type="tel" placeholder="请输入手机号码" name="phone"/>
+            </div>
+
+            <div class="row verify">
+              <input type="text" placeholder="请输入验证码" name="verify" style="margin-right: 10px;"/>
+              <input id="btnSendCode" type="button" value="获取验证码" onClick="sendMessage()" />
+            </div>
+
+            <div class="row">
+              <input type="text" placeholder="请输入昵称" name="uname"/>
+            </div>
+            <div class="row">
+              <input type="password" placeholder="密码为6～12位字母数字" name="upwd"/>
+            </div>
+            <div class="row" style="text-align: left;">
+              <label class="readagreement-wrap">
+                <input type="checkbox" name="agree" id="agree" style="vertical-align: middle;"/>
+                <a id="readagreement" href=""
+                   style="color: #1c80f1; vertical-align: middle;">同意《888用户注册协议》</a>
+              </label>
+            </div>
+            <div class="row actions">
+              <button type="submit" id="bt-signup">注册</button>
+            </div>
+            <div class="row">
+              <p>第三方登录</p>
+              <p>
+                <a href=""><i class="facebook"></i></a>
+                <a href=""><i class="wechat"></i></a>
+                <a href=""><i class="line"></i></a>
+                <a href=""><i class="duobo"></i></a>
+              </p>
+            </div>
+          </form>
+        </li>
+      </ul>
+
+    </div>
+    <!--<div class="wrap resetPwd" style="display: none">
+      <ul class="resetPassword">
+        <li class="forgotPassword" style="display:none;">
+          <h3>重置密码</h3>
+          <form class="signUp">
+            <div class="row">
+              <label>邮箱</label>
+              <input type="text" value="uname"/>
+            </div>
+            <div class="row actions">
+              <button type="submit">发送重置密码邮件</button>
+            </div>
+            <div class="row">
+              <a href="#">返回登录</a>
+            </div>
+        </li>
+      </ul>
+    </div>-->
+  </div>
+</div>
+
+
+
+
+
+<script src="resources/js/jquery.min.js"></script>
+<!-- 支持不同视频格式 必须加载在Dplayer.min.js之前 -->
+<script src="resources/js/hls.min.js"></script>
+<script src="resources/js/flv.min.js"></script>
+<script src="resources/js/webtorrent.min.js"></script>
+<!--支持不同视频格式 必须加载在Dplayer.min.js之前 -->
+<script src="resources/js/DPlayer.min.js"></script>
+
+<script>
+  /*-- 首页banner tab切换JS */
+  $(".tabs").on("click","li", function (e) {
+    e.preventDefault();
+    let idx = $(this).index();
+    $(this).siblings().removeClass("active");
+    $(this).addClass("active");
+    $(this).parents(".tab-wrap").find(".tab-content>li").eq(idx).siblings().removeClass("active");
+    $(this).parents(".tab-wrap").find(".tab-content>li").eq(idx).addClass("active");
+  })
+</script>
+
+<!-- **  播放器设置js  ** -->
+<script>
+  const dp = new DPlayer({
+    container: document.getElementById('dplayer'),
+    autoplay: false,
+    theme: '#FADFA3',
+    loop: true,
+    lang: 'zh-cn',
+    live: true,
+    hotkey: true,
+    preload: 'auto',
+    logo: './resources/images/favicon.png',
+    volume: 1,
+    mutex: true,
+    video: {
+      url: './resources/src/jinghong.flv',
+      pic: './resources/images/danmu.jpg',
+      thumbnails: './resources/images/danmu.jpg',
+      type: 'auto'
+    },
+    danmaku: {
+      id: '9E2E3368B56CDBB4',
+      api: 'https://api.prprpr.me/dplayer/',
+      token: 'tokendemo',
+      maximum: 1000,
+      addition: ['https://api.prprpr.me/dplayer/bilibili?aid=4157142'],
+      user: 'DIYgod',
+      bottom: '15%',
+      unlimited: true
+    }
+  });
+</script>
+
+<!--  登录注册模态框JS  -->
+<script>
+  let btn1 = $('#login-btn');
+  let btn2 = $('#signUp-btn');
+  let modal = $('.dialog');
+  let dialog = $('.dialog-box');
+  let close = $('.dialog-close');
+
+  btn1.on('click', function () {
+    modal.css('display', 'block');
+    dialog.css('display', 'block');
+  });
+  btn2.on('click', function () {
+    modal.css('display', 'block');
+    dialog.css('display', 'block');
+  });
+  close.on('click', function () {
+    modal.css('display', 'none');
+    dialog.css('display', 'none');
+  });
+
+  $('.dialog-tab').on('click', 'li', function (e) {
+    e.preventDefault();
+    let idx = $(this).index();
+    $(this).siblings().removeClass('current');
+    $(this).addClass('current');
+
+    $(this).parents('.dialog-wrap').find('.tab-items>li').eq(idx).siblings().removeClass('current');
+    $(this).parents('.dialog-wrap').find('.tab-items>li').eq(idx).addClass('current');
+  })
+</script>
+
+<!--- 登录滑块验证js --->
+<script src="./resources/js/jquery.slideunlock.js"></script>
+<script>
+  $(function () {
+    let slider = new SliderUnlock("#slider",{
+      successLabelTip : "验证通过"
+    },function(){
+      alert("验证成功");
+    });
+    slider.init();
+  })
+</script>
+
+<!--  注册时 手机获取验证码js -->
+<script>
+  let InterValObj; //timer变量，控制时间
+  let count = 30; //间隔函数，1秒执行
+  let curCount;//当前剩余秒数
+  let code = ""; //验证码
+  let codeLength = 6;//验证码长度
+  function sendMessage() {
+    curCount = count;
+    var dealType; //验证方式
+    var uid=$("#uid").val();//用户uid
+    if ($("#phone").attr("checked") == true) {
+      dealType = "phone";
+    }
+    else {
+      dealType = "email";
+    }
+//产生验证码
+    for (var i = 0; i < codeLength; i++) {
+      code += parseInt(Math.random() * 9).toString();
+    }
+//设置button效果，开始计时
+    $("#btnSendCode").attr("disabled", "true");
+    $("#btnSendCode").val( + curCount + "秒再获取");
+    InterValObj = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次
+//向后台发送处理数据
+    $.ajax({
+      type: "POST", //用POST方式传输
+      dataType: "text", //数据格式:JSON
+      url: 'Login.ashx', //目标地址
+      data: "dealType=" + dealType +"&uid=" + uid + "&code=" + code,
+      error: function (XMLHttpRequest, textStatus, errorThrown) { },
+      success: function (msg){ }
+    });
+  }
+  //timer处理函数
+  function SetRemainTime() {
+    if (curCount == 0) {
+      window.clearInterval(InterValObj);//停止计时器
+      $("#btnSendCode").removeAttr("disabled");//启用按钮
+      $("#btnSendCode").val("重新发送验证码");
+      code = ""; //清除验证码。如果不清除，过时间后，输入收到的验证码依然有效
+    }
+    else {
+      curCount--;
+      $("#btnSendCode").val( + curCount + "秒再获取");
+    }
+  }
+</script>
+
+</body>
+</html>
