@@ -75,8 +75,52 @@
             nostrum odit saepe.
           </p>
         </li>
-        <li>
-          这个效果明天再实现，今天先做其他比较容易的
+        <li class="about-job">
+          <ul class="table">
+            <li class="thead">
+              <span>招聘职位</span>
+              <span>所属部门</span>
+              <span>类型</span>
+              <span>地点</span>
+              <span>发布时间</span>
+              <span>职位详情</span>
+            </li>
+            <li class="tbody">
+              <div class="level">
+                <ul class="dropdown">
+                  <li><label class="emergency">急</label>PHP开发工程师</li>
+                  <li>研发部门</li>
+                  <li>2人</li>
+                  <li>广州市</li>
+                  <li>2018-03-08</li>
+                  <li>
+                    <a href="#" class="toggle-btn"><i class="icon icon-xiangxia"></i></a>
+                  </li>
+                </ul>
+                <ul class="dropdown-menu">
+                  <li>
+                    <h2>职位描述</h2>
+                    <p>
+                      1. 能参与需求调研、完成软件开发流程中的相关工作；
+                      2. 进行远程单元/功能的测试，并完善相关的测试文档；
+                      3. 与用户沟通，理解用户的业务流程，提升用户体验，并开发相关文档；
+                      4. 分析并解决软件开发过程中的相关问题。
+                    </p>
+                  </li>
+                  <li>
+                    <h2>岗位要求</h2>
+                    <p>
+                      1. 能参与需求调研、完成软件开发流程中的相关工作；
+                      2. 进行远程单元/功能的测试，并完善相关的测试文档；
+                      3. 与用户沟通，理解用户的业务流程，提升用户体验，并开发相关文档；
+                      4. 分析并解决软件开发过程中的相关问题；
+                      5. 具有较好的团队协作能力和沟通能力，有（用友8）ERP项目开发经验者优先考虑。
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
         </li>
         <li>广告合作</li>
         <li class="about-partner">
@@ -613,6 +657,15 @@
     $(this).find('.news-details').css('display', 'block');
   });
 
+</script>
+
+<!-- 加入我们 dropdown menu -->
+<script>
+  $('.dropdown a.toggle-btn').click(function (e) {
+    e.preventDefault();
+    let idx = $(this).index();
+    $('.dropdown-menu').eq(idx).fadeToggle( "fast", "linear" );
+  });
 </script>
 
 </body>
