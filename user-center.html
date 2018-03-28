@@ -90,6 +90,7 @@
         </ul>
       </div>
       <ul class="nav-items">
+        <!--个人账户管理-->
         <li class="active">
           <div class="first-part zhanghu">
             <h2 class="nav-title">个人账户管理</h2>
@@ -146,6 +147,7 @@
             </ul>
           </div>
         </li>
+        <!--资金管理-->
         <li>
           <div class="first-part">
             <h2 class="nav-title">资金管理</h2>
@@ -175,9 +177,10 @@
             </ul>
           </div>
         </li>
+        <!--直播间管理-->
         <li>
           <div class="first-part shejiao zhibojianguanli">
-            <h2 class="nav-title">直播间管理</h2>
+            <h2 class="nav-title">直播间管理</h2><!--3-->
             <div class="sj-wrapper">
               <ul class="sj-tabs">
                 <li class="active">直播间设置</li>
@@ -186,7 +189,7 @@
                 <li>广告设置</li>
                 <li>广告收益</li>
                 <li>赞助商设置</li>
-              </ul>
+              </ul><!--4-->
               <ul class="sj-content">
                 <li class="zbjsz active">
                   <div id="box" class="cover-wrap">
@@ -208,7 +211,6 @@
                       <label><textarea></textarea></label>
                       <a class="edit-btn">修改</a>
                     </p>
-
                     <ul class="tuijianzixun">
                       <li style="font-size: 16px; color: #333; font-weight: bold;">推流资讯</li>
                       <li><label style="color: #333; font-size: 14px; margin-right: 12px;">推荐服务器</label><input type="url"></li>
@@ -236,29 +238,140 @@
                         </p>
                       </li>
                     </ul>
-
-
                   </div>
-                </li>
+                </li><!--5-->
+                <li class="gly">
+                  <a href="" class="add-gly-btn"><i class="icon icon-weibiaoti37"></i>添加</a>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>管理员账号</th>
+                        <th>任命时间</th>
+                        <th>操作</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td data-label="管理员账号">Admin</td>
+                        <td data-label="任命时间">2018-02-22 22:22:22</td>
+                        <td data-label="操作"><a href="" class="del-gly">删除</a></td>
+                      </tr>
+                      <tr>
+                        <td data-label="管理员账号">bilibili</td>
+                        <td data-label="任命时间">2018-02-22 22:22:22</td>
+                        <td data-label="操作"><a href="" class="del-gly">删除</a></td>
+                      </tr>
+                      <tr>
+                        <td data-label="管理员账号">operation</td>
+                        <td data-label="任命时间">2018-02-22 22:22:22</td>
+                        <td data-label="操作"><a href="" class="del-gly">删除</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </li><!--5-->
+                <li class="gly">
+                  <a href="" class="add-gly-btn"><i class="icon icon-weibiaoti37"></i>添加</a>
+                  <table>
+                    <thead>
+                    <tr>
+                      <th>封禁类型</th>
+                      <th>用户昵称/ID</th>
+                      <th>IP地址</th>
+                      <th>封禁时间</th>
+                      <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                      <!--<tr>-->
+                        <!--<td data-label="封禁类型">Admin</td>-->
+                        <!--<td data-label="用户昵称/ID">lsjslsjslsl</td>-->
+                        <!--<td data-label="IP地址">2018-02-22 22:22:22</td>-->
+                        <!--<td data-label="封禁时间">2018-02-22 22:22:22</td>-->
+                        <!--<td data-label="操作"><a href="" class="del-gly">删除</a></td>-->
+                      <!--</tr>-->
+                      <!--<tr>-->
+                        <!--<td data-label="封禁类型">Admin</td>-->
+                        <!--<td data-label="用户昵称/ID">lsjslsjslsl</td>-->
+                        <!--<td data-label="IP地址">2018-02-22 22:22:22</td>-->
+                        <!--<td data-label="封禁时间">2018-02-22 22:22:22</td>-->
+                        <!--<td data-label="操作"><a href="" class="del-gly">删除</a></td>-->
+                      <!--</tr>-->
+                      <tr style="text-align: center;">
+                        <td>暂无封禁名单 <a href="" style="color: #1c80f1;">开始添加</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </li><!--5-->
+                <li class="guanggaoshezhi">
+                  <form action="">
+                    <p>
+                      <label for="">广告1支付<input type="text">元</label>
+                      <label for="">可刊登
+                        <select style="width: 142px;height: 30px;border: 1px solid #e0e0e0;text-align: left;padding: 2px 10px 2px 15px; margin-left: 10px;">
+                          <option value="24h">24小时</option>
+                          <option value="30days">30天</option>
+                          <option value="90days">90天</option>
+                          <option value="365days">365天</option><!-- 这个是我随便写的 具体问产品经理去-->
+                        </select>
+                      </label>
+                    </p>
+                    <p>
+                      <label for="">广告2支付<input type="text">元</label>
+                      <label for="">可刊登
+                        <select style="width: 142px;height: 30px;border: 1px solid #e0e0e0;text-align: left;padding: 2px 10px 2px 15px; margin-left: 10px;">
+                          <option value="24h">24小时</option>
+                          <option value="30days">30天</option>
+                          <option value="90days">90天</option>
+                          <option value="365days">365天</option><!-- 这个是我随便写的 具体问产品经理去-->
+                        </select>
+                      </label>
+                    </p>
+                    <p>
+                      <input class="set-guanggao-btn" type="submit" value="保存设定">
+                    </p>
+                  </form>
+                  <div class="beizhu">
+                    <p>注：</p>
+                    <p>1. 所设置之广告时间，直播一旦结束，但广告仍未到期，下次开启直播时，广告仍会继续刊登至展示时间结束;</p>
+                    <p>2. 如果广告收益主播与平台比例为7:3，即收入1万元，主播收入7000，则平台抽取3000元。</p>
+                  </div>
+                </li><!--5-->
                 <li>
-                  2222
-                </li>
-                <li>
-                  3333
-                </li>
-                <li>
-                  4444
-                </li>
-                <li>
-                  5555
-                </li>
-                <li>
-                  6666
-                </li>
-              </ul>
-            </div>
-          </div>
-        </li>
+                  广告收益这个页面的设计稿在哪里？？？^_^
+                </li><!--5-->
+                <li class="zhanzhushang"><!--5-->
+                  <div class="without-zzs">
+                    <input type="radio" id="without-zzs" name="zhanzhushang" />
+                    <label for="without-zzs">
+                      我没有赞助商
+                      <input type="text" placeholder="这里填写没有赞助商时的预设文案">
+                    </label>
+                  </div>
+                  <div class="with-zzs">
+                    <input type="radio" id="with-zzs" name="zhanzhushang" />
+                    <label for="with-zzs">
+                      我有赞助商
+                      <div class="set-zzs-avatar">
+                        <a href="" class="avatar"><img src="./resources/images/avatar.png" alt=""></a>
+                        <div>
+                          <a href="" class="edit-img-btn">修改图片</a>
+                          <h6>仅支持Jjpg/jpeg/png/gif图片格式</h6>
+                        </div>
+                      </div>
+                      <div class="add-zzs">
+                        <input type="text" placeholder="赞助商名字">
+                        <input type="text" placeholder="赞助商简介">
+                        <input type="url" placeholder="赞助商跳转链接">
+                        <input type="submit" class="set-zhanzhushang-btn" value="保存设定">
+                      </div>
+                    </label>
+                  </div>
+                </li><!--5-->
+              </ul><!--4-->
+            </div><!--3-->
+          </div><!--2-->
+        </li><!--1-->
+
         <li>
           <div class="first-part shejiao">
             <h2 class="nav-title">社交</h2>
