@@ -1041,7 +1041,7 @@ a>.icon-usergroup {
   padding: 20px;
   background: #fff;
   border: 1px solid #e0e0e0;
-  height: 298px;
+  /*height: 298px;*/
   margin-bottom: 16px;
 }
 .user-center .nav-items>li>.second-part {
@@ -1173,4 +1173,66 @@ a>.icon-usergroup {
 }
 .second-part .bd-btn:hover {
   border-color: #f11c2a;
+}
+/*个人中心-录像管理*/
+.luxiang {
+  min-height: 100vh;
+}
+.luxiang>.luxiangguanli {
+  margin-top: 12px;
+  padding: 20px 0;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.luxiangguanli>li {
+  width: 281px;
+  height: 230px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #e0e0e0;
+}
+.luxiangguanli>li:last-child {
+  margin-right: 0;
+}
+.luxiangguanli>li>a {
+  display: block;
+  width: 280px;
+  height: 176px;
+  vertical-align: middle;
+  text-align: center;
+}
+.luxiangguanli>li>a img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.luxiangguanli>li>h2 {
+  font-size: 14px;
+  color: #333;
+  padding: 6px 5px 0 5px;
+}
+.luxiangguanli>li>h2>a {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  overflow: hidden;
+}
+.luxiangguanli>li>p {
+  font-size: 13px;
+  color: #888;
+  padding: 0 5px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.luxiangguanli>li>p .delete-btn {
+  font-size: 14px;
+  color: #f11c2a;
 }
