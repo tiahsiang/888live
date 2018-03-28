@@ -1901,3 +1901,21 @@ a.colors > .icon-colors {
   height: 100%;
   vertical-align: middle;
 }
+
+/* 登录后 顶部导航条上展示的用户头像 */
+.nav .rt-nav .user-action>a.avatar {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 50%;
+  padding: 0;
+  overflow: hidden;
+}
+.nav .rt-nav .user-action>a.avatar img {
+  width:100%;
+  height: 100%;
+  vertical-align: middle;
+  background: #ddd;
+}

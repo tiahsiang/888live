@@ -15,7 +15,25 @@
   <link rel="stylesheet" href="resources/css/index.css"/>
   <!-- 模态登录框 css -->
   <link rel="stylesheet" href="resources/css/modal.css">
-
+  <style>
+    /*-- 登录后导航条的用户头像 */
+    .nav .rt-nav .user-action>a.avatar {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      vertical-align: middle;
+      text-align: center;
+      border-radius: 50%;
+      padding: 0;
+      overflow: hidden;
+    }
+    .nav .rt-nav .user-action>a.avatar img {
+      width:100%;
+      height: 100%;
+      vertical-align: middle;
+      background: #ddd;
+    }
+  </style>
 </head>
 <body style="background: #fff;">
 <!-- max-width: 1200px 主导航 -->
@@ -39,8 +57,9 @@
         <a href="#"> <i class="icon icon-shouji"></i>APP下载 </a>
       </li>
       <li class="user-action">
-        <a id="login-btn" href="#">登录</a>
-        <a id="signUp-btn" href="#">注册</a>
+        <a href="user-center.html" class="avatar"><img src="./resources/images/avatar.png" alt=""></a>
+        <!--<a id="login-btn" href="#">登录</a>-->
+        <!--<a id="signUp-btn" href="#">注册</a>-->
       </li>
     </ul>
   </div>
