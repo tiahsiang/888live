@@ -1669,7 +1669,53 @@ a>.icon-usergroup {
   margin-left: 70px;
   margin-top: 12px;
 }
-
+.tuijianzixun>li {
+  padding: 10px 0;
+  text-align: left;
+}
+.tuijianzixun>li>input {
+  display: inline-block;
+  min-width: 70%;
+  border: 1px solid #e0e0e0;
+  line-height: 30px;
+  color: #333;
+  padding: 3px 10px;
+}
+.tuijianzixun>li {
+  position: relative;
+}
+.tuijianzixun>li>a.reset-btn {
+  display: inline-block;
+  padding: 7px 10px;
+  font-size: 14px;
+  color: #f11c2a;
+  position: absolute;
+  /*border: 1px solid red;*/
+  top: 10px;
+  left: 74%;
+}
+.tuijianzixun a.kaishizhibo,.tuijianzixun a.guanbizhibo, .tuijianzixun a.disable-zhibo {
+  display: block;
+  width: 262px;
+  height: 50px;
+  line-height: 50px;
+  background: #ff921a;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+.tuijianzixun a.kaishizhibo>.icon-bofang5,.tuijianzixun a.guanbizhibo>.icon-bofang5, .tuijianzixun a.disable-zhibo>.icon-bofang5 {
+  font-size: 24px;
+  vertical-align: top;
+}
+.tuijianzixun a.guanbizhibo {
+  background: #f11c2a;
+}
+.tuijianzixun a.disable-zhibo {
+  background: #999;
+}
 
 /* 封面图片上传 */
 .img-d {
