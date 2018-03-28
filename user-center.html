@@ -176,32 +176,73 @@
           </div>
         </li>
         <li>
-          <div class="first-part">
+          <div class="first-part shejiao zhibojianguanli">
             <h2 class="nav-title">直播间管理</h2>
-            <ul class="user-profile">
-              <li class="left">
-                <a class="avatar" href=""><img src="./resources/images/avatar.png" alt=""></a>
-                <a href="" class="change-avatar">修改头像</a>
-                <p>仅支持jpg,jpeg,png,gif</p>
-              </li>
-              <li class="right">
-                <h2>一只受伤的小番茄正在做直播哈哈哈<i class="icon icon-shuru"></i></h2>
-                <p>
-                  <span>关注人数： <b style="color: #1c80f1; font-weight: normal;">1234567890</b></span>
-                  <span>粉丝人数： <b style="color: #1c80f1; font-weight: normal;">1234567890</b></span>
-                </p>
-                <div class="user-wallet">
-                  <p>
-                    <a class="ba-coin" href=""><i class="icon icon-tubiao207"></i>巴币 <span>4122</span></a>
-                    <b><i class="icon icon-question"></i><a class="pay-btn" href="">充值</a></b>
-                  </p>
-                  <p>
-                    <a class="ba-coin" href=""><i class="icon icon-tubiao207"></i>巴币 <span>4122</span></a>
-                    <b><i class="icon icon-question"></i><a class="pay-btn" href="">提现</a></b>
-                  </p>
-                </div>
-              </li>
-            </ul>
+            <div class="sj-wrapper">
+              <ul class="sj-tabs">
+                <li class="active">直播间设置</li>
+                <li>管理员</li>
+                <li>封禁名单</li>
+                <li>广告设置</li>
+                <li>广告收益</li>
+                <li>赞助商设置</li>
+              </ul>
+              <ul class="sj-content">
+                <li class="zbjsz active">
+                  <div id="box" class="cover-wrap">
+                    <div class="img-d">
+                      <span class="up-s"></span>
+                      <input type="file" id="up" multiple name="files">
+                    </div>
+                    <div>
+                      <a class="loadImg-btn">上传封面</a>
+                      <p>直播封面时图片必须小于10MB，仅支持JPG/PNG和GIF格式</p>
+                    </div>
+                  </div>
+                  <div class="zbj-details">
+                    <p>房间编号: <span>1233457890 </span><a class="enterZb-btn">进入直播间</a></p>
+                    <p>直播标题: <span>今晚爆肝不吃鸡不下播 </span> <a class="edit-btn">修改</a></p>
+                    <p>游戏类别: <span>北京赛车 </span> <a class="edit-btn">修改</a></p>
+                    <p>娱乐平台: <span>澳门新葡京 </span> <a class="edit-btn">修改</a></p>
+                    <p class="zb-gonggao">直播公告:
+                      <label><textarea></textarea></label>
+                      <a class="edit-btn">修改</a>
+                    </p>
+
+                    <ul class="tuijianzixun">
+                      <li><h2>推流资讯</h2></li>
+                      <li><label>推荐服务器</label><input type="url"></li>
+                      <li><label>直播串流码</label><input type="text"> <a href="" class="reset-btn"></a></li>
+                      <li style="color: #f11c2a; font-size: 12px;">绝对不要和任何人分享您的直播串流码，或在串流时出示，请注意！888直播工作人员，网站管理员不会向您索要该信息</li>
+                      <li>
+                        <a href="" class="kaishizhibo"><i class="icon icon-bofang5"></i> 开始直播</a>
+                        <p style="font-size: 12px; color: #666;">
+                          请先确认OBS已推流成功，再点击[开始直播]按钮 <br>
+                          OBS推流方式，请参考 <a href="" style="font-size: 12px; color: #1c80f1;">直播教程</a>
+                        </p>
+                      </li>
+                    </ul>
+
+
+                  </div>
+                </li>
+                <li>
+                  2222
+                </li>
+                <li>
+                  3333
+                </li>
+                <li>
+                  4444
+                </li>
+                <li>
+                  5555
+                </li>
+                <li>
+                  6666
+                </li>
+              </ul>
+            </div>
           </div>
         </li>
         <li>
@@ -802,6 +843,40 @@
   })
 </script>
 
+<!-- 个人中心 封面图片上传 -->
+<script>
+  // span的点击事件
+  let addBtn = document.querySelector('.up-s');
+  addBtn.addEventListener('click',function () {
+    document.querySelector('#up').value = null;
+    document.querySelector('#up').click();
+    return false;
+  },false);
+
+  // 处理input点击之后的change事件
+  document.getElementById("up").addEventListener("change",function(e){
+    let files =this.files;
+    let reader =new FileReader();
+    reader.readAsDataURL(files[0]);
+    reader.onload =function(e){
+      let dx =(e.total/1024)/1024;
+      if(dx>=2){
+        alert("文件大小大于2M");
+        return;
+      }
+      let result =this.result;//这里就是转化之后的DataURL
+      addBtn.style.backgroundImage = "url("+result+")";
+    };
+    let rem =document.createElement("i");
+    rem.setAttribute("class","rems");
+    rem.innerHTML ="x";
+    document.querySelector(".img-d").appendChild(rem);
+    rem.addEventListener('click',function () {
+      this.style.display ="none";
+      addBtn.style.backgroundImage = "url(jia.jpg)";
+    });
+  })
+</script>
 
 </body>
 </html>
