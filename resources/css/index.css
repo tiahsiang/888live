@@ -1453,6 +1453,15 @@ a>.icon-usergroup {
   -moz-text-overflow: ellipsis;
   overflow: hidden;
 }
+.sixin .sj-tabs>li>b>s {
+  font-size: 12px;
+  padding: 3px 5px;
+  background: #ff921a;
+  font-style: normal;
+  text-decoration: none;
+  color: #fff;
+  margin-left: 3px;
+}
 .sixin .sj-content {
   width: 80%;
   min-height: 80vh;
@@ -1479,7 +1488,6 @@ a>.icon-usergroup {
   height: 100%;
   vertical-align: middle;
 }
-
 .sixin .sj-content .question {
   max-width: 100%;
   float: left;
@@ -1496,7 +1504,6 @@ a>.icon-usergroup {
   text-align: left;
   margin-left: 10px;
 }
-
 .sixin .sj-content .question .cvs-box, .sixin .sj-content .reply .cvs-box {
   min-height: 34px;
   word-break: break-all;
@@ -1557,4 +1564,27 @@ a>.icon-usergroup {
   position: absolute;
   top: 12px;
   right: -4px;
+}
+/* 系统消息 */
+.sixin .official-notice {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  padding: 7px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #f11c2a;
+}
+
+.sixin a.official-notice>.icon {
+  font-size: 24px;
+  color: #fff;
+  vertical-align: middle;
+}
+.sixin .sj-content .official-notice {
+  min-width: 40px;
+  min-height: 40px;
 }
