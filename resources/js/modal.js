@@ -48,13 +48,5 @@ hide.on('click', function () {
   box.css('display', 'none');
 });
 
-/** tab切换 **/
-$('.navs').on('click', 'option', function (e) {
-  e.preventDefault();
-  let idx = $(this).index();
-  // $(this).siblings().removeClass('current');
-  // $(this).addClass('current');
+/** 收款类型下拉选项 切换 暂时没有做这个效果 **/
 
-  $(this).parents('.tabWrap').find('.navs-content>li').eq(idx).siblings().removeClass('active');
-  $(this).parents('.tabWrap').find('.navs-content>li').eq(idx).addClass('active');
-})
