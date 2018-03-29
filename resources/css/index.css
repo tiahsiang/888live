@@ -2071,4 +2071,69 @@ a>.icon-usergroup {
   width: 25%;
   text-align: left;
 }
-/**** 添加收款账号 模态框 ****/
+
+/* 登录后 顶部导航条上展示的用户头像 */
+.nav .rt-nav .user-action>a.avatar {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 50%;
+  padding: 0;
+  overflow: hidden;
+}
+.nav .rt-nav .user-action>a.avatar img {
+  width:100%;
+  height: 100%;
+  vertical-align: middle;
+  background: #ddd;
+}
+
+/** APP下载 **/
+.appDownload {
+  width: 100%;
+  height: 100%;
+  margin-top: 57px;
+}
+.appDownload>.container {
+  width: 1200px;
+  overflow: hidden;
+}
+.appDownload>.container>div {
+  width: 400px;
+  float: right;
+  text-align: right;
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-top: 34%;
+  margin-right: 12%;
+}
+.appDownload>.container>div>ul li {
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+.appDownload>.container>div>ul li>a {
+  display: block;
+  width: 194px;
+  height: 56px;
+  vertical-align: middle;
+}
+.appDownload>.container>div>ul li>a img {
+  width: 100%;
+  height: 100%;
+  vert-align: middle;
+}
+.appDownload>.container>div>ul li>span {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.appDownload>.container>div>img {
+  width: 164px;
+  height: 164px;
+}
