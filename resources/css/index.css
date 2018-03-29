@@ -1749,6 +1749,7 @@ a>.icon-usergroup {
   font-weight: bold;
   color: #333;
 }
+
 .gly table tr {
   border-bottom: 1px solid #efefef;
   padding: 5px;
@@ -1772,7 +1773,6 @@ a>.icon-usergroup {
 
 .gly table th {
   text-align: left;
-  text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 1px;
 }
@@ -2037,4 +2037,36 @@ a>.icon-usergroup {
 .sign-step1>li>form label {
   display: block;
   margin-bottom: 15px;
+}
+/*** 资金管理 ***/
+.pager {
+  text-align: right;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.pager>li>a {
+  display: inline-block;
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+  margin-left: 6px;
+}
+.pager>li>a:hover {
+  color: #ff921a;
+}
+.pager>li>a.active {
+  width: 22px;
+  height: 22px;
+  padding: 3px;
+  border-radius: 50%;
+  background: #ff921a;
+  color: #fff;
+  text-align: center;
+}
+/* 收礼记录 */
+.shoulijilu>table thead th, .shoulijilu>table tbody td {
+  width: 25%;
+  text-align: left;
 }
