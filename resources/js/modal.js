@@ -1,4 +1,4 @@
-<!--  登录注册模态框JS  -->
+<!--  登录注册模态框 + Tab JS  -->
 let login = $('#login-btn');
 let signUp = $('#signUp-btn');
 let modal = $('.dialog');
@@ -29,16 +29,24 @@ $('.dialog-tab').on('click', 'li', function (e) {
 });
 
 
-
-
-/** 添加收款账号 modal **/
-let button = $('#add-account-btn');
+/** 个人中心 通用模态框 **/
+let button1 = $('#add-account-btn'); /* 添加收款账号 btn */
+let button2 = $('#add-gly'); /* 添加管理员 btn */
+let button3 = $('#add-black'); /* 添加封禁名单 btn */
 let layout = $('.modal-layout');
 let box = $('.modal-box');
 let comfirmBtn = $('.confirm-btn');
 let hide = $('.modal-close');
 
-button.on('click', function () {
+button1.on('click', function () {
+  layout.css('display', 'block');
+  box.css('display', 'block');
+});
+button2.on('click', function () {
+  layout.css('display', 'block');
+  box.css('display', 'block');
+});
+button3.on('click', function () {
   layout.css('display', 'block');
   box.css('display', 'block');
 });
@@ -48,5 +56,7 @@ hide.on('click', function () {
   box.css('display', 'none');
 });
 
-/** 收款类型下拉选项 切换 暂时没有做这个效果 **/
+
+
+
 

@@ -1726,6 +1726,7 @@ a>.icon-usergroup {
   background: #f11c2a;
   text-align: center;
   vertical-align: middle;
+  cursor: pointer;
 }
 .gly > .add-gly-btn >.icon {
   font-size: 16px;

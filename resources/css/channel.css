@@ -58,7 +58,7 @@ a:hover, a:active {
   overflow: auto;
 }
 .main>.main-menu {
-  /*min-width: 60px;*/
+  width: 60px;
 }
 .main>.main-pannel {
 

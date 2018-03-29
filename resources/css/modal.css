@@ -172,7 +172,7 @@
   background: url('../images/icons/login-icons.png') -80px -10px;
 }
 
-.line {
+.line-chat {
   width: 50px; height: 50px;
   background: url('../images/icons/login-icons.png') -80px -80px;
 }
@@ -275,7 +275,7 @@
 }
 .modal-box {
   width: 320px;
-  min-height: 370px;
+  max-height: 380px;
   border: 1px solid #ddd;
   border-radius: 5px;
   position: absolute;
@@ -286,11 +286,11 @@
   background: #fff;
   display: none;
 }
-.head {
+.modal-head {
   padding: 15px 15px 10px 15px;
   /*border-bottom: 1px solid #e0e0e0;*/
 }
-.head>h3 {
+.modal-head>h3 {
   display: inline-block;
   font-size: 14px;
   color: #333;
@@ -299,7 +299,7 @@
   padding-left: 5px;
   border-left: 3px solid #f11c2a;
 }
-.head>.modal-close {
+.modal-head>.modal-close {
   float: right;
   font-size: 22px;
   display: inline-block;
@@ -318,29 +318,30 @@
   font-size: 16px;
   color: #888;
 }
-.main {
+.modal-main {
   padding: 15px;
   border-bottom: 1px solid #e0e0e0;
 }
-.foot {
+.modal-foot {
   padding: 15px;
   text-align: center;
 }
-.foot>button.confirm-btn {
+.modal-foot>button.confirm-btn {
   border: 1px solid #f11c2a;
   background: #f11c2a;
   font-size: 13px;
   padding: 5px 20px;
   color: #fff;
+  cursor: pointer;
 }
-.main>.tabWrap label {
+.modal-main>.tabWrap label , .modal-main label {
   display: block;
   margin: auto;
   font-size: 14px;
   color: #333;
   margin-bottom: 10px;
 }
-.tabWrap label>input, .tabWrap select {
+.tabWrap label input, .tabWrap select , .modal-main label input , .modal-main select {
   width: 200px;
   height: 30px;
   border: 1px solid #e0e0e0;
@@ -349,8 +350,8 @@
   font-size: 12px;
   margin-left: 10px;
 }
-.tabWrap select {
-  margin-left: 14px;
+.tabWrap select, .modal-main select {
+  margin-left: 18px;
 }
 .tabWrap .navs-content {
   text-align: center;

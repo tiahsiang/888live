@@ -449,6 +449,68 @@
                     </tbody>
                   </table>
 
+                  <!-- 添加收款账号 模态框 -->
+                  <div class="modal-layout"></div>
+                  <div class="modal-box">
+                    <div class="modal-head">
+                      <h3>添加收款账号</h3>
+                      <a class="modal-close"><i class="icon icon-guanbi"></i></a>
+                    </div>
+                    <div class="modal-main">
+                      <div class="tabWrap">
+                        <label class="navs">
+                          账号类型
+                          <select>
+                            <option value="bank-account">银行卡</option>
+                            <option value="wechat-account">微信账号</option>
+                            <option value="alipay-account">支付宝</option>
+                          </select>
+                        </label>
+                        <ul class="navs-content">
+                          <!-- 添加银行卡 -->
+                          <li class="active">
+                            <form>
+                              <label>收款姓名 <input type="text" placeholder="请输入真实姓名"></label>
+                              <label>收款账号 <input type="text" placeholder="请输入收款银行账号"></label>
+                              <label>
+                                开户银行
+                                <select>
+                                  <option value="1">中国农业银行</option>
+                                  <option value="2">中国建设银行</option>
+                                  <option value="3">中国工商银行</option>
+                                  <option value="4">中国招商银行</option>
+                                </select>
+                              </label>
+                              <label style="display: flex;display: -webkit-flex;align-items: center;justify-content: flex-end;flex-wrap: wrap; line-height: 2.5;">
+                                银行支行
+                                <input type="text" style="width: 80px; margin-right: 5px;">省
+                                <input type="text" style="width: 80px; margin-right: 5px;">市
+                                <input type="text" style="width: 175px; margin-right: 5px;">支行
+                              </label>
+                            </form>
+                          </li>
+                          <!-- 添加微信账号 -->
+                          <li>
+                            <form>
+                              <label>收款姓名 <input type="text" placeholder="请输入实名认证的真实姓名"></label>
+                              <label>收款账号 <input type="text" placeholder="请输入收款微信账号"></label>
+                            </form>
+                          </li>
+                          <!-- 添加支付宝账号 -->
+                          <li>
+                            <form>
+                              <label>收款姓名 <input type="text" placeholder="请输入实名认证的真实姓名"></label>
+                              <label>收款账号 <input type="text" placeholder="请输入收款支付宝账号"></label>
+                            </form>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="modal-foot">
+                      <button class="confirm-btn">确定</button>
+                    </div>
+                  </div>
+
                 </li><!--5-->
               </ul><!--4-->
             </div><!--3-->
@@ -518,7 +580,7 @@
                   </div>
                 </li><!--5-->
                 <li class="gly">
-                  <a href="" class="add-gly-btn"><i class="icon icon-weibiaoti37"></i>添加</a>
+                  <a id="add-gly" class="add-gly-btn"><i class="icon icon-weibiaoti37"></i>添加</a>
                   <table>
                     <thead>
                     <tr>
@@ -545,9 +607,24 @@
                     </tr>
                     </tbody>
                   </table>
+
+                  <!-- 添加管理员 模态框 -->
+                  <div class="modal-layout"></div>
+                  <div class="modal-box">
+                    <div class="modal-head">
+                      <a class="modal-close"><i class="icon icon-guanbi"></i></a>
+                    </div>
+                    <div class="modal-main">
+                      <label>会员ID <input type="text" placeholder="请输入会员ID" style="margin-left: 5px;"></label>
+                    </div>
+                    <div class="modal-foot">
+                      <button class="confirm-btn">确定</button>
+                    </div>
+                  </div>
+
                 </li><!--5-->
                 <li class="gly">
-                  <a href="" class="add-gly-btn"><i class="icon icon-weibiaoti37"></i>添加</a>
+                  <a id="add-black" class="add-gly-btn"><i class="icon icon-weibiaoti37"></i>添加</a>
                   <table>
                     <thead>
                     <tr>
@@ -559,25 +636,48 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <!--<tr>-->
-                    <!--<td data-label="封禁类型">Admin</td>-->
-                    <!--<td data-label="用户昵称/ID">lsjslsjslsl</td>-->
-                    <!--<td data-label="IP地址">2018-02-22 22:22:22</td>-->
-                    <!--<td data-label="封禁时间">2018-02-22 22:22:22</td>-->
-                    <!--<td data-label="操作"><a href="" class="del-gly">删除</a></td>-->
-                    <!--</tr>-->
-                    <!--<tr>-->
-                    <!--<td data-label="封禁类型">Admin</td>-->
-                    <!--<td data-label="用户昵称/ID">lsjslsjslsl</td>-->
-                    <!--<td data-label="IP地址">2018-02-22 22:22:22</td>-->
-                    <!--<td data-label="封禁时间">2018-02-22 22:22:22</td>-->
-                    <!--<td data-label="操作"><a href="" class="del-gly">删除</a></td>-->
-                    <!--</tr>-->
+                    <tr>
+                      <td data-label="封禁类型">Admin</td>
+                      <td data-label="用户昵称/ID">lsjslsjslsl</td>
+                      <td data-label="IP地址">2018-02-22 22:22:22</td>
+                      <td data-label="封禁时间">2018-02-22 22:22:22</td>
+                      <td data-label="操作"><a href="" class="del-gly">删除</a></td>
+                    </tr>
+                    <tr>
+                      <td data-label="封禁类型">Admin</td>
+                      <td data-label="用户昵称/ID">lsjslsjslsl</td>
+                      <td data-label="IP地址">2018-02-22 22:22:22</td>
+                      <td data-label="封禁时间">2018-02-22 22:22:22</td>
+                      <td data-label="操作"><a href="" class="del-gly">删除</a></td>
+                    </tr>
                     <tr style="text-align: center;">
-                      <td>暂无封禁名单 <a href="" style="color: #1c80f1;">开始添加</a></td>
+                      <td>暂无封禁名单 <a class="" style="color: #1c80f1;">开始添加</a></td>
                     </tr>
                     </tbody>
                   </table>
+
+                  <!-- 添加封禁名单 模态框 -->
+                  <div class="modal-layout"></div>
+                  <div class="modal-box">
+                    <div class="modal-head">
+                      <a class="modal-close"><i class="icon icon-guanbi"></i></a>
+                    </div>
+                    <div class="modal-main">
+                      <label>
+                        类型
+                        <select>
+                          <option value="1">封禁ID1</option>
+                          <option value="2">封禁ID2</option>
+                          <option value="3">封禁ID3</option>
+                        </select>
+                      </label>
+                      <label>会员ID <input type="text" placeholder="请输入会员ID" style="margin-left: 5px;"></label>
+                    </div>
+                    <div class="modal-foot">
+                      <button class="confirm-btn">确定</button>
+                    </div>
+                  </div>
+
                 </li><!--5-->
                 <li class="guanggaoshezhi">
                   <form action="">
@@ -1127,67 +1227,6 @@
   </div>
 </div>
 
-<!-- 添加收款账号 模态框 -->
-<div class="modal-layout"></div>
-<div class="modal-box">
-  <div class="head">
-    <h3>添加收款账号</h3>
-    <a class="modal-close"><i class="icon icon-guanbi"></i></a>
-  </div>
-  <div class="main">
-    <div class="tabWrap">
-      <label class="navs">
-        账号类型
-        <select>
-          <option value="bank-account">银行卡</option>
-          <option value="wechat-account">微信账号</option>
-          <option value="alipay-account">支付宝</option>
-        </select>
-      </label>
-      <ul class="navs-content">
-        <!-- 添加银行卡 -->
-        <li class="active">
-          <form>
-            <label>收款姓名 <input type="text" placeholder="请输入真实姓名"></label>
-            <label>收款账号 <input type="text" placeholder="请输入收款银行账号"></label>
-            <label>
-              开户银行
-              <select>
-                <option value="1">中国农业银行</option>
-                <option value="2">中国建设银行</option>
-                <option value="3">中国工商银行</option>
-                <option value="4">中国招商银行</option>
-              </select>
-            </label>
-            <label style="display: flex;display: -webkit-flex;align-items: center;justify-content: flex-end;flex-wrap: wrap; line-height: 2.5;">
-              银行支行
-              <input type="text" style="width: 80px; margin-right: 5px;">省
-              <input type="text" style="width: 80px; margin-right: 5px;">市
-              <input type="text" style="width: 175px; margin-right: 5px;">支行
-            </label>
-          </form>
-        </li>
-        <!-- 添加微信账号 -->
-        <li>
-          <form>
-            <label>收款姓名 <input type="text" placeholder="请输入实名认证的真实姓名"></label>
-            <label>收款账号 <input type="text" placeholder="请输入收款微信账号"></label>
-          </form>
-        </li>
-        <!-- 添加支付宝账号 -->
-        <li>
-          <form>
-            <label>收款姓名 <input type="text" placeholder="请输入实名认证的真实姓名"></label>
-            <label>收款账号 <input type="text" placeholder="请输入收款支付宝账号"></label>
-          </form>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="foot">
-    <button class="confirm-btn">确定</button>
-  </div>
-</div>
 
 
 
@@ -1203,6 +1242,7 @@
 <!----  JS   ---->
 <script src="resources/js/jquery.min.js"></script>
 <script src="resources/js/modal.js"></script>
+
 <script>
   /*-- 首页banner tab切换JS */
   $(".tab-nav").on("click","li", function (e) {
