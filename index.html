@@ -758,6 +758,7 @@
 
 
 <script src="resources/js/jquery.min.js"></script>
+<script src="resources/js/modal.js"></script>
 <!-- 支持不同视频格式 必须加载在Dplayer.min.js之前 -->
 <script src="resources/js/hls.min.js"></script>
 <script src="resources/js/flv.min.js"></script>
@@ -811,36 +812,36 @@
 </script>
 
 <!--  登录注册模态框JS  -->
-<script>
-  let btn1 = $('#login-btn');
-  let btn2 = $('#signUp-btn');
-  let modal = $('.dialog');
-  let dialog = $('.dialog-box');
-  let close = $('.dialog-close');
+<!--<script>-->
+  <!--let btn1 = $('#login-btn');-->
+  <!--let btn2 = $('#signUp-btn');-->
+  <!--let modal = $('.dialog');-->
+  <!--let dialog = $('.dialog-box');-->
+  <!--let close = $('.dialog-close');-->
 
-  btn1.on('click', function () {
-    modal.css('display', 'block');
-    dialog.css('display', 'block');
-  });
-  btn2.on('click', function () {
-    modal.css('display', 'block');
-    dialog.css('display', 'block');
-  });
-  close.on('click', function () {
-    modal.css('display', 'none');
-    dialog.css('display', 'none');
-  });
+  <!--btn1.on('click', function () {-->
+    <!--modal.css('display', 'block');-->
+    <!--dialog.css('display', 'block');-->
+  <!--});-->
+  <!--btn2.on('click', function () {-->
+    <!--modal.css('display', 'block');-->
+    <!--dialog.css('display', 'block');-->
+  <!--});-->
+  <!--close.on('click', function () {-->
+    <!--modal.css('display', 'none');-->
+    <!--dialog.css('display', 'none');-->
+  <!--});-->
 
-  $('.dialog-tab').on('click', 'li', function (e) {
-    e.preventDefault();
-    let idx = $(this).index();
-    $(this).siblings().removeClass('current');
-    $(this).addClass('current');
+  <!--$('.dialog-tab').on('click', 'li', function (e) {-->
+    <!--e.preventDefault();-->
+    <!--let idx = $(this).index();-->
+    <!--$(this).siblings().removeClass('current');-->
+    <!--$(this).addClass('current');-->
 
-    $(this).parents('.dialog-wrap').find('.tab-items>li').eq(idx).siblings().removeClass('current');
-    $(this).parents('.dialog-wrap').find('.tab-items>li').eq(idx).addClass('current');
-  })
-</script>
+    <!--$(this).parents('.dialog-wrap').find('.tab-items>li').eq(idx).siblings().removeClass('current');-->
+    <!--$(this).parents('.dialog-wrap').find('.tab-items>li').eq(idx).addClass('current');-->
+  <!--})-->
+<!--</script>-->
 
 <!--- 登录滑块验证js --->
 <script src="./resources/js/jquery.slideunlock.js"></script>
