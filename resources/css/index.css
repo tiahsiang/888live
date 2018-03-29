@@ -2015,3 +2015,26 @@ a>.icon-usergroup {
   vertical-align: middle;
   background: #ddd;
 }
+
+/*** 个人中心- 我要签约 ***/
+.sign-step1 {
+  margin-top: 12px;
+  border-top: 1px solid #e0e0e0;
+}
+.sign-step1>li {
+  display: block;
+  padding: 15px 20px;
+}
+.sign-step1>li>a {
+  font-size: 16px;
+  color: #666;
+}
+.sign-step1>li>b {
+  font-size: 16px;
+  color: #888;
+  margin: 0 10px;
+}
+.sign-step1>li>form label {
+  display: block;
+  margin-bottom: 15px;
+}
