@@ -2137,3 +2137,163 @@ a>.icon-usergroup {
   width: 164px;
   height: 164px;
 }
+
+/*** 找回密码 ***/
+.forgot-password {
+  width: 100%;
+  min-height: 50vh;
+  margin-top: 57px;
+}
+.forgot-password>.container {
+  width: 1200px;
+  height: 100%;
+  text-align: center;
+  margin: 50px auto;
+}
+.breadcrumb {
+  margin: 50px 0;
+  list-style: none;
+  display: inline-block;
+}
+.breadcrumb li {
+  float: left;
+}
+.breadcrumb li a {
+  color: #fff;
+  display: block;
+  background: #ccc;
+  text-decoration: none;
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px 0 5px;
+  text-align: center;
+  margin-right: 23px;
+}
+.breadcrumb li:nth-child(even) a {
+  background-color: #ccc;
+}
+.breadcrumb li:nth-child(even) a:before {
+  border-color: #ccc;
+  border-left-color: transparent;
+}
+.breadcrumb li:nth-child(even) a:after {
+  border-left-color: #ccc;
+}
+.breadcrumb li:first-child a {
+  padding-left: 15px;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  -ms-border-radius: 4px 0 0 4px;
+  -o-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+.breadcrumb li:first-child a:before {
+  border: none;
+}
+.breadcrumb li:last-child a {
+  padding-right: 15px;
+  -webkit-border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  -ms-border-radius: 0 4px 4px 0;
+  -o-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
+}
+.breadcrumb li:last-child a:after {
+  border: none;
+}
+.breadcrumb li a:before, .breadcrumb li a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  border: 0 solid #ccc;
+  border-width: 20px 10px;
+  width: 0;
+  height: 0;
+}
+.breadcrumb li a:before {
+  left: -20px;
+  border-left-color: transparent;
+}
+.breadcrumb li a:after {
+  left: 100%;
+  border-color: transparent;
+  border-left-color: #ccc;
+}
+.breadcrumb li a:hover {
+  background-color: #f11c2a;
+}
+.breadcrumb li a:hover:before {
+  border-color: #f11c2a;
+  border-left-color: transparent;
+}
+.breadcrumb li a:hover:after {
+  border-left-color: #f11c2a;
+}
+.breadcrumb li a:active {
+  background-color: #f11c2a;
+}
+.breadcrumb li a:active:before {
+  border-color: #f11c2a;
+  border-left-color: transparent;
+}
+.breadcrumb li a:active:after {
+  border-left-color: #f11c2a;
+}
+
+
+.step1>.breadcrumb a.a-step1::after, .step2>.breadcrumb a.a-step2::after, .step3>.breadcrumb a.a-step3::after {
+  border-left-color: #f11c2a;
+}
+.step2>.breadcrumb a.a-step2::before, .step3>.breadcrumb a.a-step3::before, .step4>.breadcrumb a.a-step4::before {
+  border-color: #f11c2a;
+  border-left-color: transparent;
+}
+
+.forgot-password form {
+  width: 80%;
+  margin: 0 auto;
+}
+.forgot-password form label {
+  display: block;
+  margin: 15px 0;
+  font-size: 14px;
+  color: #333;
+}
+.forgot-password form input {
+  width: 300px;
+  height: 34px;
+  font-size: 13px;
+  padding: 3px 12px;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+}
+.forgot-password form input.next-btn {
+  display: block;
+  width: 300px;
+  height: 34px;
+  color: #fff;
+  background: #f11c2a;
+  border: 1px solid #f11c2a;
+  margin-left: 38%;
+}
+.verify {
+  position: relative;
+}
+
+.verify-btn {
+  display: inline-block;
+  max-width: 109px;
+  min-width: 90px;
+  height: 34px;
+  color: #fff;
+  font-size: 12px;
+  background: #ff921a;
+  border: 1px solid #ff921a;
+  border-radius: 3px;
+  text-align: center;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  right: 295px;
+}
