@@ -616,31 +616,26 @@ a>.icon-usergroup {
   height: 70px;
 }
 
-
-
-
-
-
-
-
 /****** 更多。。。关于我们频道 ******/
 .more-about {
   width: 100%;
+  height: 100%;
   margin: 0 auto;
   margin-top: 70px;
-  min-height: 100vh;
+
 }
 .more-about>.container {
   width: 100%;
+  height: 100%;
   margin: 0 auto;
 }
 
 /* 关于我们 tab */
 .more-about .wrapper {
   width: 100%;
-  min-height: 100vh;
+  /*min-height: 100vh;*/
   margin: 0 auto;
-  overflow: auto;
+  /*overflow: auto;*/
   display: flex;
   display: -webkit-flex;
   align-items: flex-start;
@@ -2141,12 +2136,13 @@ a>.icon-usergroup {
 /*** 找回密码 ***/
 .forgot-password {
   width: 100%;
-  min-height: 50vh;
+  height: 100%;
+  margin: 0 auto;
   margin-top: 57px;
 }
 .forgot-password>.container {
   width: 1200px;
-  height: 100%;
+  min-height: 80vh;
   text-align: center;
   margin: 50px auto;
 }
@@ -2280,7 +2276,6 @@ a>.icon-usergroup {
 .verify {
   position: relative;
 }
-
 .verify-btn {
   display: inline-block;
   max-width: 109px;
@@ -2296,4 +2291,148 @@ a>.icon-usergroup {
   position: absolute;
   top: 0;
   right: 295px;
+}
+/*** 充值/提现 ***/
+.charge-pay {
+  width: 100%;
+  height: 100%;
+  margin: 70px auto;
+}
+.charge-pay>.container {
+  width: 100%;
+  min-height: 80vh;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.charge-pay .bread {
+  width: 100%;
+  text-align: left;
+}
+.charge-pay .bread>a {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #999;
+}
+.charge-pay .bread>a>.icon-home {
+  font-size: 22px;
+  color: #999;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.charge-pay .bread>b {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #999;
+  margin: 0 6px;
+}
+.charge-pay .choose-payment {
+  width: 100%;
+  height: 100%;
+  margin-top: 15px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.charge-pay .choose-payment>.bg-left {
+  width: 20%;
+  height: 440px;
+  background: #ff921a;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "黑体-简";
+  color: #fff;
+  text-align: center;
+}
+.choose-payment>.bg-left>p {
+  display: block;
+  line-height: 440px;
+}
+.choose-payment>.bg-left>p a {
+  font-size: 30px;
+  padding: 12px;
+  color: #ff921a;
+  font-weight: bold;
+  text-align: center;
+  background: #fff;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.charge-pay .choose-payment>.how-to-pay {
+  width: 80%;
+  height: 440px;
+  margin-left: 16px;
+  padding: 50px;
+  background: #fff;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, .10);
+}
+.choose-payment>.how-to-pay>ul>li {
+  padding: 20px 0;
+  display: flex;
+  display: -webkit-flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.choose-payment>.how-to-pay>ul>li label {
+  display: inline-block;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  padding-right: 10px;
+}
+.choose-payment>.how-to-pay>ul>li p input[type=button] {
+  display: inline-block;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+  padding: 6px 12px;
+  background: #f4f4f4;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.choose-payment>.how-to-pay>ul>li p input[type=button]:hover, .choose-payment>.how-to-pay>ul>li p input[type=button].active {
+  border-color: #f11c2a;
+  color: #f11c2a;
+}
+.choose-payment>.how-to-pay>ul>li p>input[type=number] {
+  width: 200px;
+  height: 34px;
+  border: 1px solid #e0e0e0;
+  padding: 3px 10px;
+}
+.choose-payment>.how-to-pay>ul>li p>a {
+  display: inline-block;
+  width: 114px;
+  height: 46px;
+  vertical-align: middle;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+.choose-payment>.how-to-pay>ul>li p>a:hover, .choose-payment>.how-to-pay>ul>li p>a.active {
+  border-color: #f11c2a;
+}
+.choose-payment>.how-to-pay>ul>li p>a img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.choose-payment>.how-to-pay>ul>li p>b {
+  font-size: 26px;
+  color: #ff921a;
+  font-weight: bold;
+  margin: 0 10px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.choose-payment>.how-to-pay>ul>li p>span {
+  font-size: 14px;
+  color: #999;
+  font-weight: normal;
+  vertical-align: middle;
 }
