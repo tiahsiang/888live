@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>直播频道_888live</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <link type="favicon" rel="shortcut icon" href="resources/images/favicon.ico" mce_href="/favicon.ico"/>
+  <link rel="shortcut icon" href="resources/images/favicon.ico" mce_href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="resources/css/normalize.css">
+  <link rel="stylesheet" href="resources/font/iconfont.css">
+  <link rel="stylesheet" href="resources/css/DPlayer.min.css">
+  <link rel="stylesheet" href="resources/css/channel.css">
+  <link rel="stylesheet" href="resources/css/modal.css">
+</head>
+
+<body style="background: #fff;">
+
+<div class="layout">
+  <!-- width:100% 顶部导航 -->
+  <nav class="nav">
+    <div class="container">
+      <a class="logo" href="index.html"><img src="resources/images/logo144x46.png" alt="lOGO"></a>
+      <ul class="lt-nav">
+        <li><a href="index.html">首页</a></li>
+        <li class="active"><a href="live.html">直播</a></li>
+        <li><a href="game.html">游戏</a></li>
+        <li><a href="cash.html">现金网</a></li>
+        <li><a href="more.html"><i class="icon icon-gengduo-tianchong"></i></a></li>
+      </ul>
+      <ul class="rt-nav">
+        <li class="search">
+          <input type="search" placeholder="搜索房间、主播、游戏">
+          <i class="icon icon-sousuo"></i>
+        </li>
+        <li class="wyzb">
+          <a href="#"> <i class="icon icon-bofang4"></i>我要直播 </a>
+          <a href="download-app.html"> <i class="icon icon-shouji"></i>APP下载 </a>
+        </li>
+        <li class="user-action">
+          <a href="user-center.html" class="avatar"><img src="./resources/images/avatar.png" alt=""></a>
+          <!--<a href="#">登录</a>-->
+          <!--<a href="#">注册</a>-->
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="main">
+      <!-- 左 伸缩导航条 -->
+      <section class="main-menu">
+        <ul class="menu-icon">
+          <li class="active">
+            <a href="live-detail.html">
+              <i class="fa icon icon-luxiang"></i>
+              <span class="nav-text">全部直播</span>
+            </a>
+            <b class="line"></b>
+          </li>
+
+          <li>
+            <a href="game.html">
+              <i class="fa icon icon-youxi"></i>
+              <span class="nav-text">游戏</span>
+            </a>
+            <b class="line"></b>
+          </li>
+
+          <li>
+            <a href="cash.html">
+              <i class="fa icon icon-iconreturncash"></i>
+              <span class="nav-text">现金网</span>
+            </a>
+            <b class="line"></b>
+          </li>
+
+          <li>
+            <a href="my-follow.html">
+              <i class="fa icon icon-heartoutline01"></i>
+              <span class="nav-text">我的关注</span>
+            </a>
+            <b class="line"></b>
+          </li>
+        </ul>
+        <ul class="hot games">
+          <li>
+            <a href="#">北京赛车</a>
+          </li>
+          <li>
+            <a href="#">体育赛事</a>
+          </li>
+          <li>
+            <a href="#">老虎机</a>
+          </li>
+          <li>
+            <a href="#">龙虎斗</a>
+          </li>
+          <li>
+            <a href="#">捕鱼王</a>
+          </li>
+          <li>
+            <a href="#">体育赛事</a>
+          </li>
+          <li>
+            <a href="#">龙虎斗</a>
+          </li>
+          <li>
+            <a href="#">北京赛车</a>
+          </li>
+          <li>
+            <a href="#">北京赛车</a>
+          </li>
+          <li>
+            <a href="#">北京赛车</a>
+          </li>
+          <li>
+            <a href="#">北京赛车</a>
+          </li>
+          <li>
+            <a href="#">全部</a>
+          </li>
+        </ul>
+        <ul class="hot cashs">
+          <li>
+            <a href="#">澳门新葡京</a>
+          </li>
+          <li>
+            <a href="#">乐百家</a>
+          </li>
+          <li>
+            <a href="#">博狗</a>
+          </li>
+          <li>
+            <a href="#">澳门新葡京</a>
+          </li>
+          <li>
+            <a href="#">捕鱼王</a>
+          </li>
+          <li>
+            <a href="#">乐百家</a>
+          </li>
+          <li>
+            <a href="#">体育赛事</a>
+          </li>
+          <li>
+            <a href="#">全部</a>
+          </li>
+        </ul>
+        <ul class="reds">
+          <li>
+            <a href="#"><i class="icon icon-shouji"></i>APP下载</a>
+          </li>
+          <li>
+            <a href="#"><i class="icon icon-bofang4"></i>我要直播</a>
+          </li>
+        </ul>
+        <div class="hot-text">
+          <a href="">直播教学</a>
+          <a href="">在线客服</a>
+          <a href="">语言</a>
+        </div>
+      </section>
+      <!-- 中间 主内容展示 -->
+      <section class="main-panel">
+        <div class="container">
+          <div class="zb-floor1">
+            <div class="video-area">
+              <div class="whoesonline">
+                <div class="ws-lt">
+                  <div>
+                    <a class="avatar">
+                      <img src="resources/images/avatar.png" alt="">
+                    </a>
+                  </div>
+                  <div class="ws-info">
+                    <h2 class="ws-title">
+                      <a class="ws-name">一颗受伤的小番茄在直123456播哈哈哈哈哈哈rrrr哈哈哈哈哈哈哈哈哈哈哈哈123444444</a>
+                      <a class="badge1">正在直播<i class="icon icon-shipin"></i></a>
+                    </h2>
+                    <p class="red-txt">
+                      <a><i class="icon icon-tubiao_youxi"></i>赛事直播</a>
+                      <a><i class="icon icon-iconreturncash"></i>玛雅吧</a>
+                    </p>
+                    <p>
+                      <a class="purple"><i class="icon icon-yuyin"></i>签约主播</a>
+                      <a>主播王五</a>
+                      <a class="yellow"><i class="icon icon-youjian"></i></a>
+                      <a class="red"><i class="icon icon-usergroup"></i>123456</a>
+                    </p>
+                    <p class="notice">
+                      <a href="">
+                        <i class="icon icon-laba-"></i>
+                        <span style="color: #999;margin-right: 2px;">直播公告：</span>
+                        主播今天带大家发家致富，这才是快速脱贫脱单不脱发的最佳捷径
+                      </a>
+                      <i class="icon icon-bofangqi-bofang"></i>
+                    </p>
+                  </div>
+                </div>
+                <b class="line2"></b>
+                <div class="ws-rt">
+                  <div class="rt1">
+                    <a href="#" class="avatar">
+                      <img src="resources/images/avatar.png" alt="">
+                    </a>
+                    <div>
+                      <h3>腾讯友情赞助</h3>
+                      <p>深圳市腾讯科技股份有限公司股份有限公司</p>
+                    </div>
+                  </div>
+                  <div class="rt2">
+                    <p>
+                      <a class="paytion"><i class="icon icon-shixintaoxin"></i>关注</a>
+                      <a class="track-btn">追踪者<b>2000</b></a>
+                      <a class="tracking-btn">追踪中<b>2000</b></a>
+                    </p>
+                    <p class="share">
+                      <a href=""><i class="icon icon-fenxiang"></i>分享</a>
+                      <a href=""><i class="icon icon-zhanghuyichang"></i>举报</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="video-frame">
+                <section>
+                  <div id="dplayer2"></div>
+                </section>
+                <ul class="send-gifts">
+                  <li>
+                    <a class="ba-coin" href=""><i class="icon icon-tubiao207"></i>巴币 <span>4122</span></a>
+                    <a class="pay-btn" href="">充值</a>
+                  </li>
+                  <li class="gifts-list">
+                    <ul>
+                      <li>
+                        <a class="ics1"><i class="icons1"></i></a>
+                        <div class="has-dropdown">
+                          <ul class="dropdown-list">
+                            <li class="droplist-item1">
+                              <a class="ics1"><i class="icons1"></i></a>
+                              <div>
+                                <h2>金币</h2>
+                                <p>6巴币/巴豆</p>
+                              </div>
+                            </li>
+                            <li class="droplist-item2">
+                              <p>
+                                <a>1</a><a>520</a><a>666</a><a>888</a><a>1314</a>
+                                <a class="reduce">-</a><input type="number"><a class="plus">+</a>
+                              </p>
+                              <button>发送</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a class="ics2"><i class="icons2"></i></a>
+                        <div class="has-dropdown">
+                          <ul class="dropdown-list">
+                            <li class="droplist-item1">
+                              <a class="ics2"><i class="icons2"></i></a>
+                              <div>
+                                <h2>金币</h2>
+                                <p>6巴币/巴豆</p>
+                              </div>
+                            </li>
+                            <li class="droplist-item2">
+                              <p>
+                                <a>1</a><a>520</a><a>666</a><a>888</a><a>1314</a>
+                                <a class="reduce">-</a><input type="number"><a class="plus">+</a>
+                              </p>
+                              <button>发送</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a class="ics3"><i class="icons3"></i></a>
+                        <div class="has-dropdown">
+                          <ul class="dropdown-list">
+                            <li class="droplist-item1">
+                              <a class="ics3"><i class="icons3"></i></a>
+                              <div>
+                                <h2>金币</h2>
+                                <p>6巴币/巴豆</p>
+                              </div>
+                            </li>
+                            <li class="droplist-item2">
+                              <p>
+                                <a>1</a><a>520</a><a>666</a><a>888</a><a>1314</a>
+                                <a class="reduce">-</a><input type="number"><a class="plus">+</a>
+                              </p>
+                              <button>发送</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a class="ics4"><i class="icons4"></i></a>
+                        <div class="has-dropdown">
+                          <ul class="dropdown-list">
+                            <li class="droplist-item1">
+                              <a class="ics4"><i class="icons4"></i></a>
+                              <div>
+                                <h2>金币</h2>
+                                <p>6巴币/巴豆</p>
+                              </div>
+                            </li>
+                            <li class="droplist-item2">
+                              <p>
+                                <a>1</a><a>520</a><a>666</a><a>888</a><a>1314</a>
+                                <a class="reduce">-</a><input type="number"><a class="plus">+</a>
+                              </p>
+                              <button>发送</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a class="ics5"><i class="icons5"></i></a>
+                        <div class="has-dropdown">
+                          <ul class="dropdown-list">
+                            <li class="droplist-item1">
+                              <a class="ics5"><i class="icons5"></i></a>
+                              <div>
+                                <h2>金币</h2>
+                                <p>6巴币/巴豆</p>
+                              </div>
+                            </li>
+                            <li class="droplist-item2">
+                              <p>
+                                <a>1</a><a>520</a><a>666</a><a>888</a><a>1314</a>
+                                <a class="reduce">-</a><input type="number"><a class="plus">+</a>
+                              </p>
+                              <button>发送</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a class="ics6"><i class="icons6"></i></a>
+                        <div class="has-dropdown">
+                          <ul class="dropdown-list">
+                            <li class="droplist-item1">
+                              <a class="ics6"><i class="icons6"></i></a>
+                              <div>
+                                <h2>金币</h2>
+                                <p>6巴币/巴豆</p>
+                              </div>
+                            </li>
+                            <li class="droplist-item2">
+                              <p>
+                                <a>1</a><a>520</a><a>666</a><a>888</a><a>1314</a>
+                                <a class="reduce">-</a><input type="number"><a class="plus">+</a>
+                              </p>
+                              <button>发送</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="gift7">
+                        <a class="ics7"><i class="icons7"></i></a>
+                        <div class="has-dropdown">
+                          <ul class="dropdown-list">
+                            <li class="droplist-item1">
+                              <a class="ics7"><i class="icons7"></i></a>
+                              <div>
+                                <h2>金币</h2>
+                                <p>6巴币/巴豆</p>
+                              </div>
+                            </li>
+                            <li class="droplist-item2">
+                              <p>
+                                <a>1</a><a>520</a><a>666</a><a>888</a><a>1314</a>
+                                <a class="reduce">-</a><input type="number"><a class="plus">+</a>
+                              </p>
+                              <button>发送</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="gift8">
+                        <a class="ics8"><i class="icons8"></i></a>
+                        <div class="has-dropdown">
+                          <ul class="dropdown-list">
+                            <li class="droplist-item1">
+                              <a class="ics8"><i class="icons8"></i></a>
+                              <div>
+                                <h2>金币</h2>
+                                <p>6巴币/巴豆</p>
+                              </div>
+                            </li>
+                            <li class="droplist-item2">
+                              <p>
+                                <a>1</a><a>520</a><a>666</a><a>888</a><a>1314</a>
+                                <a class="reduce">-</a><input type="number"><a class="plus">+</a>
+                              </p>
+                              <button>发送</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="gift9">
+                        <a class="ics9"><i class="icons9"></i></a>
+                        <div class="has-dropdown">
+                          <ul class="dropdown-list">
+                            <li class="droplist-item1">
+                              <a class="ics9"><i class="icons9"></i></a>
+                              <div>
+                                <h2>金币</h2>
+                                <p>6巴币/巴豆</p>
+                              </div>
+                            </li>
+                            <li class="droplist-item2">
+                              <p>
+                                <a>1</a><a>520</a><a>666</a><a>888</a><a>1314</a>
+                                <a class="reduce">-</a><input type="number"><a class="plus">+</a>
+                              </p>
+                              <button>发送</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- 右 发弹幕区 -->
+            <div class="video-chat">
+              <div class="adv-img">
+                <img src="resources/images/banner/2014_1.jpg" alt="">
+                <img src="resources/images/banner/2014_2.jpg" alt="">
+                <p><i class="icon icon-laba-"></i> <b>系统消息：</b>直播内容包含任何低俗/暴露和涉黄内容，账号会被封禁；安全部门会24小时巡查哦~</p>
+              </div>
+              <div class="Dplayer_danmu">
+                <div class="Dplayer_watching">
+                  <span class="Dplayer-watching-number" title="">24</span>
+                  人正在观看,<span class="danmuku_num">100</span>条弹幕
+                </div>
+
+                <ul class="Dplayer_list">
+                  <li>时间</li>
+                  <li>发送内容</li>
+                  <li>用户类型</li>
+                </ul>
+                <ul class="list_ovefiow">
+
+                </ul>
+
+              </div>
+              <div class="send-danmu">
+                <p>
+                  <a class="colors" href=""><i class="icon-colors"></i></a>
+                  <a href=""><i class="icon icon-smile"></i></a>
+                </p>
+                <p class="input-danmu">
+                  <input type="text" placeholder="输入弹幕信息">
+                  <button class="send-button">发送</button>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="zb-floor2">
+            <section class="video-carousel">
+              <h2 class="ct-title">直播回放</h2>
+              <ul>
+                <li>
+                  <a href=""><img src="./resources/images/game1.jpg" alt=""></a>
+                  <a class="online-label">直播录像</a>
+                  <h2><a href="">一只受伤的小番茄正在做直播一只受伤的小番茄正在做直播一只受伤的小番茄正在做直播</a></h2>
+                  <p>
+                    <a class="name1" href="">一只受伤的小番茄正在做直播</a>
+                    <a href=""><i class="icon icon-view"></i>1234567890</a>
+                  </p>
+                </li>
+                <li>
+                  <a href=""><img src="./resources/images/game1.jpg" alt=""></a>
+                  <a class="online-label">直播录像</a>
+                  <h2><a href="">一只受伤的小番茄正在做直播</a></h2>
+                  <p>
+                    <a class="name1">一只受伤的小番茄正在做直播</a>
+                    <a href=""><i class="icon icon-view"></i>123</a>
+                  </p>
+                </li>
+                <li>
+                  <a href=""><img src="./resources/images/game1.jpg" alt=""></a>
+                  <a class="online-label">直播录像</a>
+                  <h2><a href="">一只受伤的小番茄正在做直播</a></h2>
+                  <p>
+                    <a class="name1">一只受伤的小番茄正在做直播</a>
+                    <a href=""><i class="icon icon-view"></i>123456</a>
+                  </p>
+                </li>
+                <li>
+                  <a href=""><img src="./resources/images/game1.jpg" alt=""></a>
+                  <a class="online-label">直播录像</a>
+                  <h2><a href="">一只受伤的小番茄正在做直播</a></h2>
+                  <p>
+                    <a class="name1" href="">一只受伤的小番茄正在做直播</a>
+                    <a href=""><i class="icon icon-view"></i>12</a>
+                  </p>
+                </li>
+                <li>
+                  <a href=""><img src="./resources/images/game1.jpg" alt=""></a>
+                  <a class="online-label">直播录像</a>
+                  <h2><a href="">一只受伤的小番茄正在做直播</a></h2>
+                  <p>
+                    <a class="name1" href="">一只受伤的小番茄正在做直播</a>
+                    <a href=""><i class="icon icon-view"></i>1234567890</a>
+                  </p>
+                </li>
+                <li>
+                  <a href=""><img src="./resources/images/game1.jpg" alt=""></a>
+                  <a class="online-label">直播录像</a>
+                  <h2><a href="">一只受伤的小番茄正在做直播</a></h2>
+                  <p>
+                    <a class="name1" href="">一只受伤的小番茄正在做直播</a>
+                    <a href=""><i class="icon icon-view"></i>1234567890</a>
+                  </p>
+                </li>
+                <li>
+                  <a href=""><img src="./resources/images/game1.jpg" alt=""></a>
+                  <a class="online-label">直播录像</a>
+                  <h2><a href="">一只受伤的小番茄正在做直播</a></h2>
+                  <p>
+                    <a class="name1" href="">一只受伤的小番茄正在做直播</a>
+                    <a href=""><i class="icon icon-view"></i>1234567890</a>
+                  </p>
+                </li>
+                <li>
+                  <a href=""><img src="./resources/images/game1.jpg" alt=""></a>
+                  <a class="online-label">直播录像</a>
+                  <h2><a href="">一只受伤的小番茄正在做直播</a></h2>
+                  <p>
+                    <a class="name1" href="">一只受伤的小番茄正在做直播</a>
+                    <a href=""><i class="icon icon-view"></i>1234567890</a>
+                  </p>
+                </li>
+                <li>
+                  <a href=""><img src="./resources/images/game1.jpg" alt=""></a>
+                  <a class="online-label">直播录像</a>
+                  <h2><a href="">一只受伤的小番茄正在做直播</a></h2>
+                  <p>
+                    <a class="name1" href="">一只受伤的小番茄正在做直播</a>
+                    <a href=""><i class="icon icon-view"></i>1234567890</a>
+                  </p>
+                </li>
+                <li>
+                  <a href=""><img src="./resources/images/game1.jpg" alt=""></a>
+                  <a class="online-label">直播录像</a>
+                  <h2><a href="">一只受伤的小番茄正在做直播</a></h2>
+                  <p>
+                    <a class="name1" href="">一只受伤的小番茄正在做直播</a>
+                    <a href=""><i class="icon icon-view"></i>1234567890</a>
+                  </p>
+                </li>
+              </ul>
+            </section>
+            <section class="empty"></section><!-- 仅用于占位 -->
+          </div>
+          <!-- 有关体育赛事的直播 -->
+          <div class="zb-floor3">
+            <section class="video-about">
+              <h2 class="ct-title">有关 <span style="color: #f11c2a;">"体育赛事"</span> 的直播</h2>
+              <ul>
+                <li>
+                  <a href=""><img src="./resources/images/game1.jpg" alt=""></a>
+                  <p class="f2-uname">
+                    <a class="name2" href="">一只受伤的小番茄正在做直播一只受伤的小番茄正在做直播</a>
+                    <a class="view2"><i class="icon icon-usergroup"></i>1234567890</a>
+                  </p>
+                  <p class="f2-view">
+                    <a href="" class="avatar"><img src="./resources/images/avatar.png" alt=""></a>
+                    <b class="name3">一只受伤的小番茄</b>
+                    <a class="label">
+                      <span>北京赛车</span><span>电竞直播</span>
+                    </a>
+                  </p>
+                </li>
+                <li>
+                  <a href=""><img src="./resources/images/game1.jpg" alt=""></a>
+                  <p class="f2-uname">
+                    <a class="name2" href="">今晚爆肝</a>
+                    <a class="view2"><i class="icon icon-usergroup"></i>1234567890</a>
+                  </p>
+                  <p class="f2-view">
+                    <a href="" class="avatar"><img src="./resources/images/avatar.png" alt=""></a>
+                    <b class="name3">ABCDEFGHIGK</b>
+                    <a class="label">
+                      <span>北京赛车</span><span>电竞直播</span>
+                    </a>
+                  </p>
+                </li>
+                <li>
+                  <a href=""><img src="./resources/images/game1.jpg" alt=""></a>
+                  <p class="f2-uname">
+                    <a class="name2" href="">一只受伤的小番茄正在做直播</a>
+                    <a class="view2"><i class="icon icon-usergroup"></i>1234567890</a>
+                  </p>
+                  <p class="f2-view">
+                    <a href="" class="avatar"><img src="./resources/images/avatar.png" alt=""></a>
+                    <b class="name3">一只受伤的小番茄正在做直播</b>
+                    <a class="label">
+                      <span>北京赛车</span><span>电竞直播</span>
+                    </a>
+                  </p>
+                </li>
+                <li>
+                  <a href=""><img src="./resources/images/game1.jpg" alt=""></a>
+                  <p class="f2-uname">
+                    <a class="name2" href="">一只受伤的小番茄正在做直播</a>
+                    <a class="view2"><i class="icon icon-usergroup"></i>1234567890</a>
+                  </p>
+                  <p class="f2-view">
+                    <a href="" class="avatar"><img src="./resources/images/avatar.png" alt=""></a>
+                    <b class="name3">一只受伤的小番茄正在做直播</b>
+                    <a class="label">
+                      <span>北京赛车</span><span>电竞直播</span>
+                    </a>
+                  </p>
+                </li>
+              </ul>
+            </section>
+            <section class="empty"></section><!-- 仅用于占位 -->
+          </div>
+          <!-- 有关其他的直播 -->
+          <div class="zb-floor3">
+            <section class="video-about">
+              <h2 class="ct-title">有关 <span style="color: #f11c2a;">"体育赛事"</span> 的直播</h2>
+              <ul>
+                <li>
+                  <a href=""><img src="./resources/images/game1.jpg" alt=""></a>
+                  <p class="f2-uname">
+                    <a class="name2" href="">一只受伤的小番茄正在做直播一只受伤的小番茄正在做直播</a>
+                    <a class="view2"><i class="icon icon-usergroup"></i>1234567890</a>
+                  </p>
+                  <p class="f2-view">
+                    <a href="" class="avatar"><img src="./resources/images/avatar.png" alt=""></a>
+                    <b class="name3">一只受伤的小番茄</b>
+                    <a class="label">
+                      <span>北京赛车</span><span>电竞直播</span>
+                    </a>
+                  </p>
+                </li>
+                <li>
+                  <a href=""><img src="./resources/images/game1.jpg" alt=""></a>
+                  <p class="f2-uname">
+                    <a class="name2" href="">今晚爆肝</a>
+                    <a class="view2"><i class="icon icon-usergroup"></i>1234567890</a>
+                  </p>
+                  <p class="f2-view">
+                    <a href="" class="avatar"><img src="./resources/images/avatar.png" alt=""></a>
+                    <b class="name3">ABCDEFGHIGK</b>
+                    <a class="label">
+                      <span>北京赛车</span><span>电竞直播</span>
+                    </a>
+                  </p>
+                </li>
+                <li>
+                  <a href=""><img src="./resources/images/game1.jpg" alt=""></a>
+                  <p class="f2-uname">
+                    <a class="name2" href="">一只受伤的小番茄正在做直播</a>
+                    <a class="view2"><i class="icon icon-usergroup"></i>1234567890</a>
+                  </p>
+                  <p class="f2-view">
+                    <a href="" class="avatar"><img src="./resources/images/avatar.png" alt=""></a>
+                    <b class="name3">一只受伤的小番茄正在做直播</b>
+                    <a class="label">
+                      <span>北京赛车</span><span>电竞直播</span>
+                    </a>
+                  </p>
+                </li>
+                <li>
+                  <a href=""><img src="./resources/images/game1.jpg" alt=""></a>
+                  <p class="f2-uname">
+                    <a class="name2" href="">一只受伤的小番茄正在做直播</a>
+                    <a class="view2"><i class="icon icon-usergroup"></i>1234567890</a>
+                  </p>
+                  <p class="f2-view">
+                    <a href="" class="avatar"><img src="./resources/images/avatar.png" alt=""></a>
+                    <b class="name3">一只受伤的小番茄正在做直播</b>
+                    <a class="label">
+                      <span>北京赛车</span><span>电竞直播</span>
+                    </a>
+                  </p>
+                </li>
+              </ul>
+            </section>
+            <section class="empty"></section><!-- 仅用于占位 -->
+          </div>
+        </div>
+      </section>
+  </div>
+</div>
+
+
+<script src="resources/js/jquery.min.js"></script>
+<script src="resources/js/modal.js"></script>
+<script src="resources/js/modal.js"></script>
+<script src="resources/js/flv.min.js"></script>
+<script src="resources/js/DPlayer.min.js"></script>
+<script>
+  var dp = new DPlayer({
+    element: document.getElementById('dplayer2'),
+    video: {
+      url: 'resources/src/Rallye.3gp',
+      pic: 'resources/images/danmu.jpg'
+    },
+    danmaku: {
+      id: 'demo',
+      api: 'https://api.prprpr.me/dplayer/',
+      addition: ['https://api.prprpr.me/dplayer/bilibili?aid=15572523']
+    }
+  });
+  // 弹出框
+  function alert_back(text) {
+    $(".alert_back").html(text).show();
+    setTimeout(function () {
+      $(".alert_back").fadeOut();
+    },1200)
+  }
+  //秒转分秒
+  function formatTime(seconds) {
+    return [
+//            parseInt(seconds / 60 / 60),
+      parseInt(seconds / 60 % 60),
+      parseInt(seconds % 60)
+    ]
+      .join(":")
+      .replace(/\b(\d)\b/g, "0$1");
+  }
+  $.ajax({
+    url:"https://api.prprpr.me/dplayer/bilibili?aid=15572523",
+    success:function (data) {
+      if(data.code=="1"){
+        var danmaku=data.danmaku;
+        var autor="农民";
+        $(".danmuku_num").text(danmaku.length)
+        $(danmaku).each(function (index,item) {
+          if(item.type=="right"){
+          }else
+          {
+            autor="地主"
+          }
+          var oLi=`
+            <ol class="danmuku_list" time="${item.time}">
+              <li>${formatTime(item.time)}</li>
+              <li title="${item.text}">${item.text}</li>
+              <li>${autor}</li>
+            </ol>`
+          $(".list_ovefiow").append(oLi);
+          autor="农民";
+        })
+      }else {
+        alert_back("弹幕加载失败 -v-!");
+      }
+      $(".danmuku_list").on("click",function () {
+
+        dp.seek( $(this).attr("time"))
+      })
+    }
+  })
+</script>
+
+</body>
+</html>
