@@ -13,14 +13,6 @@
   <link rel="stylesheet" href="resources/font/iconfont.css">
   <!-- Tia 首页css -->
   <link rel="stylesheet" href="resources/css/index.css"/>
-  <style>
-    .withdrawal-posit .choose-payment .bg-left {
-      background: #a5abb1;
-    }
-    .withdrawal-posit .choose-payment .how-to-pay label {
-      display: block;
-    }
-  </style>
 </head>
 
 <body style="background: #f2f2f2;">
@@ -61,25 +53,56 @@
     <ul class="choose-payment">
       <li class="bg-left">
         <p>
-          <img src="./resources/images/icons/bean-grey.png" alt=""> <b>巴豆提现</b>
+          <img src="./resources/images/icons/bean-grey.png" alt="" style="display: inline-block; vertical-align: middle;"> <b>巴豆提现</b>
         </p>
       </li>
+
+      <!-- 提现 --->
       <li class="how-to-pay">
-        <ul>
-          <li>
-            <label>账号余额:  <b style="color: #ff921a; font-size: 14px; font-weight: bold;">100巴豆</b>(等值1000人民币)</label>
-            <label>冻结余额:  <b>10000巴豆</b> (已经申请提现,但未处理的金额)</label>
-            <label>
-              提现方式:
-              <select name="" id="">
-                <option value="wexin-pay">微信支付</option>
-                <option value="alipay">支付宝</option>
-                <option value="bank-pay">银联支付</option>
-              </select>
-            </label>
-          </li>
-        </ul>
+        <label>账号余额:  <b style="color: #ff921a; font-weight: bold; margin-left: 5px;">100巴豆</b> <b style="color: #888; font-weight: normal;">(等值1000人民币)</b></label>
+        <label>冻结余额:  <b style="color: #333;font-weight: bold; margin-left: 5px;">10000巴豆</b> <b style="color: #888; font-weight: normal;">(已经申请提现,但未处理的金额)</b></label>
+        <label>
+           提现方式:
+           <select>
+             <option value="wexin-pay">微信支付</option>
+             <option value="alipay">支付宝</option>
+             <option value="bank-pay">银联支付</option>
+           </select>
+           <b style="color: #1c80f1; margin: 0 6px; font-weight: normal;">点此绑定收款账号，方可进行提现</b>
+           <b style="color: #888; font-weight: normal;">如已绑定，请忽略</b>
+        </label>
+        <label>
+          提现账号:
+          <select>
+            <option value="wexin-pay">一只受伤的小番茄</option>
+            <option value="alipay">不卑不亢</option>
+            <option value="bank-pay">你没看错，我是万元户</option>
+          </select>
+          <b style="color: #1c80f1; margin: 0 6px; font-weight: normal;">点此绑定收款账号，方可进行提现</b>
+          <b style="color: #888; font-weight: normal;">如已绑定，请忽略</b>
+        </label>
+        <label style="border-bottom: 1px solid #e0e0e0; padding-bottom: 20px;">
+          提现巴豆:
+          <input type="number">
+          <b style="color: #000; margin: 0 6px; font-weight: normal;">x1=22</b>
+          <b style="color: #888; font-weight: normal;">最少提现100巴豆，最多提现50000巴豆</b>
+        </label>
+        <label>
+          <input type="button" value="提现">
+        </label>
       </li>
+
+      <!-- 提现成功 --->
+      <!--<li class="how-to-pay success">-->
+        <!--<div>-->
+          <!--<img src="./resources/images/icons/success.png" alt="签约成功">-->
+          <!--<div>-->
+            <!--<h2>操作成功!</h2>-->
+            <!--<p>您的提现将于1-3个工作日内操作完成</p>-->
+            <!--<p style="padding-top: 0;">点此前往 <a href="#" style="color: #1c80f1;">提现记录</a>查看提现状态，<b style="color: #f11c2a; font-weight: normal;">10s</b>后自动 <a href="index.html" style="color: #1c80f1;">返回首页</a></p>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</li>-->
     </ul>
   </div>
 </section>

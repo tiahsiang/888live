@@ -2436,3 +2436,74 @@ a>.icon-usergroup {
   font-weight: normal;
   vertical-align: middle;
 }
+/** 提现成功  **/
+.withdrawal-posit .choose-payment .bg-left {
+  background: #a5abb1;
+}
+.withdrawal-posit .choose-payment .how-to-pay label {
+  font-size: 14px;
+  color: #333;
+  display: block;
+  margin: 15px 0;
+  padding: 5px 0;
+}
+.withdrawal-posit .choose-payment .how-to-pay label select {
+  display: inline-block;
+  width: 200px;
+  height: 30px;
+  border: 1px solid #ccc;
+  padding: 3px 10px;
+  margin-left: 10px;
+}
+.withdrawal-posit .choose-payment .how-to-pay label input {
+  display: inline-block;
+  width: 200px;
+  height: 30px;
+  border: 1px solid #ccc;
+  padding: 3px 10px;
+  margin-left: 10px;
+}
+.withdrawal-posit .choose-payment .how-to-pay label input[type=button] {
+  display: inline-block;
+  width: 140px;
+  height: 34px;
+  background: #f11c2a;
+  color: #fff;
+  font-size: 14px;
+  border: 1px solid #f11c2a;
+  border-radius: 3px;
+  margin-left: 76px;
+}
+.choose-payment .success {
+  display: flex;
+  display: -webkit-flex;
+}
+.choose-payment .success>div {
+  line-height: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.choose-payment .success>div img {
+  width: 90px;
+  height: 90px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.choose-payment .success>div div {
+  display: inline-block;
+  padding-left: 20px;
+  text-align: left;
+}
+.choose-payment .success>div div>h2 {
+  font-size: 22px;
+  color: #333;
+}
+.choose-payment .success>div div>p {
+  font-size: 14px;
+  color: #333;
+  padding-top: 10px;
+}
