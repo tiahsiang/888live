@@ -674,7 +674,7 @@ input::placeholder {
   justify-content: space-between;
   position: relative;
 }
-.online-game>.live-title>h2 {
+.online-game h2 {
   font-size: 22px;
   color: #333;
   text-align: left;

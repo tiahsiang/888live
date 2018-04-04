@@ -46,6 +46,8 @@ a:hover, a:active {
 /** nav **/
 .nav {
   width: 100%;
+  min-width: 1200px;
+  max-width: 1920px;
   height: 57px;
   position: fixed;
   top: 0;
@@ -390,6 +392,8 @@ input::placeholder {
 /***  banner ***/
 .banner {
   width: 100%;
+  min-width: 1200px;
+  max-width: 1920px;
   height: 650px;
   background: url("../images/banner.jpg") top center no-repeat;
   background-size: cover;
@@ -507,6 +511,8 @@ input::placeholder {
 /*** 首页 floor1  ***/
 .floor1 {
   width: 100%;
+  min-width: 1200px;
+  max-width: 1920px;
   margin: 18px auto;
 }
 .floor1>.container {
@@ -807,6 +813,8 @@ a>.icon-usergroup {
 /*** footer ***/
 .footer {
   width: 100%;
+  min-width: 1200px;
+  max-width: 1920px;
   height: 192px;
   line-height: 1;
   padding: 45px;
@@ -814,6 +822,7 @@ a>.icon-usergroup {
 }
 .footer>.container {
   text-align: center;
+  margin: 0 auto;
 }
 .links>li {
   display: inline-block;
