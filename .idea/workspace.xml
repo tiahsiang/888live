@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="483207ae-0b50-481e-bfd0-3e7f048332dc" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/live-details.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/resources/css/live-detail.css" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/cash.html" afterPath="$PROJECT_DIR$/cash.html" />
-      <change beforePath="$PROJECT_DIR$/game.html" afterPath="$PROJECT_DIR$/game.html" />
-      <change beforePath="$PROJECT_DIR$/live-detail.html" afterPath="$PROJECT_DIR$/live-detail.html" />
-      <change beforePath="$PROJECT_DIR$/live.html" afterPath="$PROJECT_DIR$/live.html" />
       <change beforePath="$PROJECT_DIR$/resources/css/channel.css" afterPath="$PROJECT_DIR$/resources/css/channel.css" />
-      <change beforePath="$PROJECT_DIR$/resources/css/live.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/resources/css/modal.css" afterPath="$PROJECT_DIR$/resources/css/modal.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,7 +16,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="live-detail.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="live-detail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/live-detail.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="550">
@@ -80,6 +71,16 @@
                 <element signature="n#script#4;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <marker date="1523270002839" expanded="true" signature="31796:31951" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="channel.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/css/channel.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="2062" column="31" lean-forward="true" selection-start-line="2062" selection-start-column="31" selection-end-line="2062" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -161,9 +162,9 @@
         <option value="$PROJECT_DIR$/resources/css/live.css" />
         <option value="$PROJECT_DIR$/live.html" />
         <option value="$PROJECT_DIR$/cash.html" />
-        <option value="$PROJECT_DIR$/resources/css/channel.css" />
         <option value="$PROJECT_DIR$/resources/css/live-detail.css" />
         <option value="$PROJECT_DIR$/live-detail.html" />
+        <option value="$PROJECT_DIR$/resources/css/channel.css" />
       </list>
     </option>
   </component>
@@ -180,8 +181,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-6" />
-    <option name="y" value="4" />
+    <option name="x" value="189" />
+    <option name="y" value="3" />
     <option name="width" value="1523" />
     <option name="height" value="1047" />
   </component>
@@ -292,15 +293,15 @@
       <workItem from="1522568458255" duration="10350000" />
       <workItem from="1522805181294" duration="20915000" />
       <workItem from="1523166619560" duration="2101000" />
-      <workItem from="1523237924605" duration="21566000" />
+      <workItem from="1523237924605" duration="22556000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="386513000" />
+    <option name="totallyTimeSpent" value="387503000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="4" width="1523" height="1047" extended-state="0" />
+    <frame x="189" y="3" width="1523" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1612475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -659,14 +660,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/css/channel.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="453" column="1" lean-forward="true" selection-start-line="445" selection-start-column="0" selection-end-line="453" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/css/live-detail.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
@@ -729,6 +722,14 @@
             <element signature="n#script#4;n#body#0;n#html#0;n#!!top" expanded="false" />
             <marker date="1523270002839" expanded="true" signature="31796:31951" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/channel.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="2062" column="31" lean-forward="true" selection-start-line="2062" selection-start-column="31" selection-end-line="2062" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
