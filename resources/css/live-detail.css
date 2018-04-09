@@ -44,7 +44,7 @@ a:hover, a:active {
 .nav {
   width: 100%;
   min-width: 1200px;
-  /*max-width: 1920px;*/
+  max-width: 1920px;
   height: 57px;
   position: fixed;
   top: 0;
@@ -58,8 +58,7 @@ a:hover, a:active {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
 }
 .nav>.container {
-  min-width: 1200px;
-  /*max-width: 1920px;*/
+  max-width: 1920px;
   margin: 0 auto;
 }
 .nav>.container::after {
@@ -435,37 +434,51 @@ input::placeholder {
   background: #999;
 }
 
-/*  布局  */
+/***************************** 直播间详情 界面样式 *******************************/
+/*  三栏布局  */
+.layout:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
 .layout {
   width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 56px;
+}
+.main-menu {
+  width:250px;
   min-height: 100vh;
-  display: flex;
-  display: -webkit-flex;
-  flex-direction: column;
-}
-.main {
-  width: 100%;
-  margin: 56px 0 0 0;
-  display: flex;
-  display: -webkit-flex;
-  display: -moz-flex;
-  justify-content: flex-start;
   overflow: auto;
+  background:#333;
+  float: left;
 }
-.main>.main-menu {
-  min-width: 46px;
+.video-chat {
+  width: 378px;
+  height: 100%;
+  /*height: 892px;*/
+  background: #fff;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  float: right;
 }
-.main>.main-pannel {
-  border: 1px solid red;
-  width: 100%;
-  flex-grow: 1;
+.main-panel {
+  min-height: 100vh;
+  background: #fff;
+  margin-left: 266px;  /*含 左边距16px*/
+  margin-right: 394px; /*含 右边距16px*/
 }
 
 /*** side nav start  ***/
 .main-menu {
   background:#333;
   border-right:1px solid #e5e5e5;
-  width:60px;
+  width:250px;
   min-height: 100vh;
   overflow: hidden;
   -webkit-transition:width .3s linear;
@@ -475,11 +488,11 @@ input::placeholder {
   opacity:1;
 }
 
-.main-menu:hover {
-  min-width:250px;
-  overflow:hidden;
-  opacity:1;
-}
+/*.main-menu:hover {*/
+  /*min-width:250px;*/
+  /*overflow:hidden;*/
+  /*opacity:1;*/
+/*}*/
 
 .fa {
   display: table-cell;
@@ -487,7 +500,7 @@ input::placeholder {
   height: 46px;
   text-align: center;
   font-size: 20px;
-  padding-right: 23px;
+  /*padding-right: 23px;*/
 }
 
 .main-menu>.menu-icon {
@@ -496,7 +509,7 @@ input::placeholder {
 
 .main-menu>.menu-icon li {
   display:block;
-  width:250px;
+  width:248px;
   padding: 6px 0;
   position: relative;
 }
@@ -504,7 +517,7 @@ input::placeholder {
 .main-menu>.menu-icon li>a {
   position: relative;
   display: block;
-  width:255px;
+  width:250px;
   color:#999;
   font-size: 16px;
   text-decoration:none;
@@ -514,7 +527,7 @@ input::placeholder {
 }
 
 .line {
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   bottom: 0;
   left: 10px;
@@ -548,7 +561,7 @@ input::placeholder {
 }
 
 .main-menu>.hot {
-  opacity: 0;
+  opacity: 1;
   width: 240px;
   display: flex;
   display: -webkit-flex;
@@ -604,7 +617,7 @@ input::placeholder {
 }
 
 .reds {
-  opacity: 0;
+  opacity: 1;
   width: 240px;
   display: flex;
   display: -webkit-flex;
@@ -635,7 +648,7 @@ input::placeholder {
 }
 
 .hot-text {
-  opacity: 0;
+  opacity: 1;
   width: 180px;
   margin: 0 auto;
   display: flex;
@@ -692,36 +705,23 @@ input::placeholder {
 .main-panel>.container {
   width: 100%;
   height: 100%;
-  padding: 20px;
   overflow: auto;
 }
 
 /****  zb-floor1  ****/
 .main-panel .zb-floor1 {
-  display: flex;
-  display: -webkit-flex;
-  align-items: flex-start;
-  justify-content: flex-start;
+  width: 100%;
 }
 
 .main-panel .zb-floor1 .video-area {
-  width: 78%;
-  margin-right: 16px;
-}
-.main-panel .zb-floor1 .video-chat {
-  width: 22%;
-  /*min-width: 378px;*/
-  /*height: 892px;*/
-  height: 100%;
-  background: #fff;
-  overflow: hidden;
-  border: 1px solid #e0e0e0;
+  width: 100%;
 }
 
 .video-area .whoesonline {
   background: #fff;
   display: flex;
   display: -webkit-flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
   border: 1px solid #e0e0e0;
@@ -729,7 +729,7 @@ input::placeholder {
 }
 
 .whoesonline .ws-lt {
-  width: 45%;
+  width: 50%;
   height: 154px;
   padding: 16px;
   text-align: left;
@@ -795,6 +795,7 @@ input::placeholder {
   position: absolute;
   top: -5px;
   right: -14px;
+  cursor: pointer;
 }
 
 .badge1>.icon {
@@ -895,7 +896,7 @@ p.notice .icon-bofangqi-bofang {
 }
 
 .ws-rt {
-  width: 55%;
+  width: 50%;
   height: 154px;
   padding: 36px 16px 0 16px;
   text-align: left;
@@ -916,7 +917,7 @@ p.notice .icon-bofangqi-bofang {
   height: 110px;
   background: #e0e0e0;
   position: absolute;
-  left: 44%;
+  left: 50%;
   top: 50%;
   margin-top: -55px;
 }
@@ -1038,26 +1039,51 @@ a.paytion:hover .icon-shixintaoxin, a.paytion:active .icon-shixintaoxin {
   display: none;
 }
 
-.video-chat .adv-img {
+.video-chat .atv {
   padding: 10px;
 }
 
-.video-chat .adv-img>p {
+.video-chat .atv .atv-img>li {
+  display: block;
+  position: relative;
+}
+
+.video-chat .atv .atv-img img {
+  width: 356px;
+  height: 88px;
+  background: #eee;
+}
+
+.video-chat .atv .atv-img>li>a.report-btn {
+  display: inline-block;
+  padding: 2px 3px;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  background: rgba(0,0,0,.35);
+  border-radius: 3px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.video-chat .atv>p {
   padding: 5px 0;
   font-size: 13px;
   color: #f11c2a;
   text-align: justify;
 }
 
-.video-chat .adv-img>p .icon-laba- {
+.video-chat .atv-img>p .icon-laba- {
   color: #f11c2a;
 }
 
-.video-chat .adv-img>p b {
+.video-chat .atv-img>p b {
   color: #333;
 }
 
-.zb-floor1 .video-chat img {
+.video-chat img {
   width: 100%;
   /*min-width: 358px;*/
   height: 100px;
@@ -1261,20 +1287,21 @@ a.colors > .icon-colors {
 
 .video-frame> section {
   width: 100%;
-  height: 600px;
+  min-height: 600px;
 }
 
 .video-frame> section >#dplayer2 {
-  min-width: 980px;
-  height: 600px;
+  max-width: 100%;
+  min-height: 600px;
 }
 
 .send-gifts {
   width: 100%;
-  height: 112px;
+  min-height: 112px;
   padding: 12px 25px;
   display: -webkit-flex;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   background: #fff;
@@ -1314,8 +1341,9 @@ a.colors > .icon-colors {
 .gifts-list>ul {
   display: flex;
   display: -webkit-flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-end;
 }
 
 .gifts-list>ul>li {
@@ -1428,7 +1456,7 @@ a.colors > .icon-colors {
   right: -205px;
   bottom: 69px;
 }
-.gifts-list .has-dropdown::after {
+.gifts-list .has-dropdown:after {
   top: 100%;
   left: 50%;
   border: solid transparent;
@@ -1440,6 +1468,34 @@ a.colors > .icon-colors {
   border-top-color: #fff;
   border-width: 6px;
   margin-left: -6px;
+}
+/* 礼物提示框 溢出 定位 */
+.gift7 .has-dropdown {
+  right: -140px;
+}
+
+.gift8 .has-dropdown {
+  right: -74px;
+}
+
+.gift9 .has-dropdown {
+  right: -22px;
+}
+
+.gift7 .has-dropdown:after {
+  left: 64%;
+}
+
+.gift8 .has-dropdown:after {
+  left: 78%;
+}
+
+.gift9 .has-dropdown:after {
+  left: 89%;
+}
+
+.gift7 .has-dropdown:after, .gift8 .has-dropdown:after,.gift9 .has-dropdown:after {
+
 }
 
 .gifts-list>ul>li:hover .has-dropdown, .gifts-list>ul>li:focus .has-dropdown {
@@ -1561,14 +1617,9 @@ a.colors > .icon-colors {
 }
 
 .zb-floor2 .video-carousel {
-  width: 78%;
-  margin-right: 16px;
+  width: 100%;
 }
-.zb-floor2 .empty {
-  width: 22%;
-  min-width: 378px;
-  background: #fff;
-}
+
 /***  左右轮滚展示 样式 ***/
 .video-carousel>ul {
   max-width: 1400px;
@@ -1595,7 +1646,7 @@ a.colors > .icon-colors {
 .video-carousel>ul>li {
   display: inline-block;
   width: 255px;
-  height: 206px;
+  height: 212px;
   margin-right: 16px;
   margin-bottom: 16px;
   position: relative;
@@ -1603,7 +1654,6 @@ a.colors > .icon-colors {
 }
 .video-carousel>ul>li>a {
   display: block;
-  width: 255px;
   height: 146px;
   overflow: hidden;
   vertical-align: middle;
@@ -1655,7 +1705,7 @@ a.colors > .icon-colors {
 }
 .video-carousel a.name1 {
   display: inline-block;
-  max-width: 150px;
+  max-width: 144px;
   text-align: left;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1670,28 +1720,23 @@ a.colors > .icon-colors {
 }
 
 .zb-floor3 .video-about {
-  width: 78%;
-  margin-right: 16px;
+  width: 100%;
 }
-.zb-floor3 .empty {
-  width: 22%;
-  min-width: 378px;
-  height: 274px;
-  background: #fff;
-}
+
 .video-about>ul {
-  max-width: 1400px;
-  height: 274px;
   display: flex;
   display: -webkit-flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
 }
 .video-about>ul>li {
   display: inline-block;
-  width: 327px;
-  height: 250px;
-  margin-right: 16px;
+  width: 298px;
+  height: 242px;
+  /*width: 397px;*/
+  /*height: 266px;*/
+  /*margin-right: 16px;*/
   margin-bottom: 16px;
   position: relative;
   border: 1px solid #e0e0e0;
@@ -1711,15 +1756,14 @@ a.colors > .icon-colors {
 }
 .video-about>ul>li>a {
   display: block;
-  width: 326px;
-  height: 168px;
+  height: 164px;
   overflow: hidden;
   vertical-align: middle;
 }
 .video-about a.name2 {
   font-size: 14px;
   display: inline-block;
-  max-width: 220px;
+  max-width: 174px;
   text-align: left;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1761,7 +1805,7 @@ a.colors > .icon-colors {
 .video-about .f2-view .name3 {
   cursor: pointer;
   display: inline-block;
-  max-width: 136px;
+  max-width: 108px;
   margin: 0 4px;
   font-size: 12px;
   color: #888;
@@ -1788,426 +1832,4 @@ a.colors > .icon-colors {
 }
 .f2-view .name3:hover, .f2-view .name3:focus {
   color: #f11c2a;
-}
-
-/**************************   游戏频道     ***************************/
-.game-floor, .cash-floor {
-  width: 100%;
-}
-.game-floor>ul, .cash-floor>ul {
-  display: flex;
-  display: -webkit-flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-.game-floor>ul>li {
-  display: inline-block;
-  width: 141px;
-  height: 230px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  position: relative;
-}
-.game-floor>ul>li>a {
-  display: block;
-  width: 140px;
-  height: 188px;
-  overflow: hidden;
-  vertical-align: middle;
-  cursor: pointer;
-}
-.game-floor>ul>li>a img {
-  width: 100%;
-  height: 100%;
-  vertical-align: middle;
-}
-.game-floor p.f2-uname {
-  display: flex;
-  display: -webkit-flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 0;
-  font-size: 14px;
-  color: #333;
-}
-.game-floor a.name2 {
-  display: inline-block;
-  max-width: 90px;
-  text-align: left;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
-  -moz-text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.game-floor a.view2, .cash-floor a.view2 {
-  font-size: 14px;
-  color: #888;
-  cursor: pointer;
-}
-.game-floor a.view2 .icon-usergroup, .cash-floor a.view2 .icon-usergroup {
-  font-size: 16px !important;
-  color: #888;
-}
-/*****  游戏详情页  *****/
-.main-panel .game-details, .main-panel .cash-details {
-  width: 100%;
-  margin: 0 auto;
-  background: #fff;
-}
-
-.game-details .details-brief, .cash-details .details-brief {
-  min-height: 225px;
-  background: #fff;
-  display: flex;
-  display: -webkit-flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  border: 1px solid #eee;
-  padding: 16px;
-}
-
-.details-brief>div {
-  display: inline-block;
-  padding-left: 16px;
-}
-.details-brief>div>h2 {
-  font-size: 22px;
-  color: #333;
-}
-.details-brief>div>h2>a {
-  font-size: 14px;
-  color: #999;
-  margin-left: 26px;
-  font-weight: 400;
-}
-.details-brief>div>h2>a>.icon-yanjing {
-  font-size: 16px;
-  color: #999;
-  margin-right: 4px;
-}
-.details-brief>div>p.intro-txt {
-  padding: 15px 0;
-  font-size: 14px;
-  color: #333;
-  text-indent: 24px;
-  text-align: justify;
-}
-.online-game {
-  width: 100%;
-}
-
-/*全部直播 title标签*/
-.online-game>.live-title {
-  display: flex;
-  display: -webkit-flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-}
-.online-game h2 {
-  font-size: 22px;
-  color: #333;
-  text-align: left;
-  margin: 30px 0 16px 0;
-}
-.online-game>.live-title>h2>a {
-  display: inline-block;
-  margin: 0 4px;
-  font-size: 12px;
-  padding: 3px 6px;
-  border: 1px solid #e0e0e0;
-  border-radius: 3px;
-  vertical-align: middle;
-}
-.online-game>.live-title>p {
-  position: absolute;
-  top: 50%;
-  right: 10%;
-}
-.online-game>.live-title>p>a {
-  display: inline-block;
-  padding: 3px 8px;
-  font-size: 12px;
-  border: 1px solid #f11c2a;
-  border-radius: 15px;
-  color: #f11c2a;
-  margin-right: 8px;
-}
-
-.online-game>h2 {
-  font-size: 22px;
-  color: #333;
-  text-align: left;
-  margin: 30px 0 16px 0;
-}
-.online-game>ul.video-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  display: -webkit-flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.online-game>ul.video-list>li {
-  width: 321px;
-  height: 264px;
-  cursor: pointer;
-  margin: 0 20px 20px 0;
-  background: #fff;
-  border: 1px solid #e0e0e0;
-}
-.online-game>ul.video-list>li>a {
-  display: block;
-  width: 320px;
-  height: 176px;
-  overflow: hidden;
-  text-align: center;
-  vertical-align: middle;
-}
-.online-game>ul.video-list>li>a img {
-  width: 100%;
-  height: 100%;
-  vertical-align: middle;
-}
-.online-game .f2-cover {
-  padding: 10px 10px 5px 10px;
-  font-size: 14px;
-  overflow: hidden;
-}
-.online-game .f2-cover span {
-  cursor: pointer;
-  float: left;
-  font-size: 14px;
-  color: #333;
-  text-align: left;
-  max-width: 88px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
-  -moz-text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.online-game .f2-cover span:hover {
-  color: #f11c2a;
-}
-.online-game .f2-cover a {
-  float: right;
-  font-size: 14px;
-  color: #888;
-  text-align: right;
-}
-.online-game a>.icon-usergroup {
-  font-size: 16px;
-  color: #888;
-  margin-right: 4px;
-}
-.online-game .f2-view {
-  font-size: 14px;
-  color: #888;
-  text-align: left;
-  padding: 5px 10px 5px 10px;
-}
-.online-game .f2-view>a.avatar {
-  display: inline-block;
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: #ddd;
-  vertical-align: middle;
-  overflow: hidden;
-}
-.online-game .f2-view>.avatar img {
-  width: 100%;
-  height: 100%;
-  vertical-align: middle;
-}
-.online-game .f2-view b.name2 {
-  cursor: pointer;
-  display: inline-block;
-  max-width: 110px;
-  font-size: 12px;
-  color: #888;
-  text-align: left;
-  margin-left: 4px;
-  vertical-align: middle;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
-  -moz-text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.online-game .f2-view>.label>span {
-  display: inline-block;
-  cursor: pointer;
-  font-size: 12px;
-  color: #666;
-  padding: 3px 7px;
-  text-align: center;
-  background: #e0e0e0;
-  border-radius: 20px;
-}
-.online-game .f2-cover>span {
-  float: left;
-  font-size: 14px;
-  color: #333;
-  text-align: left;
-  max-width: 200px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
-  -moz-text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-/************** 我的关注  *****************/
-.follow-list {
-  max-width: 1400px;
-  display: flex;
-  display: -webkit-flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.follow-list>li {
-  width: 249px;
-  min-height: 180px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  border: 1px solid #e0e0e0;
-  background: #fff;
-}
-.follow-list>li>div:first-child {
-  width: 248px;
-  height: 140px;
-  background: #292929;
-  text-align: center;
-  padding: 22px 20px;
-}
-.follow-list>li>div:first-child>a {
-  display: block;
-  width: 66px;
-  height: 66px;
-  margin: 0 auto;
-  text-align: center;
-  vertical-align: middle;
-  background: #ddd;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.follow-list>li>div:first-child>a>img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  vertical-align: middle;
-}
-.follow-list>li>div:first-child>h2.user-name {
-  margin-top: 16px;
-  font-size: 16px;
-  text-align: center;
-  cursor: pointer;
-}
-.follow-list .user-name>a {
-  font-size: 16px;
-  max-width: 100%;
-  color: #f2f2f2;
-  display: block;
-  height: 30px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
-  -moz-text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.follow-list .user-name>a:hover {
-  color: #f11c2a;
-}
-.follow-list>li>div:last-child {
-  text-align: center;
-  padding: 10px;
-
-}
-.follow-list>li>div:last-child>a.follow-btn {
-  display: inline-block;
-  width: 80px;
-  height: 26px;
-  text-align: center;
-  font-size: 13px;
-  color: #666;
-  line-height: 14px;
-  border: 1px solid #e0e0e0;
-  border-radius: 3px;
-  padding: 5px 15px;
-  margin-left: 16px;
-}
-.follow-list>li>div:last-child>a.follow-btn:first-child {
-  margin-left: 0;
-}
-.follow-list>li>div:last-child>a:hover,  .follow-list>li>div:last-child>a:focus {
-  color: #f11c2a;
-  border-color: #f11c2a;
-}
-
-/**************** 现金网 *****************/
-.cash-floor>ul>li {
-  width: 101px;
-  height: 160px;
-  background: #fff;
-  border: 1px solid #e0e0e0;
-  margin-bottom: 16px;
-  margin-right: 16px;
-}
-.cash-floor>ul>li>a {
-  display: block;
-  width: 100px;
-  height: 100px;
-  background: #ddd;
-  overflow: hidden;
-  text-align: center;
-  vertical-align: middle;
-}
-.cash-floor>ul>li>p.f2-uname {
-  padding: 5px;
-}
-.cash-floor>ul>li>p.f2-uname>a.name2 {
-  display: inline-block;
-  max-width: 90px;
-  text-align: left;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
-  -moz-text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.cash-floor>ul>li>p {
-  padding: 0 5px;
-}
-.cash-details .details-brief {
-  background: #fff;
-  min-height: 124px;
-  display: flex;
-  display: -webkit-flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  border: 1px solid #eee;
-  padding: 16px;
-}
-.cash-details a.cash-img {
-  /*display: inline-block;*/
-  /*width: 100px;*/
-  /*height: 100px;*/
-  text-align: center;
-  vertical-align: middle;
-  overflow: hidden;
-  background: #ddd;
-}
-.cash-details a.cash-img>img {
-  width: 100%;
-  height: 100%;
-  vertical-align: middle;
 }
