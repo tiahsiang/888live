@@ -1225,6 +1225,20 @@ a>.icon-usergroup {
   font-size: 14px;
   vertical-align: middle;
 }
+.user-wallet>a {
+  display: inline-block;
+}
+.user-wallet>a>.ba-b-coin {
+  display: inline-block;
+  font-style: normal;
+  padding: 10px;
+  border-radius: 50%;
+  background: #ff921a;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
 .user-wallet .pay-btn {
   display: inline-block;
   color: #f11c2a;

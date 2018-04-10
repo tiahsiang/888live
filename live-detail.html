@@ -211,7 +211,86 @@
       <div class="video-chat">
         <div class="atv">
           <ul class="atv-img">
-            <li><a class="set-atv">点击设置广告位价格</a></li>
+            <li>
+              <a class="set-atv">点击设置广告位价格</a>
+
+              <!-- 设置广告位价格 模态框 -->
+              <div class="modal-layout"></div>
+              <!--<div class="modal-box">-->
+                <!--<div class="modal-head">-->
+                  <!--<h3>购买直播间广告位</h3>-->
+                  <!--<a class="modal-close"><i class="icon icon-guanbi"></i></a>-->
+                <!--</div>-->
+                <!--<div class="modal-main">-->
+                  <!--<p-->
+                      <!--style="display: block;-->
+                      <!--text-align: center;-->
+                      <!--padding: 15px 0 30px 0;-->
+                      <!--font-size: 16px;">支付<b style="color: #ff921a;margin: 0 4px;font-size: 26px;">100</b>巴币-->
+                  <!--</p>-->
+                  <!--<p class="user-wallet" style="border-top: 1px solid #ddd; padding-top: 15px;">-->
+                    <!--<a><i class="ba-b-coin">巴</i>巴币 <b>4122</b></a>-->
+                    <!--<a class="pay-btn" href="charge-payment.html" target="_blank">充值</a>-->
+                  <!--</p>-->
+
+                <!--</div>-->
+                <!--<div class="modal-foot">-->
+                  <!--<button class="confirm-btn">确定支付</button>-->
+                <!--</div>-->
+              <!--</div>-->
+              <div class="modal-box">
+                <div class="modal-head">
+                  <h3>购买直播间广告位</h3>
+                  <a class="modal-close"><i class="icon icon-guanbi"></i></a>
+                </div>
+                <div class="modal-main">
+                  <p
+                      style="display: block;
+                      text-align: left;
+                      padding: 0 0 15px 0;
+                      color: #ff921a;;
+                      font-size: 20px; font-weight: bold;">恭喜您，支付成功！
+                  </p>
+                  <div style="font-size: 12px; text-align: left; color: #666;">
+                    <h6>请上传广告图(355*87),仅限JPG/GIF/PNG</h6>
+                    <h6>该广告图可刊登至: <b style="color: #f11c2a; font-weight: normal;">直播结束</b></h6>
+                    <a href="#" class="upload-atv-img"
+                       style="display: block;
+                       width: 290px;
+                       height: 90px;
+                       margin: 0 auto;
+                       margin-top: 10px;
+                       text-align: center;
+                       border: 1px dashed #ff921a;
+                       background: #fff7ee; position: relative;">
+                      <i class="icon icon-gengduo"
+                         style="position: absolute;
+                         top:20%; left: 47%;
+                         font-size: 24px;
+                         color: #888;"></i>
+                      <span
+                          style="position: absolute;
+                          top:55%; left: 40%; font-size: 16px;
+                          color: #888;">上传图片</span>
+                    </a>
+                    <label style="font-size: 16px; font-weight: bold; color: #333; text-align: left; margin-top: 10px;">超链接
+                      <input type="url" placeholder="请输入"
+                             style="display: block;
+                             width: 290px; height: 36px;
+                             border: 1px solid #ccc;
+                             margin: 0 auto;
+                             border-radius: 3px;
+                             padding: 2px 10px;">
+                    </label>
+                  </div>
+
+                </div>
+                <div class="modal-foot">
+                  <button class="confirm-btn">确定支付</button>
+                </div>
+              </div>
+
+            </li>
             <li><a class="no-atv">直播暂未开放广告位</a></li>
             <li>
               <a class="pay-atv">
@@ -220,8 +299,7 @@
               </a>
             </li>
             <li><a class="black-atv">这个区块是什么鬼？？？</a></li>
-            <li><img src="resources/images/banner/2014_1.jpg" alt=""> <a class="report-btn">举报</a></li>
-            <li><img src="resources/images/banner/2014_2.jpg" alt=""> <a class="report-btn">举报</a></li>
+            <li style="position: relative;"><img src="resources/images/banner/2014_1.jpg" alt=""> <a class="report-btn">举报</a></li>
           </ul>
           <p><i class="icon icon-laba-"></i> <b>系统消息：</b>直播内容包含任何低俗/暴露和涉黄内容，账号会被封禁；安全部门会24小时巡查哦~</p>
         </div>
@@ -817,6 +895,9 @@
     }
   })
 </script>
+
+
+
 
 </body>
 </html>
