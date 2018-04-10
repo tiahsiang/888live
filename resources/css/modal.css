@@ -299,7 +299,7 @@
 }
 .modal-head {
   padding: 15px 15px 10px 15px;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #ccc;
   background: #fff;
 }
 .modal-head>h3 {
@@ -332,7 +332,7 @@
 }
 .modal-main {
   padding: 15px;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #ccc;
 }
 .modal-foot {
   padding: 15px;
@@ -356,7 +356,7 @@
 .tabWrap label input, .tabWrap select , .modal-main label input , .modal-main select {
   width: 200px;
   height: 30px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #ccc;
   border-radius: 2px;
   padding: 2px 10px;
   font-size: 12px;
