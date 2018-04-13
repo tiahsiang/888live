@@ -676,21 +676,21 @@
 <footer class="footer">
   <div class="container">
     <ul class="links">
-      <li><a href="">关于888直播 <b>|</b></a></li>
-      <li><a href="">广告业务 <b>|</b></a></li>
-      <li><a href="">合作伙伴 <b>|</b></a></li>
-      <li><a href="">招兵买马(台湾) <b>|</b></a></li>
-      <li><a href="">主播分成计划 <b>|</b></a></li>
-      <li><a href="">手机客户端 <b>|</b></a></li>
-      <li><a href="">直播软件 <b>|</b></a></li>
-      <li><a href="">切换语言</a></li>
+      <li><a href="#">关于888直播 <b>|</b></a></li>
+      <li><a href="#">广告业务 <b>|</b></a></li>
+      <li><a href="#">合作伙伴 <b>|</b></a></li>
+      <li><a href="#">招兵买马(台湾) <b>|</b></a></li>
+      <li><a href="#">主播分成计划 <b>|</b></a></li>
+      <li><a href="#">手机客户端 <b>|</b></a></li>
+      <li><a href="#">直播软件 <b>|</b></a></li>
+      <li class="language-modal-btn"><a href="#">切换语言</a></li>
     </ul>
     <p class="copyright">
       <a href="/index.html"><img src="./resources/images/logo-grey.png" alt="logo"></a>
     </p>
   </div>
 </footer>
-<!----  float side bar  ---->
+<!----  右 悬浮栏  ---->
 <ul id="floatSideBar">
   <li>
     <i class="icon icon-bofang4"></i>
@@ -743,7 +743,6 @@
     </p>
   </li>
 </ul>
-
 <!----  登录注册 模态框  ---->
 <div class="dialog">
   <div class="dialog-box">
@@ -853,9 +852,31 @@
     </div>-->
   </div>
 </div>
-
-
-
+<!--- footer 语言切换 模态框 --->
+<div class="modal-layout"></div>
+<div class="modal-box" style="top: 15%;">
+  <div class="modal-head">
+    <h3>切换语言</h3>
+    <a class="modal-close"><i class="icon icon-guanbi"></i></a>
+  </div>
+  <div class="modal-main">
+    <label for="" style="text-align: center;">
+      语言
+      <select name="" id=""
+              style="width: 200px; height: 34px;
+              border: 1px solid #ccc; padding: 3px 10px;
+              color: #666; display: inline-block;
+              margin-left: 10px; vertical-align: middle;">
+        <option>中文</option>
+        <option>中文繁体</option>
+        <option>English</option>
+      </select>
+    </label>
+  </div>
+  <div class="modal-foot">
+    <button class="confirm-btn">确定</button>
+  </div>
+</div>
 
 
 <script src="resources/js/jquery.min.js"></script>
@@ -991,6 +1012,23 @@
         $('body,html').animate({scrollTop:0},1000);
      });
      goTop();
+  });
+</script>
+
+<!--- 语言切换 模态框js --->
+<script>
+  let button5 = $('.language-modal-btn');  /* footer语言切换 btn */
+  let layout5 = $('.modal-layout');
+  let box5 = $('.modal-box');
+  let hide5 = $('.modal-close');
+
+  button5.on('click', function () {
+    layout5.css('display', 'block');
+    box5.css('display', 'block');
+  });
+  hide5.on('click', function () {
+    layout5.css('display', 'none');
+    box5.css('display', 'none');
   });
 </script>
 
