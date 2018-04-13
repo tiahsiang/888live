@@ -1231,14 +1231,17 @@ a>.icon-usergroup {
 }
 .user-wallet>a>.ba-b-coin {
   display: inline-block;
+  width: 35px;
+  height: 35px;
   font-style: normal;
-  padding: 10px;
+  padding: 6px;
   border-radius: 50%;
   background: #ff921a;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
   text-align: center;
+  margin-right: 5px;
 }
 .user-wallet .pay-btn {
   display: inline-block;
@@ -1248,6 +1251,7 @@ a>.icon-usergroup {
   border-radius: 3px;
   background: #fff;
   border: 1px solid #f11c2a;
+  margin-left: 10px;
 }
 .ba-coin .icon-tubiao207 {
   font-size: 22px;

@@ -280,7 +280,7 @@
 }
 .modal-box {
   width: 320px;
-  max-height: 400px;
+  min-height: 187px;
   border: 1px solid #ddd;
   border-radius: 5px;
   position: absolute;
@@ -373,4 +373,14 @@
 }
 .tabWrap .navs-content>li.active {
   display:block;
+}
+.quest .quest-radio {
+  display: inline-block;
+  width: 50%;
+}
+.quest-radio>input[type=radio] {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-left: 5px;
 }
