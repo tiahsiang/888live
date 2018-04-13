@@ -57,6 +57,7 @@ button4.on('click', function () {
   layout.css('display', 'block');
   box.css('display', 'block');
 });
+
 hide.on('click', function () {
   layout.css('display', 'none');
   box.css('display', 'none');
