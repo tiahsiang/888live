@@ -2005,3 +2005,18 @@ a.colors > .icon-colors {
     bottom: 5px;
   }
 }
+
+.ba-b-coin {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  font-style: normal;
+  padding: 6px;
+  border-radius: 50%;
+  background: #ff921a;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-right: 5px;
+}
