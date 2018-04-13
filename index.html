@@ -672,7 +672,7 @@
 </section>
 
 
-
+<!----  footer  ---->
 <footer class="footer">
   <div class="container">
     <ul class="links">
@@ -690,6 +690,59 @@
     </p>
   </div>
 </footer>
+<!----  float side bar  ---->
+<ul id="floatSideBar">
+  <li>
+    <i class="icon icon-bofang4"></i>
+    <p class="level-two">
+      <a href="#" style="letter-spacing: 2px; padding-top: 10px;">直播</a>
+    </p>
+  </li>
+  <li>
+    <i class="icon icon-youxi"></i>
+    <p class="level-two">
+      <a href="#" style="letter-spacing: 2px; padding-top: 10px;">游戏</a>
+    </p>
+  </li>
+  <li>
+    <i class="icon icon-PC"></i>
+    <p class="level-two">
+      <a href="#">在线客服</a>
+    </p>
+  </li>
+  <li>
+    <i class="icon icon-luxiang"></i>
+    <p class="level-two">
+      <a href="#">在线客服</a>
+    </p>
+  </li>
+  <li>
+    <i class="icon icon-message"></i>
+    <p class="level-two">
+      <a href="#">在线客服</a>
+    </p>
+  </li>
+  <li>
+    <i class="icon icon-jianting"></i>
+    <p class="level-two">
+      <a href="#">在线客服</a>
+    </p>
+  </li>
+  <li class="ft-qrcode">
+    <i class="icon icon-erweima"></i>
+    <div class="qrcode">
+      <h2 style="font-weight: bold;">随时随地</h2>
+      <h2 style="font-weight: normal;">想看就看</h2>
+      <img src="resources/images/qrcode.jpg" style="width: 94px;height: 94px; margin: 0 auto; margin-top: 10px;">
+    </div>
+  </li>
+  <li id="gotop">
+    <i class="icon icon-huidaodingbu goTop"></i>
+    <p class="level-two">
+      <a href="#">返回顶部</a>
+    </p>
+  </li>
+</ul>
 
 <!----  登录注册 模态框  ---->
 <div class="dialog">
@@ -920,6 +973,25 @@
       $("#btnSendCode").val( + curCount + "秒再获取");
     }
   }
+</script>
+
+<!--- 右侧悬浮栏 回到顶部js --->
+<script type="text/javascript">
+  function goTop() {
+     $(window).scroll(function(e) {
+        if($(window).scrollTop()>100)
+           $("#gotop").fadeIn(500);
+        else
+           $("#gotop").fadeOut(500);
+     });
+  }
+  $(function(){
+     $("#gotop").click(function(e) {
+        e.preventDefault();
+        $('body,html').animate({scrollTop:0},1000);
+     });
+     goTop();
+  });
 </script>
 
 </body>

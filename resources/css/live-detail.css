@@ -1912,7 +1912,7 @@ a.colors > .icon-colors {
 
 /***  响应式   ***/
 
-@media (max-width: 1920px) {
+@media screen and (max-width: 1920px) {
   .whoesonline .ws-lt, .whoesonline .ws-rt {
     width: 50%;
   }
@@ -1928,7 +1928,7 @@ a.colors > .icon-colors {
   }
 
 }
-@media (max-width: 1820px) {
+@media screen and (max-width: 1820px) {
   .whoesonline .ws-lt, .whoesonline .ws-rt {
     width: 590px;
   }
@@ -1944,7 +1944,7 @@ a.colors > .icon-colors {
   }
 
 }
-@media (max-width: 1240px) {
+@media screen and (max-width: 1240px) {
   .ws-rt > .rt1>div {
     padding-left: 0;
     width: 140px;
@@ -1958,7 +1958,7 @@ a.colors > .icon-colors {
     bottom: 40px;
   }
 }
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
   .ws-rt > .rt1>div {
     padding-left: 0;
@@ -1982,7 +1982,7 @@ a.colors > .icon-colors {
   }
 
 }
-@media (max-width: 975px) {
+@media screen and (max-width: 975px) {
   .ws-rt > .rt1>div {
     padding-left: 0;
     max-width: 116px;

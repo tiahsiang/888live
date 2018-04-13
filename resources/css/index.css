@@ -2720,3 +2720,114 @@ a>.icon-usergroup {
   color: #333;
   padding-top: 10px;
 }
+
+/** 右侧 浮动栏 **/
+html, body {
+  position: relative;
+}
+#floatSideBar {
+  position: fixed;
+  right: 0;
+  bottom: 5%;
+  max-width: 60px;
+  /*border: 1px solid #e0e0e0;*/
+  background: #fff;
+  z-index: 3333;
+  font-family: "PingFang SC","Helvetica Neue",Helvetica,"Hiragino Sans GB","Microsoft YaHei","\5FAE\8F6F\96C5\9ED1",Arial,sans-serif;
+}
+#floatSideBar li {
+  width: 50px;
+  height: 50px;
+  color: #f11c2a;
+  padding: 3px;
+  text-align: center;
+  /*border-top: 1px solid #e0e0e0;*/
+  cursor: pointer;
+  position: relative;
+}
+#floatSideBar li:first-child {
+  border-top: none;
+}
+#floatSideBar li .icon {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  font-size: 26px;
+  color: #f11c2a;
+  vertical-align: middle;
+}
+#floatSideBar li .level-two {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f11c2a;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  padding: 3px 5px;
+  /*border-top: 1px solid #f11c2a;*/
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+#floatSideBar li .level-two a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+.goTop {
+
+}
+#floatSideBar li:first-child {
+  border-top: none;
+}
+#floatSideBar li:hover .level-two {
+  display: block;
+}
+#floatSideBar li.active {
+  background: #f11c2a;
+}
+#floatSideBar li.ft-qrcode {
+  position: relative;
+}
+#floatSideBar li.ft-qrcode div.qrcode h2 {
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  line-height: 1.1;
+}
+#floatSideBar li.ft-qrcode div.qrcode {
+  display: none;
+  position: absolute;
+  right: 65px;
+  bottom: 0;
+  background: #fff;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  width: 124px;
+  min-height: 170px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  -webkit-box-shadow: 1px 1px 10px 1px rgba(227,48,62,.15);
+  -moz-box-shadow: 1px 1px 10px 1px rgba(227,48,62,.15);
+  box-shadow: 1px 1px 10px 1px rgba(227,48,62,.15);
+}
+#floatSideBar li.ft-qrcode:hover, #floatSideBar li.ft-qrcode.active div.qrcode {
+  background: #f11c2a;
+}
+#floatSideBar li.ft-qrcode:hover .icon-erweima, #floatSideBar li.ft-qrcode.active div.qrcode .icon-erweima {
+  color: #fff;
+}
+#floatSideBar li.ft-qrcode:hover div.qrcode, #floatSideBar li.ft-qrcode.active div.qrcode div.qrcode {
+  display: block;
+}
