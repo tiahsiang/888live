@@ -2563,25 +2563,46 @@ a>.icon-usergroup {
   width: 20%;
   height: 440px;
   background: #ff921a;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 30px;
+  font-weight: 800;
   font-family: "黑体-简";
   color: #fff;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.bg-left>div.lt-dot1, .bg-left>div.lt-dot2 {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .1);
+  position: absolute;
+}
+.bg-left>div.lt-dot1 {
+  left: -358px;
+  top: -36%;
+}
+.bg-left>div.lt-dot2 {
+  left: -400px;
+  top: -15%;
+}
+img.bg-bean {
+  position: absolute;
+  left: 68px;
+  top: 68%;
 }
 .choose-payment>.bg-left>p {
   display: block;
   line-height: 440px;
 }
 .choose-payment>.bg-left>p a {
-  font-size: 30px;
-  padding: 12px;
+  font-size: 28px;
+  padding: 10px;
   color: #ff921a;
   font-weight: bold;
   text-align: center;
   background: #fff;
   border-radius: 50%;
-  margin-right: 15px;
 }
 .charge-pay .choose-payment>.how-to-pay {
   width: 80%;
