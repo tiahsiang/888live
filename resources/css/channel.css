@@ -126,7 +126,7 @@ a.logo>img {
   outline: none;
   border-radius: 25px;
   background: #eee;
-  padding: 2px 0 2px 10px;
+  padding: 2px 0 4px 10px;
   color: #333;
 }
 input::placeholder {
@@ -135,6 +135,7 @@ input::placeholder {
 }
 .rt-nav li.search {
   position: relative;
+  margin-top: -6px;
 }
 .icon-sousuo {
   cursor: pointer;
@@ -144,7 +145,7 @@ input::placeholder {
   right: 10px;
   top: 50%;
   z-index: 102;
-  margin-top: -9px;
+  margin-top: -11px;
 }
 .rt-nav li.wyzb {
   padding: 5px 0;
