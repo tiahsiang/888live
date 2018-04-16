@@ -191,20 +191,20 @@ div.dot1, div.dot2, div.dot3 {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  background: rgba(241, 28, 42, .12);
+  background: rgba(241, 28, 42, .10);
   position: absolute;
   z-index: -1;
 }
 .dot1 {
-  bottom: -79%;
-  left: -46%;
+  bottom: -400px;
+  left: -40%;
 }
 .dot2 {
-  bottom: -79%;
-  left: -28%;
+  bottom: -400px;
+  left: -25%;
 }
 .dot3 {
-  bottom: -77%;
+  bottom: -400px;
   right: -57%;
 }
 /*** 拖动滑块验证  ***/
