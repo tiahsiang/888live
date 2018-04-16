@@ -39,6 +39,7 @@
 
 .dialog-wrap {
   position: relative;
+  overflow: hidden;
 }
 
 .dialog .dialog-box {
@@ -51,12 +52,10 @@
   -moz-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  /*margin-left:-251px;*/
-  /*margin-top:-150px;*/
   width:400px;
   background:#fff;
   font-size: 14px;
-  padding-bottom: 10px;
+  /*padding-bottom: 10px;*/
   box-shadow: 0 0 1em hsla(0,0%,0%,0.45);
   display: none;
 }
@@ -187,6 +186,27 @@
   background: url('../images/icons/login-icons.png') -10px -10px;
 }
 
+/**  花瓣背景 **/
+div.dot1, div.dot2, div.dot3 {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: rgba(241, 28, 42, .12);
+  position: absolute;
+  z-index: -1;
+}
+.dot1 {
+  bottom: -79%;
+  left: -46%;
+}
+.dot2 {
+  bottom: -79%;
+  left: -28%;
+}
+.dot3 {
+  bottom: -77%;
+  right: -57%;
+}
 /*** 拖动滑块验证  ***/
 #slider {
   margin: 0 auto;
@@ -286,8 +306,6 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  /*margin-left: -161px;*/
-  /*margin-top: -185px;*/
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
