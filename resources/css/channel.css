@@ -60,7 +60,7 @@ a:hover, a:active {
 }
 .nav>.container {
   min-width: 1200px;
-  /*max-width: 1920px;*/
+  max-width: 1920px;
   margin: 0 auto;
 }
 .nav>.container::after {
@@ -137,7 +137,7 @@ input::placeholder {
   position: relative;
   margin-top: -6px;
 }
-.icon-sousuo {
+.rt-nav li .icon-sousuo {
   cursor: pointer;
   font-size: 17px;
   color: #999;
@@ -147,22 +147,21 @@ input::placeholder {
   z-index: 102;
   margin-top: -11px;
 }
-.rt-nav li.wyzb {
-  padding: 5px 0;
+.rt-nav li.wyzb, .rt-nav li.zb-history, .rt-nav li.zb-follower, .rt-nav li.app-download {
+  padding: 6px 0 10px 0;
 }
-.rt-nav li.wyzb a {
+.rt-nav li.wyzb a, .rt-nav li.zb-history a, .rt-nav li.zb-follower a, .rt-nav li.app-download a {
   font-size: 13px;
-  margin: 0 10px;
   vertical-align: middle;
 }
-.icon-bofang4, .icon-shouji {
+.rt-nav li .icon-bofang4, .rt-nav li .icon-shouji, .rt-nav li .icon-lishijilu, .rt-nav li .icon-xihuan {
   font-size: 21px;
   color: #666;
   vertical-align: middle;
-  margin-right: 6px;
+  margin-right: 3px;
   transition: all .5s;
 }
-.rt-nav li.wyzb>a:hover .icon-bofang4, .rt-nav li.wyzb>a:hover .icon-shouji {
+.rt-nav li.wyzb>a:hover .icon-bofang4, .rt-nav li.app-download>a:hover .icon-shouji,.rt-nav li.zb-history>a:hover .icon-lishijilu, .rt-nav li.zb-follower>a:hover .icon-xihuan {
   color: #f11c2a;
 }
 .rt-nav .user-action>a {
@@ -205,7 +204,6 @@ input::placeholder {
 .nav .lt-nav>li, .nav .rt-nav>li {
   position: relative;
 }
-/* more ... 下拉列表 */
 .nav .has-dropdown {
   display: none;
   min-width: 150px;
@@ -240,12 +238,17 @@ input::placeholder {
   margin-left: -8px;
 }
 .nav li.more:hover .has-dropdown, .nav li.more:focus .has-dropdown,
-.nav li.user-action:hover .has-dropdown, .nav li.user-action:focus .has-dropdown {
+.nav li.user-action:hover .has-dropdown, .nav li.user-action:focus .has-dropdown,
+.nav li.zb-history:hover .has-dropdown, .nav li.zb-history:focus .has-dropdown,
+.nav li.zb-follower:hover .has-dropdown, .nav li.zb-follower:focus .has-dropdown,
+.nav li.app-download:hover .has-dropdown, .nav li.app-download:focus .has-dropdown {
   display: block;
 }
 .nav .has-dropdown>li {
   cursor: pointer;
 }
+
+/* more ... 下拉列表 */
 .nav li.more .has-dropdown>li>a {
   display: block;
   font-size: 14px;
@@ -435,6 +438,91 @@ input::placeholder {
 }
 .nav li.search .has-dropdown>li>a b.grey-bg {
   background: #999;
+}
+/*** 历史/关注/APP下载 下拉框 ***/
+.nav li.zb-history .has-dropdown,
+.nav li.zb-follower .has-dropdown {
+  max-width: 278px;
+  border: 1px solid #e1e1e1;
+  position: absolute;
+  top: 41px;
+  right: -105px;
+}
+.nav li.app-download .has-dropdown {
+  max-width: 120px;
+  min-height: 100%;
+  border: 1px solid #e1e1e1;
+  top: 41px;
+  right: -15px;
+}
+.nav li.zb-history .has-dropdown>li ,
+.nav li.zb-follower .has-dropdown>li {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 0;
+}
+.nav li.app-download .has-dropdown>li {
+  padding: 10px 0;
+  text-align: center;
+}
+.nav li.app-download .has-dropdown>li>a {
+  text-align: center;
+}
+.nav li.zb-history .has-dropdown>li:first-child,
+.nav li.zb-follower .has-dropdown>li:first-child {
+  padding-top: 0;
+}
+.nav li.zb-history .has-dropdown>li:last-child,
+.nav li.zb-follower .has-dropdown>li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.nav li.zb-history .has-dropdown>li>p,
+.nav li.zb-follower .has-dropdown>li>p {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  margin-top: -5px;
+}
+.nav li.zb-history .has-dropdown>li>p span,
+.nav li.zb-follower .has-dropdown>li>p span {
+  display: inline-block;
+}
+.nav li.zb-history .has-dropdown>li>p>span:first-child ,
+.nav li.zb-follower .has-dropdown>li>p>span:first-child {
+  max-width: 150px;
+  height: 18px;
+  line-height: 18px;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 5px 0;
+}
+.nav li.zb-history .has-dropdown>li>p>span:nth-child(2),
+.nav li.zb-history .has-dropdown>li>p:nth-child(2)>span:first-child,
+.nav li.zb-follower .has-dropdown>li>p>span:nth-child(2),
+.nav li.zb-follower .has-dropdown>li>p:nth-child(2)>span:first-child {
+  color: #999;
+  font-size: 13px;
+  vertical-align: middle;
+}
+.nav li.zb-history .has-dropdown>li>p:first-child>span:nth-child(2)>i,
+.nav li.zb-follower .has-dropdown>li>p:first-child>span:nth-child(2)>i {
+  background: #999;
+  color: #fff;
+  padding: 1px 5px;
+  font-size: 10px;
+  text-align: center;
+  border-radius: 3px;
+  font-style: normal;
+  margin-right: 3px;
 }
 
 /*  布局  */
