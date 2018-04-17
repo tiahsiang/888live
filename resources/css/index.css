@@ -133,7 +133,7 @@ input::placeholder {
 }
 .rt-nav li.search {
   position: relative;
-  margin-top: -6px;
+  margin-top: -2px;
 }
 .icon-sousuo {
   cursor: pointer;
@@ -1294,7 +1294,7 @@ a>.icon-usergroup {
   width: 100%;
   padding: 20px;
   background: #fff;
-  border: 1px solid #e0e0e0;
+  /*border: 1px solid #e0e0e0;*/
   margin-bottom: 16px;
 }
 .nav-items>li>.zhanghu {
@@ -1743,7 +1743,8 @@ a>.icon-usergroup {
   vertical-align: middle;
 }
 .sixin .sj-content .question {
-  max-width: 100%;
+  width: 100%;
+  margin: 10px 0;
   float: left;
   text-align: left;
   vertical-align: middle;
@@ -1791,7 +1792,7 @@ a>.icon-usergroup {
   max-width: 100%;
   float: right;
   text-align: right;
-  margin-top: 50px;
+  margin: 10px 0;
 }
 .sixin .sj-content .reply .talk-time {
   font-size: 12px;
