@@ -1821,10 +1821,14 @@ a>.icon-usergroup {
   right: -4px;
 }
 /* 系统消息 */
-.sixin .official-notice {
+.first-part .question {
+  max-width: 100%;
+  text-align: left;
+  float: left;
+}
+.first-part .official-notice {
   display: inline-block;
   text-align: center;
-  margin: 0 auto;
   vertical-align: middle;
   width: 40px;
   height: 40px;
@@ -1833,15 +1837,12 @@ a>.icon-usergroup {
   overflow: hidden;
   background: #f11c2a;
 }
-.sixin a.official-notice>.icon {
+.first-part a.official-notice>.icon {
   font-size: 24px;
   color: #fff;
   vertical-align: middle;
 }
-.sixin .sj-content .official-notice {
-  min-width: 40px;
-  min-height: 40px;
-}
+
 /* 直播间管理 */
 .zhibojianguanli .sj-content {
   padding: 20px;
