@@ -1722,6 +1722,92 @@ a>.icon-usergroup {
   padding: 20px;
   background: #ebebeb;
   border: 1px solid #e0e0e0;
+  position: relative;
+}
+
+/** 私信 发送消息框 **/
+.send-danmu {
+  width: 100%;
+  /*height: 130px;*/
+  background: #fff;
+  border-top: 1px solid #ddd;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.send-danmu>p:first-child {
+  display: block;
+  line-height: 36px;
+  text-align: left;
+  /*padding: 10px 0 0 0;*/
+}
+
+.send-danmu>p:first-child>a.colors {
+  background: transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+a.colors > .icon-colors {
+  display: inline-block;
+  background: url("../images/icons/colors.png") center center no-repeat;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  background-size: cover;
+}
+
+.send-danmu>p:first-child>a .icon {
+  font-size: 24px;
+  color: #888;
+}
+
+.send-danmu>p.input-danmu {
+  padding: 5px 10px 10px 10px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.send-danmu>p.input-danmu>input[type=text] {
+  width: 100%;
+  /*width: 284px;*/
+  height: 52px;
+  border: 1px solid #cdcdcd;
+  outline: none;
+  background: #fff;
+  color: #333;
+  font-size: 14px;
+  padding: 5px 5px 5px 10px;
+  text-align: left;
+  word-break-wrap: wrap;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.send-danmu .send-button {
+  display: inline-block;
+  width: 70px;
+  height: 52px;
+  line-height: 20px;
+  outline: none;
+  border: 1px solid #f11c2a;
+  background: #f11c2a;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #fff;
+  padding: 10px 8px;
+  font-size: 14px;
+  text-align: center;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+}
+.sixin .sj-content {
+  padding-bottom: 130px;
 }
 .sixin .sj-content>li {
   display:none;
@@ -1789,7 +1875,7 @@ a>.icon-usergroup {
   left: -5px;
 }
 .sixin .sj-content .reply {
-  max-width: 100%;
+  width: 100%;
   float: right;
   text-align: right;
   margin: 10px 0;
@@ -1801,6 +1887,7 @@ a>.icon-usergroup {
   margin-right: 10px;
 }
 .sixin .sj-content .reply .cvs-box {
+  float: right;
   background: #f11c2a;
   color: #fff;
 }
@@ -1821,12 +1908,12 @@ a>.icon-usergroup {
   right: -4px;
 }
 /* 系统消息 */
-.first-part .question {
+.system-message .question {
   max-width: 100%;
   text-align: left;
   float: left;
 }
-.first-part .official-notice {
+.system-message .official-notice {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
@@ -1837,7 +1924,7 @@ a>.icon-usergroup {
   overflow: hidden;
   background: #f11c2a;
 }
-.first-part a.official-notice>.icon {
+.system-message a.official-notice>.icon {
   font-size: 24px;
   color: #fff;
   vertical-align: middle;
