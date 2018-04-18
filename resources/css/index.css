@@ -1956,7 +1956,7 @@ a.colors > .icon-colors {
   text-align: left;
   float: left;
 }
-.system-message .official-notice {
+.official-notice {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
@@ -1967,12 +1967,12 @@ a.colors > .icon-colors {
   overflow: hidden;
   background: #f11c2a;
 }
-.system-message a.official-notice>.icon {
+.official-notice>.icon {
   font-size: 24px;
   color: #fff;
   vertical-align: middle;
 }
-.system-message .sj-content .official-notice {
+.sj-content .official-notice {
   min-width: 40px;
   min-height: 40px;
 }
