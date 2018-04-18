@@ -217,13 +217,27 @@
           <a href="#" target="_blank">更多>></a>
         </li>
         <li class="f1-img">
-          <img src="resources/images/banner/2014_1.jpg" alt="新闻图片">
+          <img src="resources/images/banner/2014_1.jpg" alt="新闻图片1">
+          <img src="resources/images/banner/2014_2.jpg" alt="新闻图片2">
+          <img src="resources/images/banner/2014_3.jpg" alt="新闻图片3">
+          <img src="resources/images/banner/2014_4.jpg" alt="新闻图片4">
+          <img src="resources/images/banner/2014_5.jpg" alt="新闻图片5">
+          <img src="resources/images/banner/2014_1.jpg" alt="新闻图片6">
+          <img src="resources/images/banner/2014_2.jpg" alt="新闻图片7">
         </li>
-        <li class="f1-list2">
-          <a class="active" href="#" target="_blank">[活动]LINK看直播，礼物奖金翻倍</a>
-          <a href="#" target="_blank">[招募]LINK看直播，礼物奖金翻倍，LINK看直播，礼物奖金翻倍，LINK看直播，礼物奖金翻倍</a>
-          <a href="#" target="_blank">[官方]LINK看直播，礼物奖金翻倍。</a>
-          <a href="#" target="_blank">[公告]LINK看直播，礼物奖金翻倍！</a>
+        <li class="f1-list2" id="scrollDiv">
+          <ul>
+            <li><a href="#" target="_blank">[活动]LINK看直播，礼物奖金翻倍</a></li>
+            <li><a href="#" target="_blank">[招募]LINK看直播，礼物奖金翻倍，LINK看直播，礼物奖金翻倍，LINK看直播，礼物奖金翻倍</a></li>
+            <li><a href="#" target="_blank">[官方]LINK看直播，礼物奖金翻倍。</a></li>
+            <li><a href="#" target="_blank">[招募]LINK看直播，礼物奖金翻倍，LINK看直播，礼物奖金翻倍，LINK看直播，礼物奖金翻倍</a></li>
+            <li><a href="#" target="_blank">[公告]LINK看直播，礼物奖金翻倍！</a></li>
+            <li><a href="#" target="_blank">[招募]LINK看直播，礼物奖金翻倍，LINK看直播，礼物奖金翻倍，LINK看直播，礼物奖金翻倍</a></li>
+            <li><a href="#" target="_blank">[公告]LINK看直播，礼物奖金翻倍！</a></li>
+            <li><a href="#" target="_blank">[招募]LINK看直播，礼物奖金翻倍，LINK看直播，礼物奖金翻倍，LINK看直播，礼物奖金翻倍</a></li>
+            <li><a href="#" target="_blank">[公告]LINK看直播，礼物奖金翻倍！</a></li>
+            <li><a href="#" target="_blank">[招募]LINK看直播，礼物奖金翻倍，LINK看直播，礼物奖金翻倍，LINK看直播，礼物奖金翻倍</a></li>
+          </ul>
         </li>
       </ul>
   </div>
@@ -869,6 +883,41 @@
 
 
 <script src="resources/js/jquery.min.js"></script>
+<!-- 首页 新闻轮播 JS -->
+<script src="resources/js/jq_scroll.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#scrollDiv").Scroll({line:1,speed:500,timer:3000,up:"but_up",down:"but_down"});
+  });
+</script>
+<script>
+  let $nsImg = $('.f1-img img');
+  let idx = $nsImg.index();
+  let n = 0;
+  $nsImg.hide().eq(0).show();
+
+  $('.f1-list2>ul li').click(function () {
+    n = $(this).index();
+    $('.f1-img img').fadeOut(500).eq(n).fadeIn(500);
+    $('.f1-list2>ul li').removeClass('active').eq(n).addClass('active');
+  })
+
+  function autoNews(){
+    timer = setInterval(function(){
+      if (n < $nsImg.length-1) {
+        n = n+1;
+      } else {
+        n = 0;
+      }
+      $nsImg.fadeOut(500).eq(n).fadeIn(500);
+      $(".f1-list2>ul li").removeClass("active").eq(n).addClass("active");
+    },3000);
+  }
+  autoNews();
+</script>
+
+
+<!-- 模态对话框 JS  -->
 <script src="resources/js/modal.js"></script>
 <!-- 支持不同视频格式 必须加载在Dplayer.min.js之前 -->
 <script src="resources/js/hls.min.js"></script>
@@ -876,6 +925,7 @@
 <script src="resources/js/webtorrent.min.js"></script>
 <!--支持不同视频格式 必须加载在Dplayer.min.js之前 -->
 <script src="resources/js/DPlayer.min.js"></script>
+
 
 <!-- 首页banner tab切换JS -->
 <script>
