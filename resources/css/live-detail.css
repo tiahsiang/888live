@@ -650,7 +650,7 @@ body {
 }
 
 .main-menu .ct-hidden {
-  height: 380px;
+  height: 230px;
   overflow-y: auto;
   overflow-scrolling: auto;
 }
