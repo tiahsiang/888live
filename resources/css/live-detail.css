@@ -540,7 +540,6 @@ body {
   margin-top: 70px;
 }
 .main-menu {
-  max-width:250px;
   min-height: 100vh;
   overflow: auto;
   background:#333;
@@ -632,8 +631,9 @@ body {
 }
 
 .main-menu>.menu-icon li.active>a {
-  background: #f11c2a;
-  color: #fff;
+  background: transparent;
+  color:#f11c2a;
+  border-left: 3px solid #f11c2a;
 }
 
 .main-menu>.menu-icon li:hover>a, .main-menu>.menu-icon li:focus>a {

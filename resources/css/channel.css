@@ -627,8 +627,8 @@ input::placeholder {
 }
 
 .main-menu>.menu-icon li.active>a {
-  background: #f11c2a;
-  color: #fff;
+  background: transparent;
+  color:#f11c2a;
   border-left: 3px solid #f11c2a;
 }
 
@@ -1949,13 +1949,7 @@ a.colors > .icon-colors {
   color: #888;
 }
 /*****  游戏详情页  *****/
-.main-panel .game-details, .main-panel .cash-details {
-  width: 100%;
-  margin: 0 auto;
-  background: #fff;
-}
-
-.game-details .details-brief, .cash-details .details-brief {
+.game-details .details-brief {
   min-height: 225px;
   background: #fff;
   display: flex;
@@ -1986,12 +1980,21 @@ a.colors > .icon-colors {
   color: #999;
   margin-right: 4px;
 }
-.details-brief>div>p.intro-txt {
-  padding: 15px 0;
+.game-details .details-brief>div>p.intro-txt {
+  padding: 15px 0 0 0;
   font-size: 14px;
   color: #333;
   text-indent: 24px;
   text-align: justify;
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+}
+.cash-details .details-brief>div>p.intro-txt {
+  width: 100%;
+  height: 60px;
+  max-height: 120px;
+  overflow: hidden;
 }
 .online-game {
   width: 100%;

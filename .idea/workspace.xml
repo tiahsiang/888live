@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="483207ae-0b50-481e-bfd0-3e7f048332dc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/message.html" afterPath="$PROJECT_DIR$/message.html" />
+      <change beforePath="$PROJECT_DIR$/resources/css/channel.css" afterPath="$PROJECT_DIR$/resources/css/channel.css" />
       <change beforePath="$PROJECT_DIR$/resources/css/live-detail.css" afterPath="$PROJECT_DIR$/resources/css/live-detail.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -27,21 +27,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="live-detail.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="live-detail.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/css/live-detail.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="2117" column="16" lean-forward="true" selection-start-line="2117" selection-start-column="16" selection-end-line="2117" selection-end-column="16" />
+            <state relative-caret-position="648">
+              <caret line="635" column="33" lean-forward="true" selection-start-line="635" selection-start-column="33" selection-end-line="635" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="message.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="message.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/message.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="125" column="103" lean-forward="true" selection-start-line="125" selection-start-column="103" selection-end-line="125" selection-end-column="103" />
+            <state relative-caret-position="357">
+              <caret line="157" column="29" lean-forward="true" selection-start-line="157" selection-start-column="29" selection-end-line="157" selection-end-column="29" />
               <folding>
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -197,8 +197,8 @@
       <file leaf-file-name="channel.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/css/channel.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="1969" column="24" lean-forward="true" selection-start-line="1969" selection-start-column="24" selection-end-line="1969" selection-end-column="24" />
+            <state relative-caret-position="530">
+              <caret line="632" column="1" lean-forward="true" selection-start-line="632" selection-start-column="1" selection-end-line="632" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -245,8 +245,8 @@
       <find>.online-g</find>
       <find>.online-game</find>
       <find>send-danmu</find>
-      <find>.online-game&gt;ul.video-list</find>
       <find>.v</find>
+      <find>.online-game&gt;ul.video-list</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -283,10 +283,10 @@
         <option value="$PROJECT_DIR$/live.html" />
         <option value="$PROJECT_DIR$/game-detail.html" />
         <option value="$PROJECT_DIR$/cash-detail.html" />
-        <option value="$PROJECT_DIR$/resources/css/channel.css" />
         <option value="$PROJECT_DIR$/live-detail.html" />
-        <option value="$PROJECT_DIR$/resources/css/live-detail.css" />
         <option value="$PROJECT_DIR$/message.html" />
+        <option value="$PROJECT_DIR$/resources/css/channel.css" />
+        <option value="$PROJECT_DIR$/resources/css/live-detail.css" />
       </list>
     </option>
   </component>
@@ -421,12 +421,12 @@
       <workItem from="1523588850961" duration="21840000" />
       <workItem from="1523841278691" duration="26267000" />
       <workItem from="1523928106464" duration="18428000" />
-      <workItem from="1524013517252" duration="41863000" />
+      <workItem from="1524013517252" duration="44022000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="513327000" />
+    <option name="totallyTimeSpent" value="515486000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -864,14 +864,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/css/channel.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="1969" column="24" lean-forward="true" selection-start-line="1969" selection-start-column="24" selection-end-line="1969" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/live-detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="548">
@@ -952,18 +944,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/css/live-detail.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="2117" column="16" lean-forward="true" selection-start-line="2117" selection-start-column="16" selection-end-line="2117" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/message.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="125" column="103" lean-forward="true" selection-start-line="125" selection-start-column="103" selection-end-line="125" selection-end-column="103" />
+        <state relative-caret-position="357">
+          <caret line="157" column="29" lean-forward="true" selection-start-line="157" selection-start-column="29" selection-end-line="157" selection-end-column="29" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1006,6 +990,22 @@
             <element signature="n#li#3;n#ul#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#0;n#ul#1;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/channel.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="632" column="1" lean-forward="true" selection-start-line="632" selection-start-column="1" selection-end-line="632" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/live-detail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="635" column="33" lean-forward="true" selection-start-line="635" selection-start-column="33" selection-end-line="635" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
