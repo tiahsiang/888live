@@ -649,7 +649,29 @@ body {
   width:190px;
 }
 
-.main-menu>.hot {
+.main-menu .ct-hidden {
+  height: 380px;
+  overflow-y: auto;
+  overflow-scrolling: auto;
+}
+
+.main-menu>.ct-hidden::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 20px;
+  background-color: #222;
+}
+.main-menu>.ct-hidden::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.15);
+  background-color: #666;
+}
+.main-menu>.ct-hidden::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.15);
+  border-radius: 20px;
+  background-color: #222;
+}
+
+.main-menu .hot {
   opacity: 1;
   width: 240px;
   display: flex;
@@ -661,7 +683,7 @@ body {
   position: relative;
 }
 
-.main-menu>.games::before {
+.main-menu .games::before {
   content: '热门游戏';
   display: inline-block;
   position: absolute;
@@ -671,7 +693,7 @@ body {
   color: #888;
 }
 
-.main-menu>.cashs::before {
+.main-menu .cashs::before {
   content: '热门现金网';
   display: inline-block;
   position: absolute;
@@ -681,13 +703,13 @@ body {
   color: #888;
 }
 
-.main-menu>.hot li {
+.main-menu .hot li {
   display: inline-block;
   margin: 0 0 10px 0;
   text-align: center;
 }
 
-.main-menu>.hot li>a {
+.main-menu .hot li>a {
   display: block;
   text-align: center;
   width: 96px;
@@ -701,7 +723,7 @@ body {
   text-decoration: none;
 }
 
-.main-menu>.hot li>a:hover, .main-menu>.hot li>a:focus {
+.main-menu .hot li>a:hover, .main-menu .hot li>a:focus {
   color: #fff;
 }
 
