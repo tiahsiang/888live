@@ -532,6 +532,14 @@ input::placeholder {
   color: #333;
   cursor: pointer;
 }
+@media screen and (max-width: 1280px) {
+  .nav>.container {
+    padding: 0;
+  }
+  .nav a.logo {
+    margin-right: 25px;
+  }
+}
 @media screen and (max-width: 1200px) {
   .nav>.container {
     padding: 0;
