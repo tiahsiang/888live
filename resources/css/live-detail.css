@@ -2109,6 +2109,25 @@ a.colors > .icon-colors {
     max-width: 150px;
     margin-right: 10px;
   }
+  .gifts-list .has-dropdown {
+    border: 1px solid #e0e0e0;
+  }
+  .gifts-list .gift1 .has-dropdown,
+  .gifts-list .gift2 .has-dropdown,
+  .gifts-list .gift3 .has-dropdown {
+    left: -20px;
+  }
+  .gifts-list .gift1 .has-dropdown:after,
+  .gifts-list .gift2 .has-dropdown:after,
+  .gifts-list .gift3 .has-dropdown:after {
+    left: 10%;
+  }
+  .gifts-list .gift4 .has-dropdown {
+    left: -130px;
+  }
+  .gifts-list .gift4 .has-dropdown:after {
+    left: 33%;
+  }
 }
 @media screen and (max-width: 1280px) {
   .nav>.container {
