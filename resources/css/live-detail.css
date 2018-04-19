@@ -58,7 +58,7 @@ a:hover, a:active {
 }
 .nav>.container {
   max-width: 1920px;
-  padding: 0 5%;
+  padding: 0 30px;
   margin: 0 auto;
 }
 .nav>.container::after {
@@ -245,7 +245,6 @@ input::placeholder {
 .nav .has-dropdown>li {
   cursor: pointer;
 }
-
 /* more ... 下拉列表 */
 .nav li.more .has-dropdown>li>a {
   display: block;
@@ -522,6 +521,60 @@ input::placeholder {
   font-style: normal;
   margin-right: 3px;
 }
+
+#sideMenu {
+  display: none;
+  float: right;
+  margin: 15px 0;
+}
+#sideMenu .icon {
+  font-size: 26px;
+  color: #333;
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .nav>.container {
+    padding: 0;
+  }
+  .nav a.logo {
+    margin-right: 25px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .nav>.container {
+    padding: 0 15px;
+  }
+  .nav a.logo {
+    margin-right: 30px;
+  }
+  .rt-nav>li {
+    margin-left: 15px;
+  }
+  .rt-nav .zb-history, .rt-nav .zb-follower, .rt-nav .app-download {
+    display: none;
+  }
+}
+@media screen and (max-width: 975px) {
+  .nav .rt-nav {
+    display: none;
+  }
+  .nav #sideMenu {
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .nav .lt-nav {
+    display: none;
+  }
+  .nav .rt-nav {
+    display: none;
+  }
+  .nav #sideMenu {
+    display: block;
+  }
+}
+
+
 
 /***************************** 直播间详情 界面样式 *******************************/
 /*  三栏布局  */

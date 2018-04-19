@@ -1783,7 +1783,6 @@ a>.icon-usergroup {
   display: block;
   line-height: 36px;
   text-align: left;
-  /*padding: 10px 0 0 0;*/
 }
 
 .send-danmu>p:first-child>a.colors {
@@ -1816,7 +1815,6 @@ a.colors > .icon-colors {
 
 .send-danmu>p.input-danmu>input[type=text] {
   width: 100%;
-  /*width: 284px;*/
   height: 52px;
   border: 1px solid #cdcdcd;
   outline: none;
