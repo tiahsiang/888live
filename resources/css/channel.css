@@ -251,11 +251,15 @@ input::placeholder {
   float: right;
   margin: 15px 0;
 }
+#sideMenu>a {
+  display: block;
+}
 #sideMenu .icon {
   font-size: 26px;
   color: #333;
   cursor: pointer;
 }
+
 @media screen and (max-width: 1200px) {
   .nav>.container {
     padding: 0;
