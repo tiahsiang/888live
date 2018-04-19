@@ -1971,6 +1971,7 @@ a.colors > .icon-colors {
   padding-left: 16px;
 }
 .details-brief>div>h2 {
+  text-align: left;
   font-size: 22px;
   color: #333;
 }
