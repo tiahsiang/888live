@@ -14,15 +14,80 @@
   <link rel="stylesheet" href="resources/css/modal.css">
 
   <style>
-    #sideMenu {
-      display: none;
-      float: right;
-      margin: 15px 0;
+    .online-game {
+      width: 100%;
+      margin: 0 auto;
     }
-    #sideMenu .icon {
-      font-size: 26px;
-      color: #333;
+    .online-game>ul.video-list {
+      padding: 0;
+      list-style: none;
+      display: flex;
+      display: -webkit-flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-right: -16px;
+    }
+    .online-game>ul.video-list>li {
+      width: 24%;
+      min-height: 264px;
       cursor: pointer;
+      margin: 0 16px 20px 0;
+      background: #fff;
+      border: 1px solid #e0e0e0;
+    }
+    .online-game>ul.video-list>li>a {
+      display: block;
+      width: 100%;
+      height: 176px;
+      overflow: hidden;
+      text-align: center;
+      vertical-align: middle;
+    }
+    .online-game>ul.video-list>li>a img {
+      width: 100%;
+      height: 100%;
+      vertical-align: middle;
+    }
+    .main {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .main-menu {
+      width: 250px;
+      min-height: 100vh;
+      background: #292929;
+      float: left;
+    }
+    .main-panel {
+      min-height: 100vh;
+      margin-left: 250px;
+    }
+    @media screen and (max-width: 1440px) {
+      .main-panel .online-game .video-list>li {
+        width: 275px;
+      }
+      .online-game .f2-cover>span {
+        max-width: 150px;
+      }
+      .online-game .f2-view b.name2 {
+        max-width: 80px;
+        margin-left: 0;
+        margin-right: 4px;
+      }
+    }
+    @media screen and (max-width: 1366px) {
+      .main-panel .online-game .video-list>li {
+        width: 257px;
+      }
+      .online-game .f2-cover>span {
+        max-width: 136px;
+      }
+      .online-game .f2-view b.name2 {
+        max-width: 65px;
+        margin-left: 0;
+        margin-right: 4px;
+      }
     }
     @media screen and (max-width: 1280px) {
       .nav>.container {
@@ -30,6 +95,20 @@
       }
       .nav a.logo {
         margin-right: 25px;
+      }
+    }
+    @media screen and (max-width: 1265px) {
+
+      .main-panel .online-game .video-list>li {
+        width: 312px;
+      }
+      .online-game .f2-cover>span {
+        max-width: 136px;
+      }
+      .online-game .f2-view b.name2 {
+        max-width: 65px;
+        margin-left: 0;
+        margin-right: 4px;
       }
     }
     @media screen and (max-width: 1200px) {
@@ -53,6 +132,9 @@
       .rt-nav .zb-history, .rt-nav .zb-follower, .rt-nav .app-download {
         display: none;
       }
+      .main-panel .online-game .video-list>li {
+        width: 356px;
+      }
     }
     @media screen and (max-width: 975px) {
       .nav .rt-nav {
@@ -73,6 +155,7 @@
         display: block;
       }
     }
+
 
 
   </style>
@@ -239,6 +322,7 @@
   </div>
 </nav>
 <div class="layout">
+
   <div class="main">
     <!-- left 伸缩导航条 -->
     <section class="main-menu">
@@ -354,7 +438,7 @@
       </div>
     </section>
     <!-- main 主内容区-->
-    <section class="main-panel" style="margin-top: -32px;">
+    <section class="main-panel" style="margin-top: 32px;">
       <div class="container">
         <!-- 最新直播 -->
         <div class="online-game">

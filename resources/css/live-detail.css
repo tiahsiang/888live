@@ -522,68 +522,6 @@ input::placeholder {
   margin-right: 3px;
 }
 
-#sideMenu {
-  display: none;
-  float: right;
-  margin: 15px 0;
-}
-#sideMenu .icon {
-  font-size: 26px;
-  color: #333;
-  cursor: pointer;
-}
-@media screen and (max-width: 1280px) {
-  .nav>.container {
-    padding: 0;
-  }
-  .nav a.logo {
-    margin-right: 25px;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .nav>.container {
-    padding: 0;
-  }
-  .nav a.logo {
-    margin-right: 25px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .nav>.container {
-    padding: 0 15px;
-  }
-  .nav a.logo {
-    margin-right: 30px;
-  }
-  .rt-nav>li {
-    margin-left: 15px;
-  }
-  .rt-nav .zb-history, .rt-nav .zb-follower, .rt-nav .app-download {
-    display: none;
-  }
-}
-@media screen and (max-width: 975px) {
-  .nav .rt-nav {
-    display: none;
-  }
-  .nav #sideMenu {
-    display: block;
-  }
-}
-@media screen and (max-width: 600px) {
-  .nav .lt-nav {
-    display: none;
-  }
-  .nav .rt-nav {
-    display: none;
-  }
-  .nav #sideMenu {
-    display: block;
-  }
-}
-
-
-
 /***************************** 直播间详情 界面样式 *******************************/
 /*  三栏布局  */
 .layout:after {
@@ -618,9 +556,6 @@ body {
   overflow: hidden;
   border: 1px solid #e0e0e0;
   float: right;
-  /*position: fixed;*/
-  /*top: 56px;*/
-  /*right: 0;*/
 }
 .main-panel {
   min-height: 100vh;
@@ -2136,4 +2071,120 @@ a.colors > .icon-colors {
   font-weight: bold;
   text-align: center;
   margin-right: 5px;
+}
+
+/****  Tia补充： 本页响应样式 仅用于导航条+直播间详情页 *****/
+#sideMenu {
+  display: none;
+  float: right;
+  margin: 15px 0;
+}
+
+#sideMenu .icon {
+  font-size: 26px;
+  color: #333;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1440px) {
+  .main-panel .zb-floor3 .video-about>ul>li {
+    width: 380px;
+  }
+  .main-panel .zb-floor3 .video-about a.name2 {
+    max-width: 256px;
+  }
+  .video-about .f2-view .name3 {
+    max-width: 180px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .main-panel .zb-floor3 .video-about>ul>li {
+    width: 346px;
+  }
+  .main-panel .zb-floor3 .video-about a.name2 {
+    max-width: 240px;
+  }
+  .video-about .f2-view .name3 {
+    max-width: 150px;
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .nav>.container {
+    padding: 0;
+  }
+  .nav a.logo {
+    margin-right: 25px;
+  }
+}
+@media screen and (max-width: 1265px) {
+  .main-panel .zb-floor3 .video-about>ul>li {
+    width: 296px;
+  }
+  .main-panel .zb-floor3 .video-about a.name2 {
+    max-width: 240px;
+  }
+  .video-about .f2-view .name3 {
+    max-width: 100px;
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .nav>.container {
+    padding: 0;
+  }
+  .nav a.logo {
+    margin-right: 25px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .nav>.container {
+    padding: 0 15px;
+  }
+  .nav a.logo {
+    margin-right: 25px;
+  }
+  .rt-nav>li {
+    margin-left: 15px;
+  }
+  .rt-nav .zb-history, .rt-nav .zb-follower, .rt-nav .app-download {
+    display: none;
+  }
+  .main-panel .zb-floor3 .video-about>ul>li {
+    width: 356px;
+  }
+  .main-panel .zb-floor3 .video-about a.name2 {
+    width: 100%;
+  }
+  .video-about .f2-view .name3 {
+    max-width: 162px;
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 975px) {
+  .nav .rt-nav {
+    display: none;
+  }
+  .nav #sideMenu {
+    display: block;
+  }
+  .main-panel .zb-floor3 .video-about a.name2 {
+    width: 100%;
+  }
+  .video-about .f2-view .name3 {
+    max-width: 124px;
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .nav .lt-nav {
+    display: none;
+  }
+  .nav .rt-nav {
+    display: none;
+  }
+  .nav #sideMenu {
+    display: block;
+  }
 }
