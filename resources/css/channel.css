@@ -645,7 +645,7 @@ input::placeholder {
   width: 190px;
 }
 .main-menu .ct-hidden {
-  height: 380px;
+  height: 230px;
   overflow-y: auto;
   overflow-scrolling: auto;
 }
@@ -2366,8 +2366,7 @@ a.colors > .icon-colors {
     margin-right: 25px;
   }
 }
-@media screen and (max-width: 1265px) {
-
+@media screen and (width: 1265px) {
   .main-panel .online-game .video-list>li {
     width: 312px;
   }
