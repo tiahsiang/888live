@@ -2159,7 +2159,7 @@ a.colors > .icon-colors {
     margin-right: 25px;
   }
 }
-@media screen and (width: 1265px) {
+@media screen and (max-width: 1265px) {
   .main-panel .zb-floor3 .video-about>ul>li {
     width: 294px;
   }

@@ -14,147 +14,7 @@
   <link rel="stylesheet" href="resources/css/modal.css">
 
   <style>
-    .online-game {
-      width: 100%;
-      margin: 0 auto;
-    }
-    .online-game>ul.video-list {
-      padding: 0;
-      list-style: none;
-      display: flex;
-      display: -webkit-flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      align-items: flex-start;
-      margin-right: -16px;
-    }
-    .online-game>ul.video-list>li {
-      width: 24%;
-      min-height: 264px;
-      cursor: pointer;
-      margin: 0 16px 20px 0;
-      background: #fff;
-      border: 1px solid #e0e0e0;
-    }
-    .online-game>ul.video-list>li>a {
-      display: block;
-      width: 100%;
-      height: 176px;
-      overflow: hidden;
-      text-align: center;
-      vertical-align: middle;
-    }
-    .online-game>ul.video-list>li>a img {
-      width: 100%;
-      height: 100%;
-      vertical-align: middle;
-    }
-    .main {
-      width: 100%;
-      margin: 0 auto;
-    }
-    .main-menu {
-      width: 250px;
-      min-height: 100vh;
-      background: #292929;
-      float: left;
-    }
-    .main-panel {
-      min-height: 100vh;
-      margin-left: 250px;
-    }
-    @media screen and (max-width: 1440px) {
-      .main-panel .online-game .video-list>li {
-        width: 275px;
-      }
-      .online-game .f2-cover>span {
-        max-width: 150px;
-      }
-      .online-game .f2-view b.name2 {
-        max-width: 80px;
-        margin-left: 0;
-        margin-right: 4px;
-      }
-    }
-    @media screen and (max-width: 1366px) {
-      .main-panel .online-game .video-list>li {
-        width: 257px;
-      }
-      .online-game .f2-cover>span {
-        max-width: 136px;
-      }
-      .online-game .f2-view b.name2 {
-        max-width: 65px;
-        margin-left: 0;
-        margin-right: 4px;
-      }
-    }
-    @media screen and (max-width: 1280px) {
-      .nav>.container {
-        padding: 0;
-      }
-      .nav a.logo {
-        margin-right: 25px;
-      }
-    }
-    @media screen and (max-width: 1265px) {
 
-      .main-panel .online-game .video-list>li {
-        width: 312px;
-      }
-      .online-game .f2-cover>span {
-        max-width: 136px;
-      }
-      .online-game .f2-view b.name2 {
-        max-width: 65px;
-        margin-left: 0;
-        margin-right: 4px;
-      }
-    }
-    @media screen and (max-width: 1200px) {
-      .nav>.container {
-        padding: 0;
-      }
-      .nav a.logo {
-        margin-right: 25px;
-      }
-    }
-    @media screen and (max-width: 1024px) {
-      .nav>.container {
-        padding: 0 15px;
-      }
-      .nav a.logo {
-        margin-right: 25px;
-      }
-      .rt-nav>li {
-        margin-left: 15px;
-      }
-      .rt-nav .zb-history, .rt-nav .zb-follower, .rt-nav .app-download {
-        display: none;
-      }
-      .main-panel .online-game .video-list>li {
-        width: 356px;
-      }
-    }
-    @media screen and (max-width: 975px) {
-      .nav .rt-nav {
-        display: none;
-      }
-      .nav #sideMenu {
-        display: block;
-      }
-    }
-    @media screen and (max-width: 600px) {
-      .nav .lt-nav {
-        display: none;
-      }
-      .nav .rt-nav {
-        display: none;
-      }
-      .nav #sideMenu {
-        display: block;
-      }
-    }
 
 
 
@@ -440,251 +300,498 @@
       </div>
     </section>
     <!-- main 主内容区-->
-    <section class="main-panel" style="margin-top: 32px;">
+    <section class="main-panel">
       <div class="container">
-        <!-- 最新直播 -->
-        <div class="online-game">
-          <h2>最新<b style="color: #f11c2a;font-style: normal;">直播</b></h2>
-          <ul class="video-list">
-            <li>
-              <a href="live-detail.html"><img src="./resources/images/yongxin.jpg" alt="1"></a>
-              <p class="f2-cover">
-                <span>不吃10鸡不下播今晚爆肝MT2,不吃10鸡不下播今晚爆肝MT2,不吃10鸡不下播今晚爆肝MT2不吃10鸡不下播今晚爆肝MT2</span>
-                <a href="#"><i class="icon icon-usergroup"></i>1293</a>
-              </p>
-              <p class="f2-view">
-                <a class="avatar">
-                  <img src="./resources/images/favicon.png" alt="">
-                </a>
-                <b class="name2">一只受伤的小番茄在做直播哈哈哈哈</b>
-                <a class="label">
-                  <span>北京赛车</span>
-                  <span>电竞直播</span>
-                </a>
-              </p>
-            </li>
-            <li>
-              <a href="live-detail.html"><img src="./resources/images/zhudong.jpg" alt="5"></a>
-              <p class="f2-cover">
-                <span>今晚爆肝MT2今晚爆肝MT2今晚爆肝MT2今晚爆肝MT2不吃10鸡不下播今晚爆肝MT2,不吃10鸡不下播今晚爆肝MT2</span>
-                <a href="#"><i class="icon icon-usergroup"></i>1293</a>
-              </p>
-              <p class="f2-view">
-                <a class="avatar">
-                  <img src="./resources/images/favicon.png" alt="">
-                </a>
-                <b class="name2">小番茄</b>
-                <a class="label">
-                  <span>北京赛车</span>
-                  <span>电竞直播</span>
-                </a>
-              </p>
-            </li>
-            <li>
-              <a href="live-detail.html"><img src="./resources/images/zhixingli.jpg" alt="5"></a>
-              <p class="f2-cover">
-                <span>是老虎机不是老虎不吃10鸡不下播今晚爆肝MT2,不吃10鸡不下播今晚爆肝MT2,不吃10鸡不下播今晚爆肝MT2不吃10鸡不下播今晚爆肝MT2</span>
-                <a href="#"><i class="icon icon-usergroup"></i>1234567890</a>
-              </p>
-              <p class="f2-view">
-                <a class="avatar">
-                  <img src="./resources/images/favicon.png" alt="">
-                </a>
-                <b class="name2">今晚爆肝</b>
-                <a class="label">
-                  <span>北京赛车</span>
-                  <span>电竞直播</span>
-                </a>
-              </p>
-            </li>
-            <li>
-              <a href="live-detail.html"><img src="./resources/images/zunzhong.jpg" alt="5"></a>
-              <p class="f2-cover">
-                <span>是老虎机不是老虎</span>
-                <a href="#"><i class="icon icon-usergroup"></i>1293</a>
-              </p>
-              <p class="f2-view">
-                <a class="avatar">
-                  <img src="./resources/images/favicon.png" alt="">
-                </a>
-                <b class="name2">小番茄在直播啦</b>
-                <a class="label">
-                  <span>北京赛车</span>
-                  <span>电竞直播</span>
-                </a>
-              </p>
-            </li>
-            <li>
-              <a href="live-detail.html"><img src="./resources/images/zhencheng.jpg" alt="5"></a>
-              <p class="f2-cover">
-                <span>是老虎机不是老虎</span>
-                <a href="#"><i class="icon icon-usergroup"></i>1293</a>
-              </p>
-              <p class="f2-view">
-                <a class="avatar">
-                  <img src="./resources/images/favicon.png" alt="">
-                </a>
-                <b class="name2">一只小番茄MT2</b>
-                <a class="label">
-                  <span>北京赛车</span>
-                  <span>电竞直播</span>
-                </a>
-              </p>
-            </li>
+        <div class="search-wrapper">
+          <ul class="search-tabs">
+            <li class="active">综合</li>
+            <li>直播</li>
+            <li>主播</li>
           </ul>
-        </div>
-        <!-- 实况直播 -->
-        <div class="online-game">
-          <div class="live-title">
-            <h2>
-              实况<b style="color: #f11c2a;font-style: normal;">直播</b>
-              <a href="#">北京赛车</a>
-              <a href="#">北京赛车</a>
-              <a href="#">北京赛车</a>
-              <a href="#">北京赛车</a>
-              <a href="#">北京赛车</a>
-            </h2>
-            <p>
-              <a href="game.html">更多游戏 > </a>
-              <a href="#" style="background: #f11c2a; color: #fff;">更多平台 > </a>
-            </p>
-          </div>
-          <ul class="video-list">
-            <li>
-              <a href="live-detail.html"><img src="./resources/images/yongxin.jpg" alt="1"></a>
-              <p class="f2-cover">
-                <span>不吃10鸡不下播今晚爆肝MT2,不吃10鸡不下播今晚爆肝MT2,不吃10鸡不下播今晚爆肝MT2不吃10鸡不下播今晚爆肝MT2</span>
-                <a href="#"><i class="icon icon-usergroup"></i>1293</a>
-              </p>
-              <p class="f2-view">
-                <a class="avatar">
-                  <img src="./resources/images/favicon.png" alt="">
-                </a>
-                <b class="name2">一只受伤的小番茄在做直播哈哈哈哈</b>
-                <a class="label">
-                  <span>北京赛车</span>
-                  <span>电竞直播</span>
-                </a>
-              </p>
+          <ul class="search-content">
+            <li class="active">
+              <!-- 相关主播 -->
+              <div class="online-game">
+                <div class="live-title">
+                  <h2>相关<b style="color: #f11c2a;font-style: normal;">主播</b></h2>
+                  <a href="#" target="_blank">更多></a>
+                </div>
+                <ul class="anchor-list">
+                  <li>
+                    <div class="left">
+                      <a class="avatar" href="#"><img src="./resources/images/avatar.png" alt=""></a>
+                      <a href="" class="qianyue-label"><i class="icon icon-yuyin"></i>签约主播</a>
+                    </div>
+                    <div class="right">
+                      <h2><a href="">一只受伤的小番茄正在做直播哈哈哈</a></h2>
+                      <a class="online-btn" href=""><i class="icon icon-shipin1"></i>正在直播</a>
+                      <p>
+                        <a href="" class="gz-btn">加关注</a>
+                        <a href="" class="gz-btn">私信</a>
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="left">
+                      <a class="avatar" href=""><img src="./resources/images/avatar.png" alt=""></a>
+                    </div>
+                    <div class="right">
+                      <h2><a href="">一只受伤的小番茄正在做直播哈哈哈</a></h2>
+                      <a class="online-btn" href=""><i class="icon icon-shipin1"></i>正在直播</a>
+                      <p>
+                        <a href="" class="gz-btn">加关注</a>
+                        <a href="" class="gz-btn">私信</a>
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="left">
+                      <a class="avatar" href=""><img src="./resources/images/avatar.png" alt=""></a>
+                    </div>
+                    <div class="right">
+                      <h2><a href="">一只受伤的小番茄正在做直播哈哈哈</a></h2>
+                      <p>
+                        <span style="font-size: 14px;color: #f11c2a; text-align: left;"> <b style="margin-right: 3px;">0</b>关注 </span>
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="left">
+                      <a class="avatar" href=""><img src="./resources/images/avatar.png" alt=""></a>
+                    </div>
+                    <div class="right">
+                      <h2><a href="">一只受伤的小番茄正在做直播哈哈哈</a></h2>
+                      <p>
+                        <span style="font-size: 14px;color: #f11c2a; text-align: left;"> <b style="margin-right: 3px;">0</b>关注 </span>
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="left">
+                      <a class="avatar" href=""><img src="./resources/images/avatar.png" alt=""></a>
+                    </div>
+                    <div class="right">
+                      <h2><a href="">一只受伤的小番茄正在做直播哈哈哈</a></h2>
+                      <p>
+                        <span style="font-size: 14px;color: #f11c2a; text-align: left;"> <b style="margin-right: 3px;">0</b>关注 </span>
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="left">
+                      <a class="avatar" href=""><img src="./resources/images/avatar.png" alt=""></a>
+                    </div>
+                    <div class="right">
+                      <h2><a href="">一只受伤的小番茄正在做直播哈哈哈</a></h2>
+                      <a class="online-btn" href=""><i class="icon icon-shipin1"></i>正在直播</a>
+                      <p>
+                        <a href="" class="gz-btn" style="background: #e0e0e0;">已关注</a>
+                        <a href="" class="gz-btn">私信</a>
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="left">
+                      <a class="avatar" href="#"><img src="./resources/images/avatar.png" alt=""></a>
+                      <a href="" class="qianyue-label"><i class="icon icon-yuyin"></i>签约主播</a>
+                    </div>
+                    <div class="right">
+                      <h2><a href="">一只受伤的小番茄正在做直播哈哈哈</a></h2>
+                      <p>
+                        <span style="font-size: 14px;color: #f11c2a; text-align: left;"> <b style="margin-right: 3px;">123456</b>关注 </span>
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- 相关直播 -->
+              <div class="online-game">
+                <div class="live-title">
+                  <h2>相关<b style="color: #f11c2a;font-style: normal;">直播</b></h2>
+                  <a href="#" target="_blank">更多></a>
+                </div>
+                <ul class="video-list">
+                  <li>
+                    <a href="live-detail.html"><img src="./resources/images/game1.jpg" alt="1"></a>
+                    <p class="f2-cover">
+                      <span>不吃10鸡不下播今晚爆肝MT2,不吃10鸡不下播今晚爆肝MT2,不吃10鸡不下播今晚爆肝MT2不吃10鸡不下播今晚爆肝MT2</span>
+                      <a href="#"><i class="icon icon-usergroup"></i>1293</a>
+                    </p>
+                    <p class="f2-view">
+                      <a class="avatar">
+                        <img src="./resources/images/favicon.png" alt="">
+                      </a>
+                      <b class="name2">一只受伤的小番茄在做直播哈哈哈哈</b>
+                      <a class="label">
+                        <span>北京赛车</span>
+                        <span>电竞直播</span>
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <a href="live-detail.html"><img src="./resources/images/game1.jpg" alt="5"></a>
+                    <p class="f2-cover">
+                      <span>今晚爆肝MT2今晚爆肝MT2今晚爆肝MT2今晚爆肝MT2不吃10鸡不下播今晚爆肝MT2,不吃10鸡不下播今晚爆肝MT2</span>
+                      <a href="#"><i class="icon icon-usergroup"></i>1293</a>
+                    </p>
+                    <p class="f2-view">
+                      <a class="avatar">
+                        <img src="./resources/images/favicon.png" alt="">
+                      </a>
+                      <b class="name2">小番茄</b>
+                      <a class="label">
+                        <span>北京赛车</span>
+                        <span>电竞直播</span>
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <a href="live-detail.html"><img src="./resources/images/game1.jpg" alt="5"></a>
+                    <p class="f2-cover">
+                      <span>是老虎机不是老虎不吃10鸡不下播今晚爆肝MT2,不吃10鸡不下播今晚爆肝MT2,不吃10鸡不下播今晚爆肝MT2不吃10鸡不下播今晚爆肝MT2</span>
+                      <a href="#"><i class="icon icon-usergroup"></i>1234567890</a>
+                    </p>
+                    <p class="f2-view">
+                      <a class="avatar">
+                        <img src="./resources/images/favicon.png" alt="">
+                      </a>
+                      <b class="name2">今晚爆肝</b>
+                      <a class="label">
+                        <span>北京赛车</span>
+                        <span>电竞直播</span>
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <a href="live-detail.html"><img src="./resources/images/game1.jpg" alt="5"></a>
+                    <p class="f2-cover">
+                      <span>是老虎机不是老虎</span>
+                      <a href="#"><i class="icon icon-usergroup"></i>1293</a>
+                    </p>
+                    <p class="f2-view">
+                      <a class="avatar">
+                        <img src="./resources/images/favicon.png" alt="">
+                      </a>
+                      <b class="name2">小番茄在直播啦</b>
+                      <a class="label">
+                        <span>北京赛车</span>
+                        <span>电竞直播</span>
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <a href="live-detail.html"><img src="./resources/images/game1.jpg" alt="5"></a>
+                    <p class="f2-cover">
+                      <span>是老虎机不是老虎</span>
+                      <a href="#"><i class="icon icon-usergroup"></i>1293</a>
+                    </p>
+                    <p class="f2-view">
+                      <a class="avatar">
+                        <img src="./resources/images/favicon.png" alt="">
+                      </a>
+                      <b class="name2">一只小番茄MT2</b>
+                      <a class="label">
+                        <span>北京赛车</span>
+                        <span>电竞直播</span>
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <a href="live-detail.html"><img src="./resources/images/game1.jpg" alt="5"></a>
+                    <p class="f2-cover">
+                      <span>说吧说吧说吧说吧说吧说吧</span>
+                      <a href="#"><i class="icon icon-usergroup"></i>1293</a>
+                    </p>
+                    <p class="f2-view">
+                      <a class="avatar">
+                        <img src="./resources/images/favicon.png" alt="">
+                      </a>
+                      <b class="name2">一只受伤的小番茄</b>
+                      <a class="label">
+                        <span>北京赛车</span>
+                        <span>电竞直播</span>
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <a href="live-detail.html"><img src="./resources/images/game1.jpg" alt="5"></a>
+                    <p class="f2-cover">
+                      <span>老虎机</span>
+                      <a href="#"><i class="icon icon-usergroup"></i>1293</a>
+                    </p>
+                    <p class="f2-view">
+                      <a class="avatar">
+                        <img src="./resources/images/favicon.png" alt="">
+                      </a>
+                      <b class="name2">你就直说吧要不要我喊我哥来揍你一顿哼哼</b>
+                      <a class="label">
+                        <span>北京赛车</span>
+                        <span>电竞直播</span>
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <a href="live-detail.html"><img src="./resources/images/game1.jpg" alt="5"></a>
+                    <p class="f2-cover">
+                      <span>今晚爆肝</span>
+                      <a href="#"><i class="icon icon-usergroup"></i>1293</a>
+                    </p>
+                    <p class="f2-view">
+                      <a class="avatar">
+                        <img src="./resources/images/favicon.png" alt="">
+                      </a>
+                      <b class="name2">一只受伤的小番茄</b>
+                      <a class="label">
+                        <span>北京赛车</span>
+                        <span>电竞直播</span>
+                      </a>
+                    </p>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li>
-              <a href="live-detail.html"><img src="./resources/images/zhudong.jpg" alt="5"></a>
-              <p class="f2-cover">
-                <span>今晚爆肝MT2今晚爆肝MT2今晚爆肝MT2今晚爆肝MT2不吃10鸡不下播今晚爆肝MT2,不吃10鸡不下播今晚爆肝MT2</span>
-                <a href="#"><i class="icon icon-usergroup"></i>1293</a>
-              </p>
-              <p class="f2-view">
-                <a class="avatar">
-                  <img src="./resources/images/favicon.png" alt="">
-                </a>
-                <b class="name2">小番茄</b>
-                <a class="label">
-                  <span>北京赛车</span>
-                  <span>电竞直播</span>
-                </a>
-              </p>
+              <!-- 相关直播 -->
+              <div class="online-game">
+                <div class="live-title">
+                  <h2>相关<b style="color: #f11c2a;font-style: normal;">直播</b></h2>
+                  <a href="#" target="_blank">更多></a>
+                </div>
+                <ul class="video-list">
+                  <li>
+                    <a href="live-detail.html"><img src="./resources/images/game1.jpg" alt="1"></a>
+                    <p class="f2-cover">
+                      <span>不吃10鸡不下播今晚爆肝MT2,不吃10鸡不下播今晚爆肝MT2,不吃10鸡不下播今晚爆肝MT2不吃10鸡不下播今晚爆肝MT2</span>
+                      <a href="#"><i class="icon icon-usergroup"></i>1293</a>
+                    </p>
+                    <p class="f2-view">
+                      <a class="avatar">
+                        <img src="./resources/images/favicon.png" alt="">
+                      </a>
+                      <b class="name2">一只受伤的小番茄在做直播哈哈哈哈</b>
+                      <a class="label">
+                        <span>北京赛车</span>
+                        <span>电竞直播</span>
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <a href="live-detail.html"><img src="./resources/images/game1.jpg" alt="5"></a>
+                    <p class="f2-cover">
+                      <span>今晚爆肝MT2今晚爆肝MT2今晚爆肝MT2今晚爆肝MT2不吃10鸡不下播今晚爆肝MT2,不吃10鸡不下播今晚爆肝MT2</span>
+                      <a href="#"><i class="icon icon-usergroup"></i>1293</a>
+                    </p>
+                    <p class="f2-view">
+                      <a class="avatar">
+                        <img src="./resources/images/favicon.png" alt="">
+                      </a>
+                      <b class="name2">小番茄</b>
+                      <a class="label">
+                        <span>北京赛车</span>
+                        <span>电竞直播</span>
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <a href="live-detail.html"><img src="./resources/images/game1.jpg" alt="5"></a>
+                    <p class="f2-cover">
+                      <span>是老虎机不是老虎不吃10鸡不下播今晚爆肝MT2,不吃10鸡不下播今晚爆肝MT2,不吃10鸡不下播今晚爆肝MT2不吃10鸡不下播今晚爆肝MT2</span>
+                      <a href="#"><i class="icon icon-usergroup"></i>1234567890</a>
+                    </p>
+                    <p class="f2-view">
+                      <a class="avatar">
+                        <img src="./resources/images/favicon.png" alt="">
+                      </a>
+                      <b class="name2">今晚爆肝</b>
+                      <a class="label">
+                        <span>北京赛车</span>
+                        <span>电竞直播</span>
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <a href="live-detail.html"><img src="./resources/images/game1.jpg" alt="5"></a>
+                    <p class="f2-cover">
+                      <span>是老虎机不是老虎</span>
+                      <a href="#"><i class="icon icon-usergroup"></i>1293</a>
+                    </p>
+                    <p class="f2-view">
+                      <a class="avatar">
+                        <img src="./resources/images/favicon.png" alt="">
+                      </a>
+                      <b class="name2">小番茄在直播啦</b>
+                      <a class="label">
+                        <span>北京赛车</span>
+                        <span>电竞直播</span>
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <a href="live-detail.html"><img src="./resources/images/game1.jpg" alt="5"></a>
+                    <p class="f2-cover">
+                      <span>是老虎机不是老虎</span>
+                      <a href="#"><i class="icon icon-usergroup"></i>1293</a>
+                    </p>
+                    <p class="f2-view">
+                      <a class="avatar">
+                        <img src="./resources/images/favicon.png" alt="">
+                      </a>
+                      <b class="name2">一只小番茄MT2</b>
+                      <a class="label">
+                        <span>北京赛车</span>
+                        <span>电竞直播</span>
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <a href="live-detail.html"><img src="./resources/images/game1.jpg" alt="5"></a>
+                    <p class="f2-cover">
+                      <span>说吧说吧说吧说吧说吧说吧</span>
+                      <a href="#"><i class="icon icon-usergroup"></i>1293</a>
+                    </p>
+                    <p class="f2-view">
+                      <a class="avatar">
+                        <img src="./resources/images/favicon.png" alt="">
+                      </a>
+                      <b class="name2">一只受伤的小番茄</b>
+                      <a class="label">
+                        <span>北京赛车</span>
+                        <span>电竞直播</span>
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <a href="live-detail.html"><img src="./resources/images/game1.jpg" alt="5"></a>
+                    <p class="f2-cover">
+                      <span>老虎机</span>
+                      <a href="#"><i class="icon icon-usergroup"></i>1293</a>
+                    </p>
+                    <p class="f2-view">
+                      <a class="avatar">
+                        <img src="./resources/images/favicon.png" alt="">
+                      </a>
+                      <b class="name2">你就直说吧要不要我喊我哥来揍你一顿哼哼</b>
+                      <a class="label">
+                        <span>北京赛车</span>
+                        <span>电竞直播</span>
+                      </a>
+                    </p>
+                  </li>
+                  <li>
+                    <a href="live-detail.html"><img src="./resources/images/game1.jpg" alt="5"></a>
+                    <p class="f2-cover">
+                      <span>今晚爆肝</span>
+                      <a href="#"><i class="icon icon-usergroup"></i>1293</a>
+                    </p>
+                    <p class="f2-view">
+                      <a class="avatar">
+                        <img src="./resources/images/favicon.png" alt="">
+                      </a>
+                      <b class="name2">一只受伤的小番茄</b>
+                      <a class="label">
+                        <span>北京赛车</span>
+                        <span>电竞直播</span>
+                      </a>
+                    </p>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li>
-              <a href="live-detail.html"><img src="./resources/images/zhixingli.jpg" alt="5"></a>
-              <p class="f2-cover">
-                <span>是老虎机不是老虎不吃10鸡不下播今晚爆肝MT2,不吃10鸡不下播今晚爆肝MT2,不吃10鸡不下播今晚爆肝MT2不吃10鸡不下播今晚爆肝MT2</span>
-                <a href="#"><i class="icon icon-usergroup"></i>1234567890</a>
-              </p>
-              <p class="f2-view">
-                <a class="avatar">
-                  <img src="./resources/images/favicon.png" alt="">
-                </a>
-                <b class="name2">今晚爆肝</b>
-                <a class="label">
-                  <span>北京赛车</span>
-                  <span>电竞直播</span>
-                </a>
-              </p>
-            </li>
-            <li>
-              <a href="live-detail.html"><img src="./resources/images/zunzhong.jpg" alt="5"></a>
-              <p class="f2-cover">
-                <span>是老虎机不是老虎</span>
-                <a href="#"><i class="icon icon-usergroup"></i>1293</a>
-              </p>
-              <p class="f2-view">
-                <a class="avatar">
-                  <img src="./resources/images/favicon.png" alt="">
-                </a>
-                <b class="name2">小番茄在直播啦</b>
-                <a class="label">
-                  <span>北京赛车</span>
-                  <span>电竞直播</span>
-                </a>
-              </p>
-            </li>
-            <li>
-              <a href="live-detail.html"><img src="./resources/images/zhencheng.jpg" alt="5"></a>
-              <p class="f2-cover">
-                <span>是老虎机不是老虎</span>
-                <a href="#"><i class="icon icon-usergroup"></i>1293</a>
-              </p>
-              <p class="f2-view">
-                <a class="avatar">
-                  <img src="./resources/images/favicon.png" alt="">
-                </a>
-                <b class="name2">一只小番茄MT2</b>
-                <a class="label">
-                  <span>北京赛车</span>
-                  <span>电竞直播</span>
-                </a>
-              </p>
-            </li>
-            <li>
-              <a href="live-detail.html"><img src="./resources/images/zunzhong.jpg" alt="5"></a>
-              <p class="f2-cover">
-                <span>说吧说吧说吧说吧说吧说吧</span>
-                <a href="#"><i class="icon icon-usergroup"></i>1293</a>
-              </p>
-              <p class="f2-view">
-                <a class="avatar">
-                  <img src="./resources/images/favicon.png" alt="">
-                </a>
-                <b class="name2">一只受伤的小番茄</b>
-                <a class="label">
-                  <span>北京赛车</span>
-                  <span>电竞直播</span>
-                </a>
-              </p>
-            </li>
-            <li>
-              <a href="live-detail.html"><img src="./resources/images/zhencheng.jpg" alt="5"></a>
-              <p class="f2-cover">
-                <span>老虎机</span>
-                <a href="#"><i class="icon icon-usergroup"></i>1293</a>
-              </p>
-              <p class="f2-view">
-                <a class="avatar">
-                  <img src="./resources/images/favicon.png" alt="">
-                </a>
-                <b class="name2">你就直说吧要不要我喊我哥来揍你一顿哼哼</b>
-                <a class="label">
-                  <span>北京赛车</span>
-                  <span>电竞直播</span>
-                </a>
-              </p>
-            </li>
-            <li>
-              <a href="live-detail.html"><img src="./resources/images/zhencheng.jpg" alt="5"></a>
-              <p class="f2-cover">
-                <span>今晚爆肝</span>
-                <a href="#"><i class="icon icon-usergroup"></i>1293</a>
-              </p>
-              <p class="f2-view">
-                <a class="avatar">
-                  <img src="./resources/images/favicon.png" alt="">
-                </a>
-                <b class="name2">一只受伤的小番茄</b>
-                <a class="label">
-                  <span>北京赛车</span>
-                  <span>电竞直播</span>
-                </a>
-              </p>
+              <!-- 相关主播 -->
+              <div class="online-game">
+                <div class="live-title">
+                  <h2>相关<b style="color: #f11c2a;font-style: normal;">主播</b></h2>
+                  <a href="#" target="_blank">更多></a>
+                </div>
+                <ul class="anchor-list">
+                  <li>
+                    <div class="left">
+                      <a class="avatar" href="#"><img src="./resources/images/avatar.png" alt=""></a>
+                      <a href="" class="qianyue-label"><i class="icon icon-yuyin"></i>签约主播</a>
+                    </div>
+                    <div class="right">
+                      <h2><a href="">一只受伤的小番茄正在做直播哈哈哈</a></h2>
+                      <a class="online-btn" href=""><i class="icon icon-shipin1"></i>正在直播</a>
+                      <p>
+                        <a href="" class="gz-btn">加关注</a>
+                        <a href="" class="gz-btn">私信</a>
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="left">
+                      <a class="avatar" href=""><img src="./resources/images/avatar.png" alt=""></a>
+                    </div>
+                    <div class="right">
+                      <h2><a href="">一只受伤的小番茄正在做直播哈哈哈</a></h2>
+                      <a class="online-btn" href=""><i class="icon icon-shipin1"></i>正在直播</a>
+                      <p>
+                        <a href="" class="gz-btn">加关注</a>
+                        <a href="" class="gz-btn">私信</a>
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="left">
+                      <a class="avatar" href=""><img src="./resources/images/avatar.png" alt=""></a>
+                    </div>
+                    <div class="right">
+                      <h2><a href="">一只受伤的小番茄正在做直播哈哈哈</a></h2>
+                      <p>
+                        <span style="font-size: 14px;color: #f11c2a; text-align: left;"> <b style="margin-right: 3px;">0</b>关注 </span>
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="left">
+                      <a class="avatar" href=""><img src="./resources/images/avatar.png" alt=""></a>
+                    </div>
+                    <div class="right">
+                      <h2><a href="">一只受伤的小番茄正在做直播哈哈哈</a></h2>
+                      <p>
+                        <span style="font-size: 14px;color: #f11c2a; text-align: left;"> <b style="margin-right: 3px;">0</b>关注 </span>
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="left">
+                      <a class="avatar" href=""><img src="./resources/images/avatar.png" alt=""></a>
+                    </div>
+                    <div class="right">
+                      <h2><a href="">一只受伤的小番茄正在做直播哈哈哈</a></h2>
+                      <p>
+                        <span style="font-size: 14px;color: #f11c2a; text-align: left;"> <b style="margin-right: 3px;">0</b>关注 </span>
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="left">
+                      <a class="avatar" href=""><img src="./resources/images/avatar.png" alt=""></a>
+                    </div>
+                    <div class="right">
+                      <h2><a href="">一只受伤的小番茄正在做直播哈哈哈</a></h2>
+                      <a class="online-btn" href=""><i class="icon icon-shipin1"></i>正在直播</a>
+                      <p>
+                        <a href="" class="gz-btn" style="background: #e0e0e0;">已关注</a>
+                        <a href="" class="gz-btn">私信</a>
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="left">
+                      <a class="avatar" href="#"><img src="./resources/images/avatar.png" alt=""></a>
+                      <a href="" class="qianyue-label"><i class="icon icon-yuyin"></i>签约主播</a>
+                    </div>
+                    <div class="right">
+                      <h2><a href="">一只受伤的小番茄正在做直播哈哈哈</a></h2>
+                      <p>
+                        <span style="font-size: 14px;color: #f11c2a; text-align: left;"> <b style="margin-right: 3px;">123456</b>关注 </span>
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -709,7 +816,7 @@
 <script src="resources/js/flv.min.js"></script>
 <script src="resources/js/DPlayer.min.js"></script>
 <script>
-  var dp = new DPlayer({
+  let dp = new DPlayer({
     element: document.getElementById('dplayer2'),
     video: {
       url: 'resources/src/Rallye.3gp',
@@ -771,5 +878,16 @@
   })
 </script>
 
+<!-- 搜索结果 tab切换 JS -->
+<script>
+  $(".search-tabs").on("click","li", function (e) {
+    e.preventDefault();
+    let idx = $(this).index();
+    $(this).siblings().removeClass("active");
+    $(this).addClass("active");
+    $(this).parents(".search-wrapper").find(".search-content>li").eq(idx).siblings().removeClass("active");
+    $(this).parents(".search-wrapper").find(".search-content>li").eq(idx).addClass("active");
+  })
+</script>
 </body>
 </html>
