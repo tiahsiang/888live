@@ -925,7 +925,7 @@ a>.icon-usergroup {
 .more-about .tab-nav {
   width: 15%;
   height: 100%;
-  border-top: 1px solid #e0e0e0;
+  /*border-top: 1px solid #e0e0e0;*/
 
 }
 .more-about .tab-nav li {
@@ -1178,7 +1178,7 @@ a>.icon-usergroup {
   padding: 10px 20px;
   margin-bottom: 15px;
   background: #fff;
-  border: 1px solid #e0e0e0;
+  /*border: 1px solid #e0e0e0;*/
 }
 
 .user-card>.user-img {
@@ -1316,7 +1316,7 @@ a>.icon-usergroup {
   background: #fff;
   margin-bottom: 20px;
   padding: 10px 0;
-  border: 1px solid #e0e0e0;
+  /*border: 1px solid #e0e0e0;*/
 }
 .user-center .tab-nav>li {
   padding: 5px 0 5px 40px;
@@ -1347,7 +1347,7 @@ a>.icon-usergroup {
   width: 100%;
   padding: 20px;
   background: #fff;
-  border: 1px solid #e0e0e0;
+  /*border: 1px solid #e0e0e0;*/
   height: 380px;
   margin-bottom: 16px;
 }
