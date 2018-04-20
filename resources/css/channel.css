@@ -1986,12 +1986,12 @@ a.colors > .icon-colors {
   text-indent: 24px;
   text-align: justify;
   width: 100%;
-  height: 140px;
+  max-height: 136px;
   overflow: hidden;
 }
 .cash-details .details-brief>div>p.intro-txt {
   width: 100%;
-  height: 60px;
+  height: 56px;
   max-height: 120px;
   overflow: hidden;
 }
@@ -2319,6 +2319,9 @@ a.colors > .icon-colors {
   vertical-align: middle;
 }
 
+
+/********************************************  Tia补充 响应样式  用于全部 直播/游戏&游戏详情页/现金网&现金网详情页/搜索结果 等页面 *****************************************/
+
 /**************************** 搜索结果页 ***********************************/
 .search-wrapper {
   width: 100%;
@@ -2482,10 +2485,136 @@ a.colors > .icon-colors {
   border-color: #f11c2a;
 }
 
+/**** 屏幕较小时 隐藏主导航内容 点击出现滑动导航栏  ****/
+#sideMenuContainer {
+  background: #202020;
+  height: 100%;
+  padding: 10px;
+  position: fixed;
+  top: 56px;
+  right: -240px;
+  width: 240px;
+  z-index: 4;
+}
+#sideMenuContainer h2 {
+  color: #fcfcfc;
+  font: 16px 'PT Sans', Helvetica, Arial, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#sideMenuContainer > a {
+  display: block;
+  padding: 5px 10px;
+}
+#sideMenuContainer > a::after {
+  content: attr(title);
+  font: 12px 'PT Sans', Helvetica, Arial, sans-serif;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
 
+#sideMenuContainer>.user-info {
+  position: relative;
+  text-align: center;
+}
+#sideMenuContainer .user-info>a.avatar {
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  margin: 0 auto;
+  vertical-align: middle;
+  overflow: hidden;
+  margin-top: 20px;
+}
+#sideMenuContainer .user-info>a.avatar img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+#sideMenuContainer .user-info>h2 {
+  display: block;
+  height: 30px;
+  margin: 15px auto;
+  max-width: 300px;
+  font-size: 16px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+}
+#sideMenuContainer .user-info>a.logout-btn {
+  font-size: 14px;
+  color: #999;
+  vertical-align: middle;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+#sideMenuContainer .user-info>a.logout-btn .icon-logout {
+  cursor: pointer;
+  font-size: 18px;
+  color: #999;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+#sideMenuContainer .user-info>a.logout-btn:hover, #sideMenuContainer .user-info>a.logout-btn:hover .icon-logout {
+  color: #f11c2a;
+}
+#sideMenuContainer ul>li {
+  display: block;
+  text-align: left;
+  padding: 20px 0 0 30px;
+}
+#sideMenuContainer ul>li.search {
+  position: relative;
+  text-align: center;
+  margin-top: 15px;
+  padding: 0;
+}
+#sideMenuContainer ul>li.search input[type=search] {
+  width: 178px;
+  height: 30px;
+  border: 1px solid #efefef;
+  outline: none;
+  border-radius: 25px;
+  background: #eee;
+  padding: 2px 0 4px 10px;
+  color: #333;
+}
+input::placeholder {
+  color: #999;
+  font-size: 12px;
+}
+#sideMenuContainer li .icon-sousuo {
+  cursor: pointer;
+  font-size: 17px;
+  color: #999;
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  z-index: 102;
+  margin-top: -11px;
+}
+#sideMenuContainer li a {
+  font-size: 16px;
+  color: #999;
+}
+#sideMenuContainer li a .icon {
+  font-size: 20px;
+  margin-right: 15px;
+}
+#sideMenuContainer li a:hover {
+  padding-left: 3px;
+  color: #f11c2a;
+}
 
-
-/****  Tia补充 响应样式  用于频道页面 *****/
 #sideMenu {
   display: none;
   float: right;
@@ -2497,6 +2626,8 @@ a.colors > .icon-colors {
   color: #333;
   cursor: pointer;
 }
+
+/**************  响应式   *****************/
 @media screen and (max-width: 1920px) {
   .search-content>li .anchor-list>li {
     width: 309px;
@@ -2632,6 +2763,12 @@ a.colors > .icon-colors {
   .nav .rt-nav {
     display: none;
   }
+  .main-menu {
+    display: none;
+  }
+  .main-panel {
+    margin-left: 0;
+  }
   .nav #sideMenu {
     display: block;
   }
@@ -2646,14 +2783,15 @@ a.colors > .icon-colors {
     margin-right: 5px;
   }
   .main-panel .online-game .video-list>li {
-    width: 334px;
+    width: 300px;
   }
   .online-game .f2-cover>span {
-    max-width: 200px;
+    max-width: 180px;
   }
   .online-game .f2-view b.name2 {
-    max-width: 144px;
+    max-width: 110px;
   }
+
 }
 @media screen and (max-width: 600px) {
   .nav .lt-nav {
